@@ -29,6 +29,7 @@ export default {
             },
             maxWidth: {
                 "screen-3xl": "1440px",
+                ...generateWidths(10, 200),
             },
             maxHeight: {
                 130: "32.5rem",
@@ -70,9 +71,8 @@ export default {
         screens: {
             'sm': '768px',
             'md': '1024px',
-            'lg': '1200px',
-            'xl': '1620px',
-            '2xl': '1920px'
+            'lg': '1440px',
+            'xl': '1920px',
         },
     },
 
