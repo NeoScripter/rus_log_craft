@@ -16,7 +16,7 @@ x-init="init()"
 class="sticky top-0 border-b border-gray-200">
 <div class="flex items-center justify-between gap-2 px-4 py-3 md:my-6 lg:my-0 lg:py-4 lg:mx-32">
     <div class="w-40 lg:w-80">
-        <img src="{{ asset('images/partials/logo.webp') }}" alt="Rus Log Craft logo" class="object-contain object-center w-full h-full">
+        <img src="{{ asset('images/partials/header/logo.webp') }}" alt="Rus Log Craft logo" class="object-contain object-center w-full h-full">
     </div>
 
     <div class="hidden lg:flex lg:items-start">
@@ -39,57 +39,57 @@ class="sticky top-0 border-b border-gray-200">
         <ul class="flex items-center gap-6" aria-label="Social media links">
             <li>
                 <a href="" aria-label="WhatsApp" class="bg-[#E5E3DB] block transition-colors animated-svg w-11 rounded-md hover:bg-[#2C6849]">
-                    {!! file_get_contents(public_path('images/partials/whatsapp.svg')) !!}
+                    {!! file_get_contents(public_path('images/partials/header/whatsapp.svg')) !!}
                 </a>
             </li>
             <li>
                 <a href="" aria-label="VK" class="bg-[#E5E3DB] block p-1.5 transition-colors w-11 animated-svg rounded-md hover:bg-[#2C6849]">
-                    {!! file_get_contents(public_path('images/partials/vk.svg')) !!}
+                    {!! file_get_contents(public_path('images/partials/header/vk.svg')) !!}
                 </a>
             </li>
             <li>
                 <a href="" aria-label="Telegram" class="bg-[#E5E3DB] block p-1.5 transition-colors w-11 animated-svg rounded-md hover:bg-[#2C6849]">
-                    {!! file_get_contents(public_path('images/partials/telegram.svg')) !!}
+                    {!! file_get_contents(public_path('images/partials/header/telegram.svg')) !!}
                 </a>
             </li>
         </ul>
         <a href="mailto:info@spbrb.ru" class="inline-flex items-center gap-2 font-semibold underline uppercase underline-offset-2">
-            <img src="{{ asset('images/partials/mail.svg')}}" alt="Mail icon" aria-hidden="true">
+            <img src="{{ asset('images/partials/header/mail.svg')}}" alt="Mail icon" aria-hidden="true">
             info@spbrb.ru
         </a>
     </div>
 
     <div class="hidden gap-2 lg:grid">
         <button aria-label="Switch to English" class="w-6">
-            <img src="{{ asset('images/partials/eng-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
+            <img src="{{ asset('images/partials/header/eng-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
         </button>
         <button aria-label="Switch to Chinese" class="w-6">
-            <img src="{{ asset('images/partials/chinese-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
+            <img src="{{ asset('images/partials/header/chinese-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
         </button>
         <button aria-label="Switch to Japanese" class="w-6">
-            <img src="{{ asset('images/partials/japanese-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
+            <img src="{{ asset('images/partials/header/japanese-flag.svg') }}" alt="" aria-hidden="true" class="object-contain object-center w-full h-full">
         </button>
     </div>
 
     <div class="flex items-center gap-2 md:gap-4 md:my-2 lg:hidden">
         <button aria-label="Open language menu" class="flex items-center h-4 gap-1">
             <div class="w-6">
-                <img src="{{ asset('images/partials/eng-flag.svg') }}" alt="English flag"  class="object-contain object-center w-full h-full">
+                <img src="{{ asset('images/partials/header/eng-flag.svg') }}" alt="English flag"  class="object-contain object-center w-full h-full">
             </div>
             <div>
-                <img src="{{ asset('images/partials/arrow-down.svg')}}" alt="">
+                <img src="{{ asset('images/partials/header/arrow-down.svg')}}" alt="">
             </div>
         </button>
 
         <button aria-label="Search" class="block">
-            <img src="{{ asset('images/partials/search.svg')}}" alt="Search icon" aria-hidden="true">
+            <img src="{{ asset('images/partials/header/search.svg')}}" alt="Search icon" aria-hidden="true">
         </button>
 
         <button
             @click="showPopup = true"
             class="block p-2"
             aria-label="Open navigation menu">
-            <img src="{{ asset('images/partials/burger.svg')}}" alt="Menu icon">
+            <img src="{{ asset('images/partials/header/burger.svg')}}" alt="Menu icon">
         </button>
     </div>
 </div>
@@ -111,7 +111,7 @@ class="sticky top-0 border-b border-gray-200">
             @click="showPopup = false"
             aria-label="Закрыть меню навигации"
             class="p-2">
-            <img src="{{ asset('images/partials/close-btn.svg') }}" alt="" aria-hidden="true">
+            <img src="{{ asset('images/partials/header/close-btn.svg') }}" alt="" aria-hidden="true">
         </button>
     </header>
     <nav aria-label="Main navigation">
@@ -125,9 +125,9 @@ class="sticky top-0 border-b border-gray-200">
             <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false" class="relative"  aria-haspopup="true" aria-expanded="showMenu">
                 <a href="" class="inline-flex items-center gap-2">
                     Услуги
-                    <img src="{{ asset('images/partials/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
+                    <img src="{{ asset('images/partials/header/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
                 </a>
-                <ul x-cloak x-transition x-show="showMenu" role="menu" class="mt-4 ml-2 space-y-4 list-inside lg:absolute lg:top-5 lg:p-4 lg:w-60 lg:shadow-md lg:-left-20 lg:bg-[#F6F5EF]" style="list-style-image: url('{{ asset('images/partials/green-ellipse.svg') }}')">
+                <ul x-cloak x-transition x-show="showMenu" role="menu" class="mt-4 ml-2 space-y-4 list-inside lg:absolute lg:top-5 lg:p-4 lg:w-60 lg:shadow-md lg:-left-20 lg:bg-[#F6F5EF]" style="list-style-image: url('{{ asset('images/partials/header/green-ellipse.svg') }}')">
                     <li>
                         <a href="" class="text-sm font-semibold uppercase" role="menuitem">Строительство деревянных домов и бань «под ключ»</a>
                     </li>
@@ -150,7 +150,7 @@ class="sticky top-0 border-b border-gray-200">
             </li>
             <li class="hidden lg:flex lg:items-center lg:justify-center">
                 <a href="" aria-label="Search" class="block">
-                    <img src="{{ asset('images/partials/search-large.svg')}}"  alt="Search icon" class="w-full h-full">
+                    <img src="{{ asset('images/partials/header/search-large.svg')}}"  alt="Search icon" class="w-full h-full">
                 </a>
             </li>
         </ul>
