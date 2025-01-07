@@ -20,10 +20,10 @@ export default {
                 'xxs': '0.625rem', // 10px
               },
             colors: {
-                "orange": "#FF5A00",
-                "beige": "#EEECEA",
-                "black-700": "#333",
-                "swamp": "#627867",
+                "green-primary": "#2C6849",
+                "green-light": "#CFE2D4",
+                "dim-gray": "#E5E9EC",
+                "light-gray": "#8F98A9",
                 "dark-bg": "#202020",
                 "footer-bg": "#111"
             },

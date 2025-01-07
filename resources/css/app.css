@@ -2,83 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Black.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Black.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Black.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-ExtraBold.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-ExtraBold.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-ExtraBold.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-ExtraBold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Bold.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Bold.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Bold.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Italic.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Italic.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Italic.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Italic.woff") format("woff");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Light.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Light.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Light.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Medium.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Medium.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Medium.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Regular.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Regular.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Regular.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-Thin.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-Thin.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-Thin.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-Thin.woff") format("woff");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter 18pt';
-    src: url('/resources/fonts/Inter18pt-SemiBold.woff2') format('woff2'),
-        url('/resources/fonts/Inter18pt-SemiBold.woff') format('woff');
+    font-family: "Inter 18pt";
+    src: url("/resources/fonts/Inter18pt-SemiBold.woff2") format("woff2"),
+        url("/resources/fonts/Inter18pt-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -90,4 +89,16 @@
 
 .animated-svg:hover path {
     fill: #ffffff;
+}
+
+.btn-primary {
+    @apply px-6 py-4 text-sm font-bold tracking-wide text-white uppercase transition-colors duration-300 border-2 border-transparent rounded-lg bg-green-primary hover:text-green-primary hover:bg-green-light md:text-base;
+}
+
+.btn-secondary {
+    @apply px-6 py-4 text-sm font-bold tracking-wide uppercase transition-all duration-300 bg-white border-2 rounded-lg text-green-primary hover:underline underline-offset-2 border-green-primary md:text-base;
+}
+
+.section-primary {
+    @apply px-4 lg:px-32 lg:px-40;
 }
