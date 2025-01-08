@@ -24,7 +24,7 @@ export default {
                 "green-light": "#CFE2D4",
                 "dim-gray": "#8F98A9",
                 "light-gray": "#E5E9EC",
-                "dark-bg": "#202020",
+                "dark-black": "#212125",
                 "footer-bg": "#111"
             },
             maxWidth: {

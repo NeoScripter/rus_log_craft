@@ -102,3 +102,7 @@
 .section-primary {
     @apply px-4 lg:px-32 xl:px-40;
 }
+
+.titles {
+    @apply font-bold tracking-wide uppercase leading-[120%] text-dark-black;
+}

@@ -3,13 +3,12 @@
     <section class="section-primary">
 
         <div class="flex flex-col gap-10 sm:flex-row">
-            <h1
-                class="block text-3xl font-bold tracking-wide uppercase leading-[120%] text-balance sm:flex-1 md:text-[4rem]">
+            <h1 class="block text-3xl titles text-balance sm:flex-1 md:text-[4rem]">
                 Проектирование и строительство домов и бань из бревна</h1>
 
             <div class="ml-auto w-72 sm:w-auto sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
                 <img class="w-full rounded-lg" src="{{ asset('images/home/hero-top.webp') }}" alt="Top of a wooden arc">
-                <p class="text-sm text-light-gray md:text-base">Уют и экологичность в домах из натурального бревна. <br>
+                <p class="text-sm text-dim-gray md:text-base">Уют и экологичность в домах из натурального бревна. <br>
                     Ручная работа и индивидуальный подход в каждом проекте.</p>
             </div>
 
@@ -31,106 +30,70 @@
                 <a href="{{ $links[$idx] }}" class="flex flex-col gap-4 px-4 py-6 bg-light-gray">
                     <img class="flex-1 object-center" src="{{ asset('images/home/hero-' . $idx + 1 . '.webp') }}"
                         alt="{{ $name }}">
-                    <div class="text-xl font-bold text-center md:text-2xl">{{ $name }}</div>
+                    <div class="text-xl font-bold text-center text-dark-black md:text-2xl">{{ $name }}</div>
                 </a>
             @endforeach
         </div>
 
     </section>
 
-    @php
-        $SLIDES = 5;
-    @endphp
+    @include('user.partials.home-carousel')
 
-    <section x-data="{
-        currentSlide: 0,
-        totalSlides: {{ $SLIDES }},
-        touchStartX: 0,
-        touchEndX: 0,
-        startSwipe(event) {
-            if (event.target.tagName === 'A' || event.target.closest('a')) {
-                return;
-            }
-            this.touchStartX = event.touches[0].clientX;
-        },
+    <section class="relative pb-6 section-primary sm:pb-10">
 
-        moveSwipe(event) {
-            if (event.target.tagName === 'A' || event.target.closest('a')) {
-                return;
-            }
-            this.touchEndX = event.touches[0].clientX;
-        },
+        <div class="absolute inset-0 bg-left-top bg-no-repeat bg-cover -top-10 bg-light-gray -z-10"
+            style="background-image: url({{ asset('images/svgs/green-circle.svg') }})"></div>
 
-        endSwipe() {
-            const swipeDistance = this.touchStartX - this.touchEndX;
+        <h2 class="text-xl uppercase titles md:text-3xl">новые проекты</h2>
 
-            if (swipeDistance > 100) {
-                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-            } else if (swipeDistance < -100) {
-                this.currentSlide = this.currentSlide === 0 ? this.totalSlides - 1 : this.currentSlide - 1;
-            }
+        @isset($projects)
+            <div class="grid my-6 sm:my-10 gap-y-6 gap-x-4 sm:grid-cols-2 md:gap-x-6 lg:gap-x-10 md:grid-cols-3">
+                @foreach ($projects as $project)
+                    <div class="flex flex-col bg-white rounded-lg overflow-clip">
+                        <div class="relative h-72">
 
-            this.touchStartX = 0;
-            this.touchEndX = 0;
-        },
-    }" class="relative overflow-clip">
+                            <span class="absolute top-0 right-0 block px-6 py-3 text-xl font-bold bg-white rounded-md text-green-primary">
+                                {{ $project->volume }} м²
+                            </span>
 
-        <div :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-            class="flex items-center transition-transform duration-500"
-            @touchstart="startSwipe($event)"
-            @touchmove="moveSwipe($event)"
-            @touchend="endSwipe()">
+                            <img class="object-cover object-center w-full h-full" src="{{ Storage::url($project->image) }}" alt="{{ $project->name }}">
+                        </div>
 
-            @for ($i = 0; $i < $SLIDES; $i++)
-                <div class="basis-full shrink-0">
-                    <img class="object-cover object-center w-full h-full"
-                        src="{{ asset('images/home/home-carousel.webp') }}" alt="Home carousel">
-                </div>
-            @endfor
-        </div>
+                        <div class="flex flex-col flex-1 gap-3 p-4">
+                            <div class="text-xl titles">{{ $project->name }}</div>
+                            <span class="block mt-auto text-dim-gray">{{ $project->article }}</span>
 
-        <div class="absolute items-center justify-between hidden h-10 sm:flex top-1/2 left-4 lg:right-32 xl:left-40 right-4 lg:left-32 xl:right-40">
-            <button
-                @click="currentSlide = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1"
-                class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
-                <img class="h-5 mr-0.5" src="{{ asset('images/svgs/arrow-left.svg')}}" alt="">
-            </button>
+                            <div class="flex items-center justify-between gap-1">
 
-            <button
-                @click="currentSlide = (currentSlide + 1) % totalSlides"
-                class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
-                <img class="h-5 ml-0.5" src="{{ asset('images/svgs/arrow-right.svg')}}" alt="">
-            </button>
-        </div>
+                                <div class="flex items-center flex-1 gap-2">
+                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/volume.svg') }}" alt="Volume svg">
+                                    {{ $project->volume }} м²
+                                </div>
 
-        <div class="flex items-center justify-center gap-2 mt-4 sm:gap-4 sm:absolute sm:bottom-8 sm:left-0 sm:right-0">
-            <template x-for="(i, index) in [...Array(totalSlides).keys()]">
-                <button
-                    @click="currentSlide = index"
-                    :aria-current="currentSlide === i"
-                    class="rounded-full aspect-square"
-                    :class="currentSlide === index ? 'bg-dim-gray w-2 sm:bg-light-gray sm:w-4' : 'bg-light-gray w-1.5 sm:bg-dim-gray sm:w-2'"
-                ></button>
-            </template>
-        </div>
+                                <div class="flex items-center flex-1 gap-2">
+                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/floors.svg') }}" alt="Volume svg">
+                                    {{ $project->floors . $project->floors > 1 ? 'этажа' : 'этаж' }}
+                                </div>
+
+                                <div class="flex items-center flex-1 gap-2">
+                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/rooms.svg') }}" alt="Volume svg">
+                                    {{ $project->rooms }}
+                                </div>
+
+
+                            </div>
+
+                            <a href="{{ $project->link }}" class="block mt-1 text-center btn-secondary">Подробнее</a>
+                        </div>
+
+
+                    </div>
+                @endforeach
+            </div>
+
+        @endisset
+
+    <a href="" class="block w-full text-center btn-primary"> Смотреть все проекты</a>
 
     </section>
-
-
-
-    @isset($projects)
-        @foreach ($projects as $project)
-            <div>
-                {{ $project->name }}
-                {{ $project->image }}
-                {{ $project->volume }}
-                {{ $project->article }}
-                {{ $project->floors }}
-                {{ $project->rooms }}
-                {{ $project->link }}
-            </div>
-        @endforeach
-
-    @endisset
-
 </x-user-layout>
