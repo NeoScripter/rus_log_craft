@@ -22,8 +22,8 @@ export default {
             colors: {
                 "green-primary": "#2C6849",
                 "green-light": "#CFE2D4",
-                "dim-gray": "#E5E9EC",
-                "light-gray": "#8F98A9",
+                "dim-gray": "#8F98A9",
+                "light-gray": "#E5E9EC",
                 "dark-bg": "#202020",
                 "footer-bg": "#111"
             },
