@@ -104,5 +104,9 @@
 }
 
 .titles {
-    @apply font-bold tracking-wide uppercase leading-[120%] text-dark-black;
+    @apply font-bold tracking-wide uppercase !leading-[120%] text-dark-black;
+}
+
+.golden-title {
+    @apply text-golden-primary uppercase !leading-[120%] transition-colors underline-offset-2 underline hover:text-white hover:bg-golden-primary;
 }

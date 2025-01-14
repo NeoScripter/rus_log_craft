@@ -25,7 +25,7 @@ export default {
                 "dim-gray": "#8F98A9",
                 "light-gray": "#E5E9EC",
                 "dark-black": "#212125",
-                "footer-bg": "#111"
+                "golden-primary": "#C3AD85"
             },
             maxWidth: {
                 "screen-3xl": "1440px",
