@@ -285,66 +285,37 @@
 
     </section>
 
-    <section class="section-primary">
+    @include('user.partials.home-accordion')
 
-        <h2 class="text-2xl md:text-4xl titles text-balance">6 причин выбрать бревенчатый дом <br> <span class="golden-title md:mb-4">ручной рубки</span></h2>
+    <section class="section-primary bg-[#F6F5EF] pt-8 sm:py-8">
 
-        <div class="md:flex md:gap-10 md:items-end md:justify-between">
+        <div class="flex flex-col gap-6">
 
-            @php
-                $questions = [
-                    'Эстетика и уникальность',
-                    'Экологичность',
-                    'Энергоэффективность',
-                    'Прочность и долговечность',
-                    'Индивидуальность',
-                    'Психологический эффект',
-                ];
+            <div class="text-2xl titles">Дом под ключ </div>
 
-                $answers = [
-                    'дома из ручной рубки обладают неповторимым характером и органической красотой. Каждое бревно имеет свою форму и текстуру, что создает уникальный и неповторимый внешний вид дома, придающий ему особый шарм.',
-                    'строительство осуществляется с использованием натуральных материалов, что снижает экологическую нагрузку на окружающую среду. Древесина является возобновляемым ресурсом, а процесс обработки бревен вручную обеспечивает минимальное использование энергии.',
-                    'благодаря толстым стенам из натурального дерева, дома из ручной рубки обладают превосходными теплоизоляционными свойствами. Это позволяет создавать уютное и комфортное внутреннее пространство, а также снижает затраты на отопление и кондиционирование воздуха.',
-                    'древесина, используемая при строительстве домов из ручной рубки, обладает высокой прочностью и долговечностью. Толстые бревна обеспечивают надежную защиту от ветра, дождя и других природных воздействий, что делает такие дома стойкими к различным климатическим условиям.',
-                    'возможность ручной обработки бревен позволяет создавать индивидуальные и уникальные дизайны для каждого дома. Владельцы могут выбирать форму и размеры бревен, а также стиль обработки, чтобы создать дом, который полностью отвечает их потребностям и предпочтениям.',
-                    'благодаря естественной текстуре и аромату дерева, пребывание в бревенчатом доме способствует созданию уютной и спокойной атмосферы, что благотворно влияет на психическое здоровье и общее благополучие.',
-                ];
-            @endphp
+            <p>Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
 
-            <div class="my-6 space-y-4 md:basis-[60%] md:mb-0">
-                @for ($i = 0; $i < count($questions); $i++)
-                    <div x-data="{ expanded: false }"
-                        class="rounded-md transition-colors duration-300 border border-[#E5E3DB] focus-within:border-golden-primary hover:border-golden-primary">
-                        <button class="flex items-center justify-between w-full p-6 transition-colors outline-none durat ion-300 group" @click="expanded = !expanded">
+            <p>Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
 
-                            <div class="font-semibold group-hover:text-golden-primary group-focus-visible:text-golden-primary">{{ $questions[$i] }}</div>
+            <button class="btn-secondary">Заказать звонок</button>
 
-                            <div class="w-4 h-4 transition-transform duration-500"
-                                :class="expanded ? '-rotate-180' : ''">
-                                <svg width="100%" height="100%" viewBox="0 0 18 19" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="arrow">
-                                        <path id="Vector 12" d="M1 1.5L17 17.5M17 17.5V1.5M17 17.5H1"
-                                            stroke-width="2" class="stroke-[#212125] group-hover:stroke-golden-primary group-focus-visible:stroke-golden-primary transition-colors duration-300" />
-                                    </g>
-                                </svg>
+            <ul class="space-y-6">
+                @php
+                    $turnkey_items = ['Проектирование объекта', 'Согласование с заказчиком', 'Подписание договора', 'Доставка стройматериалов', 'Строительство под ключ', 'прием объекта заказчиком'];
+                @endphp
 
-                            </div>
-                        </button>
-                        <div x-show="expanded" x-transition:enter="transition-all duration-500 ease-in-out"
-                            x-transition:enter-start="grid-rows-[0fr]" x-transition:enter-end="grid-rows-[1fr]"
-                            x-transition:leave="transition-all duration-500 ease-in"
-                            x-transition:leave-start="grid-rows-[1fr]" x-transition:leave-end="grid-rows-[0fr]"
-                            x-cloak class="grid p-6 pt-0 text-dim-gray">
-                            <div class="overflow-hidden">{{ $answers[$i] }}</div>
-                        </div>
-                    </div>
+                @for ($i = 0; $i < count($turnkey_items); $i++)
+                    <li class="inline-flex items-center gap-2">
+                        <img src="{{ asset('images/svgs/turnkey/turnkey-'. $i + 1 .'.svg') }}" alt="" class="w-8 h-8">
+                        <div class="font-semibold uppercase">{{ $turnkey_items[$i] }}</div>
+                    </li>
                 @endfor
+            </ul>
+
+            <div>
+                <img src="{{ asset('images/home/home-turnkey.webp') }}" alt="">
             </div>
 
-            <div class="max-w-100 md:basis-[40%] md:w-full">
-                <img class="object-cover object-center w-full h-full" src="{{ asset('images/home/home-accordion.webp') }}" alt="">
-            </div>
         </div>
 
     </section>
