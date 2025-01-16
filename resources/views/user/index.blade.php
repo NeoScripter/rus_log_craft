@@ -194,10 +194,13 @@
 
                         <div class="p-4 md:flex-1">
                             <p class="mb-2 text-xl font-bold">{{ $titles[$i] }}</p>
-                            <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных проектах бревенчатых коттеджей и бань</p>
+                            <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных
+                                проектах бревенчатых коттеджей и бань</p>
 
-                            <a href="" class="grid content-center w-8 h-8 p-2 ml-auto rounded-md bg-green-primary">
-                                <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}" alt="">
+                            <a href=""
+                                class="grid content-center w-8 h-8 p-2 ml-auto rounded-md bg-green-primary">
+                                <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
+                                    alt="">
                             </a>
                         </div>
 
@@ -213,19 +216,135 @@
 
     @include('user.partials.home-quality')
 
-    <section class="py-8 section-primary md:py-12 lg:py-15" style="background: linear-gradient(180deg, rgba(229, 233, 236, 0.00) 0%, #E5E9EC 100%);">
+    <section class="py-8 section-primary md:py-12 lg:py-15"
+        style="background: linear-gradient(180deg, rgba(229, 233, 236, 0.00) 0%, #E5E9EC 100%);">
 
-        <div>
+        <div class="md:flex md:gap-10 lg:gap-32">
 
-            <div>
+            <div class="md:flex-1 md:flex md:flex-col">
+                <p class="mb-4 text-2xl titles md:mb-6 md:text-4xl">Хотите узнать больше о строительстве вашего будущего
+                    дома?</p>
+                <p class="mb-8 md:mb-6">Оставьте свои контактные данные, и наш специалист свяжется с вами в ближайшее
+                    время. Ответим на все ваши вопросы и поможем сделать первый шаг к уютному и экологичному дому из
+                    бревна!</p>
 
+                <div class="hidden md:block md:mt-auto md:max-w-140 md:flex-1">
+                    <img class="object-cover object-center w-full h-full"
+                        src="{{ asset('images/home/webform.webp') }}" alt="">
+                </div>
             </div>
 
-            <form action="">
+            <form action="" class="space-y-4 md:flex-1 lg:space-y-6">
 
+                <div class="">
+                    <label for="name" class="sr-only">Ваше ФИО</label>
+                    <input type="text" id="name"
+                        class="w-full px-6 py-4 bg-transparent border rounded-md border-dim-gray"
+                        placeholder="Ваше ФИО" required>
+                </div>
+
+                <div class="">
+                    <label for="phone" class="sr-only">Телефон для связи</label>
+                    <input type="tel" id="phone"
+                        class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
+                        placeholder="Телефон для связи" required>
+                </div>
+
+                <div class="">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email"
+                        class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray" placeholder="E-mail"
+                        required>
+                </div>
+
+                <div class="">
+                    <label for="message" class="sr-only">Сообщение</label>
+                    <textarea id="message" rows="4" class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
+                        placeholder="Сообщение" required></textarea>
+                </div>
+
+                <div>
+                    <div class="flex items-start gap-6 me-4">
+                        <input checked id="checkbox" type="checkbox" value=""
+                            class="w-6 h-6 bg-gray-100 border-gray-300 rounded-sm text-green-primary focus:ring-green-primary focus:ring-2">
+                        <label for="checkbox" class="text-sm font-bold text-gray-900">Нажимая кнопку отправить, вы
+                            соглашаетесь с Политикой в отношении обработки персональных данных , а так же с обработкой
+                            персональных данных</label>
+                    </div>
+                </div>
+
+                <button class="w-full btn-primary">Отправить</button>
 
             </form>
 
+            <div class="mt-8 md:hidden">
+                <img src="{{ asset('images/home/webform.webp') }}" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-primary">
+
+        <h2 class="text-2xl md:text-4xl titles text-balance">6 причин выбрать бревенчатый дом <br> <span class="golden-title md:mb-4">ручной рубки</span></h2>
+
+        <div class="md:flex md:gap-10 md:items-end md:justify-between">
+
+            @php
+                $questions = [
+                    'Эстетика и уникальность',
+                    'Экологичность',
+                    'Энергоэффективность',
+                    'Прочность и долговечность',
+                    'Индивидуальность',
+                    'Психологический эффект',
+                ];
+
+                $answers = [
+                    'дома из ручной рубки обладают неповторимым характером и органической красотой. Каждое бревно имеет свою форму и текстуру, что создает уникальный и неповторимый внешний вид дома, придающий ему особый шарм.',
+                    'строительство осуществляется с использованием натуральных материалов, что снижает экологическую нагрузку на окружающую среду. Древесина является возобновляемым ресурсом, а процесс обработки бревен вручную обеспечивает минимальное использование энергии.',
+                    'благодаря толстым стенам из натурального дерева, дома из ручной рубки обладают превосходными теплоизоляционными свойствами. Это позволяет создавать уютное и комфортное внутреннее пространство, а также снижает затраты на отопление и кондиционирование воздуха.',
+                    'древесина, используемая при строительстве домов из ручной рубки, обладает высокой прочностью и долговечностью. Толстые бревна обеспечивают надежную защиту от ветра, дождя и других природных воздействий, что делает такие дома стойкими к различным климатическим условиям.',
+                    'возможность ручной обработки бревен позволяет создавать индивидуальные и уникальные дизайны для каждого дома. Владельцы могут выбирать форму и размеры бревен, а также стиль обработки, чтобы создать дом, который полностью отвечает их потребностям и предпочтениям.',
+                    'благодаря естественной текстуре и аромату дерева, пребывание в бревенчатом доме способствует созданию уютной и спокойной атмосферы, что благотворно влияет на психическое здоровье и общее благополучие.',
+                ];
+            @endphp
+
+            <div class="my-6 space-y-4 md:basis-[60%] md:mb-0">
+                @for ($i = 0; $i < count($questions); $i++)
+                    <div x-data="{ expanded: false }"
+                        class="rounded-md transition-colors duration-300 border border-[#E5E3DB] focus-within:border-golden-primary hover:border-golden-primary">
+                        <button class="flex items-center justify-between w-full p-6 transition-colors outline-none durat ion-300 group" @click="expanded = !expanded">
+
+                            <div class="font-semibold group-hover:text-golden-primary group-focus-visible:text-golden-primary">{{ $questions[$i] }}</div>
+
+                            <div class="w-4 h-4 transition-transform duration-500"
+                                :class="expanded ? '-rotate-180' : ''">
+                                <svg width="100%" height="100%" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow">
+                                        <path id="Vector 12" d="M1 1.5L17 17.5M17 17.5V1.5M17 17.5H1"
+                                            stroke-width="2" class="stroke-[#212125] group-hover:stroke-golden-primary group-focus-visible:stroke-golden-primary transition-colors duration-300" />
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </button>
+                        <div x-show="expanded" x-transition:enter="transition-all duration-500 ease-in-out"
+                            x-transition:enter-start="grid-rows-[0fr]" x-transition:enter-end="grid-rows-[1fr]"
+                            x-transition:leave="transition-all duration-500 ease-in"
+                            x-transition:leave-start="grid-rows-[1fr]" x-transition:leave-end="grid-rows-[0fr]"
+                            x-cloak class="grid p-6 pt-0 text-dim-gray">
+                            <div class="overflow-hidden">{{ $answers[$i] }}</div>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+
+            <div class="max-w-100 md:basis-[40%] md:w-full">
+                <img class="object-cover object-center w-full h-full" src="{{ asset('images/home/home-accordion.webp') }}" alt="">
+            </div>
         </div>
 
     </section>

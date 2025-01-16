@@ -61,12 +61,16 @@ export default {
                 "3/4": "75%",
                 "2/3": "66%",
                 "1/3": "33%",
-                full: "100%",
+                "full": "100%",
             },
             screens: {
                 "3xl": "1920px",
                 "2sm": "450px",
             },
+            gridTemplateRows: {
+                'custom-expanded': '1fr',
+                'custom-collapsed': '0fr',
+              },
         },
         screens: {
             'xs': '550px',

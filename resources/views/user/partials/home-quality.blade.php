@@ -15,7 +15,7 @@
 
     <div class="flex flex-wrap items-center gap-3 md:gap-x-10 md:gap-y-8">
 
-        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:basis-[49%] md:basis-[48%] lg:basis-[28%] transition-colors group hover:bg-golden-primary">
+        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:basis-[49%] md:basis-[48%] lg:basis-[28%] transition-colors duration-300 group hover:bg-golden-primary">
 
             <div class="flex items-start justify-between gap-6">
                 <p class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black md:text-2xl group-hover:text-white">Древесина, полученная из экологически чистых источников</p>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:basis-[49%] md:basis-[48%] lg:basis-[28%] transition-colors group hover:bg-golden-primary">
+        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:basis-[49%] md:basis-[48%] lg:basis-[28%] transition-colors duration-300 group hover:bg-golden-primary">
 
             <div class="flex items-start justify-between gap-6">
                 <p class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black md:text-2xl group-hover:text-white">Доступные цены</p>
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:h-80 sm:basis-[49%] md:order-1 md:basis-[38%] lg:basis-[28%] transition-colors group hover:bg-golden-primary">
+        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-60 md:h-80 sm:h-80 sm:basis-[49%] md:order-1 md:basis-[38%] lg:basis-[28%] transition-colors duration-300 group hover:bg-golden-primary">
 
             <div class="flex items-start justify-between gap-6">
                 <p class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black md:text-2xl group-hover:text-white">Удобная доставка до участка</p>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-80 sm:basis-[49%] md:basis-[58%] lg:basis-[38%] transition-colors group hover:bg-golden-primary">
+        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-80 sm:basis-[49%] md:basis-[58%] lg:basis-[38%] transition-colors duration-300 group hover:bg-golden-primary">
 
             <div class="flex items-start justify-between gap-6">
                 <p class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black md:text-2xl group-hover:text-white">Собственное производство и изготовление</p>
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-80 sm:basis-[49%] md:order-3 md:basis-[38%] lg:basis-[28%] lg:order-2 transition-colors group hover:bg-golden-primary">
+        <div class="p-4 rounded-xl border border-[#E5E3DB] flex flex-col justify-between h-80 sm:basis-[49%] md:order-3 md:basis-[38%] lg:basis-[28%] lg:order-2 transition-colors duration-300 group hover:bg-golden-primary">
 
             <div class="flex items-start justify-between gap-6">
                 <p class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black md:text-2xl group-hover:text-white">Подходящий вариант для каждого</p>

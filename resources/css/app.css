@@ -92,7 +92,7 @@
 }
 
 .btn-primary {
-    @apply px-6 py-4 text-sm font-bold tracking-wide text-white uppercase transition-colors duration-300 border-2 border-transparent rounded-lg bg-green-primary hover:text-green-primary hover:bg-green-light md:text-base;
+    @apply px-6 py-4 text-sm font-bold tracking-wide text-white uppercase transition-colors duration-300 border-2 border-transparent rounded-lg bg-green-primary hover:text-green-primary hover:bg-green-light focus-visible:text-green-primary focus-visible:bg-green-light focus-visible:outline-none md:text-base;
 }
 
 .btn-secondary {
