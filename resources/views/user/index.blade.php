@@ -289,44 +289,208 @@
 
     <section class="lg:px-32 xl:px-40">
 
-        <div class="relative flex flex-col pt-8 sm:py-8 md:py-14 bg-[#F6F5EF] gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:ml-auto md:flex-nowrap md:gap-10 lg:justify-end px-4">
+        <div
+            class="relative flex flex-col pt-8 sm:py-8 md:py-14 bg-[#F6F5EF] gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:ml-auto md:flex-nowrap md:gap-10 lg:justify-end px-4">
 
             <div class="text-2xl titles sm:basis-full md:basis-[50%] md:text-4xl lg:hidden">Дом под ключ </div>
 
-            <p class="z-10 sm:basis-full md:hidden">Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
+            <p class="z-10 sm:basis-full md:hidden">Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!
+            </p>
 
-            <p class="z-10 sm:basis-full md:hidden">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
+            <p class="z-10 sm:basis-full md:hidden">Закажите строительство под ключ и наслаждайтесь уютом и красотой
+                натурального дерева.</p>
 
-            <button class="!bg-[#F6F5EF] btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать звонок</button>
+            <button class="!bg-[#F6F5EF] btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать
+                звонок</button>
 
-            <div class="hidden md:flex md:flex-col md:gap-6 lg:gap-4 basis-[40%] ml-auto lg:basis-[30%] xl:basis-[28rem] z-10">
+            <div
+                class="hidden md:flex md:flex-col md:gap-6 lg:gap-4 basis-[40%] ml-auto lg:basis-[30%] xl:basis-[28rem] z-10">
                 <div class="hidden text-4xl titles lg:block">Дом под ключ </div>
 
                 <p class="">Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
 
-                <p class="">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
+                <p class="">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.
+                </p>
 
                 <button class="!bg-[#F6F5EF] btn-secondary z-10 w-full lg:mt-2">Заказать звонок</button>
             </div>
 
-            <ul class="grid gap-6 sm:basis-[max-content] sm:mr-8 md:mr-0 sm:ml-4 md:basis-[50%] lg:basis-[30%] xl:basis-[24rem]">
+            <ul
+                class="grid gap-6 sm:basis-[max-content] sm:mr-8 md:mr-0 sm:ml-4 md:basis-[50%] lg:basis-[30%] xl:basis-[24rem]">
                 @php
-                    $turnkey_items = ['Проектирование объекта', 'Согласование с заказчиком', 'Подписание договора', 'Доставка стройматериалов', 'Строительство под ключ', 'прием объекта заказчиком'];
+                    $turnkey_items = [
+                        'Проектирование объекта',
+                        'Согласование с заказчиком',
+                        'Подписание договора',
+                        'Доставка стройматериалов',
+                        'Строительство под ключ',
+                        'прием объекта заказчиком',
+                    ];
                 @endphp
 
                 @for ($i = 0; $i < count($turnkey_items); $i++)
                     <li class="inline-flex items-center gap-2">
-                        <img src="{{ asset('images/svgs/turnkey/turnkey-'. $i + 1 .'.svg') }}" alt="" class="w-8 h-8">
+                        <img src="{{ asset('images/svgs/turnkey/turnkey-' . $i + 1 . '.svg') }}" alt=""
+                            class="w-8 h-8">
                         <div class="font-semibold uppercase">{{ $turnkey_items[$i] }}</div>
                     </li>
                 @endfor
             </ul>
 
-            <div class="sm:absolute sm:bottom-1 lg:bottom-[-4%] sm:left-0 sm:w-104 sm:h-68 lg:h-84 lg:w-120 xl:w-164 xl:bottom-0 xl:h-auto">
+            <div
+                class="sm:absolute sm:bottom-1 lg:bottom-[-4%] sm:left-0 sm:w-104 sm:h-68 lg:h-84 lg:w-120 xl:w-164 xl:bottom-0 xl:h-auto">
                 <img src="{{ asset('images/home/home-turnkey.webp') }}" alt="">
             </div>
 
         </div>
+
+    </section>
+
+    <section class="section-primary overflow-clip">
+
+        <div class="lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-2xl titles md:text-4xl"><span class="golden-title">Галерея</span> домов</h2>
+
+            <a href="" class="hidden text-center lg:block btn-primary w-100">СМОТРЕТЬ ПРОЕКТЫ ДОМОВ</a>
+        </div>
+
+        <div class="my-6 lg:mt-8 lg:mb-0">
+
+
+            @php
+                $SLIDES = 5;
+            @endphp
+
+            <div x-data="carousel({ totalSlides: {{ $SLIDES }} })" class="relative">
+                <!-- Carousel Track -->
+                <div :style="{ transform: `translateX(${offset}px)` }"
+                    class="flex items-center gap-2 transition-transform duration-500 md:gap-14" @touchstart="startSwipe($event)"
+                    @touchmove="moveSwipe($event)" @touchend="endSwipe()">
+                    @for ($i = 0; $i < $SLIDES; $i++)
+                        <div class="relative basis-3/4 home-slide shrink-0" :class="currentSlide !== {{ $i }} ? 'after:absolute after:inset-0 after:bg-white/70' : ''">
+                            <img class="object-cover object-center w-full h-full"
+                                src="{{ asset('images/home/home-carousel.webp') }}" alt="Home carousel">
+                        </div>
+                    @endfor
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="absolute items-center justify-between hidden md:flex top-1/2 left-4 right-4 sm:left-[8.5%] sm:right-[8.5%] lg:left-[9%] lg:right-[9%] xl:left-[9.5%] xl:right-[9.5%]">
+                    <button @click="prevSlide"
+                        class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
+                        <img class="h-5" src="{{ asset('images/svgs/arrow-left.svg') }}" alt="">
+                    </button>
+
+                    <button @click="nextSlide"
+                        class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
+                        <img class="h-5" src="{{ asset('images/svgs/arrow-right.svg') }}" alt="">
+                    </button>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <template x-for="(slide, index) in totalSlides" :key="index">
+                        <button @click="goToSlide(index)"
+                            :class="currentSlide === index ? 'bg-dim-gray w-2.5' :
+                                'bg-light-gray w-2'"
+                            class="rounded-full aspect-square"></button>
+                    </template>
+                </div>
+            </div>
+
+            <script>
+                function carousel({
+                    totalSlides
+                }) {
+                    return {
+                        totalSlides,
+                        currentSlide: 2,
+                        slideWidth: 0,
+                        containerWidth: 0,
+                        gap: 0,
+                        offset: 0,
+                        touchStartX: 0,
+                        touchEndX: 0,
+
+                        init() {
+                            // Calculate slide dimensions on initialization and resize
+                            this.calculateDimensions();
+                            this.updateOffset();
+
+                            // Recalculate dimensions and offsets on window resize
+                            window.addEventListener('resize', () => {
+                                this.calculateDimensions();
+                                this.updateOffset();
+                            });
+                        },
+
+                        calculateDimensions() {
+                            // Get a single slide to measure its width and the gap between slides
+                            const slide = document.querySelector('.home-slide');
+                            const container = slide.parentNode;
+                            this.slideWidth = slide.offsetWidth;
+                            this.gap = parseFloat(getComputedStyle(container).gap) || 0;
+
+                            this.containerWidth = container.offsetWidth;
+                        },
+
+                        updateOffset() {
+                            // Calculate the width of a single slide including the gap
+                            const slideWidthWithGap = this.slideWidth + this.gap;
+
+                            // Adjust the offset to center the current slide
+                            this.offset = ((this.currentSlide * slideWidthWithGap) - ((this.containerWidth - this.slideWidth) / 2)) * -1;
+
+                            // Special case for the first slide to ensure it is properly centered
+                            if (this.currentSlide === 0) {
+                                this.offset = (this.containerWidth - this.slideWidth) / 2;
+                            }
+                        },
+
+                        nextSlide() {
+                            this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                            this.updateOffset();
+                        },
+
+                        prevSlide() {
+                            this.currentSlide =
+                                this.currentSlide === 0 ? this.totalSlides - 1 : this.currentSlide - 1;
+                            this.updateOffset();
+                        },
+
+                        goToSlide(index) {
+                            this.currentSlide = index;
+                            this.updateOffset();
+                        },
+
+                        startSwipe(event) {
+                            this.touchStartX = event.touches[0].clientX;
+                        },
+
+                        moveSwipe(event) {
+                            this.touchEndX = event.touches[0].clientX;
+                        },
+
+                        endSwipe() {
+                            const swipeDistance = this.touchStartX - this.touchEndX;
+
+                            if (swipeDistance > 100) {
+                                this.nextSlide();
+                            } else if (swipeDistance < -100) {
+                                this.prevSlide();
+                            }
+
+                            this.touchStartX = 0;
+                            this.touchEndX = 0;
+                        },
+                    };
+                }
+            </script>
+
+        </div>
+
+        <a href="" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">СМОТРЕТЬ ПРОЕКТЫ
+            ДОМОВ</a>
 
     </section>
 
