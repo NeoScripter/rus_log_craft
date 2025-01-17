@@ -287,19 +287,29 @@
 
     @include('user.partials.home-accordion')
 
-    <section class="section-primary bg-[#F6F5EF] pt-8 sm:py-8">
+    <section class="lg:px-32 xl:px-40">
 
-        <div class="flex flex-col gap-6">
+        <div class="relative flex flex-col pt-8 sm:py-8 md:py-14 bg-[#F6F5EF] gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:ml-auto md:flex-nowrap md:gap-10 lg:justify-end px-4">
 
-            <div class="text-2xl titles">Дом под ключ </div>
+            <div class="text-2xl titles sm:basis-full md:basis-[50%] md:text-4xl lg:hidden">Дом под ключ </div>
 
-            <p>Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
+            <p class="z-10 sm:basis-full md:hidden">Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
 
-            <p>Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
+            <p class="z-10 sm:basis-full md:hidden">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
 
-            <button class="btn-secondary">Заказать звонок</button>
+            <button class="!bg-[#F6F5EF] btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать звонок</button>
 
-            <ul class="space-y-6">
+            <div class="hidden md:flex md:flex-col md:gap-6 lg:gap-4 basis-[40%] ml-auto lg:basis-[30%] xl:basis-[28rem] z-10">
+                <div class="hidden text-4xl titles lg:block">Дом под ключ </div>
+
+                <p class="">Свяжитесь с нами сегодня, и мы начнем создавать ваш идеальный дом!</p>
+
+                <p class="">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.</p>
+
+                <button class="!bg-[#F6F5EF] btn-secondary z-10 w-full lg:mt-2">Заказать звонок</button>
+            </div>
+
+            <ul class="grid gap-6 sm:basis-[max-content] sm:mr-8 md:mr-0 sm:ml-4 md:basis-[50%] lg:basis-[30%] xl:basis-[24rem]">
                 @php
                     $turnkey_items = ['Проектирование объекта', 'Согласование с заказчиком', 'Подписание договора', 'Доставка стройматериалов', 'Строительство под ключ', 'прием объекта заказчиком'];
                 @endphp
@@ -312,7 +322,7 @@
                 @endfor
             </ul>
 
-            <div>
+            <div class="sm:absolute sm:bottom-1 lg:bottom-[-4%] sm:left-0 sm:w-104 sm:h-68 lg:h-84 lg:w-120 xl:w-164 xl:bottom-0 xl:h-auto">
                 <img src="{{ asset('images/home/home-turnkey.webp') }}" alt="">
             </div>
 
