@@ -374,4 +374,20 @@
 
     @include('user.partials.call-form')
 
+    <section class="section-primary">
+
+        <div class="lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-2xl titles md:text-4xl">полезные статьи о строительстве</h2>
+
+            <a href="https://spbrb.ru/articles_00_main.htm" class="hidden text-center lg:block btn-secondary w-100">Читать все статьи</a>
+        </div>
+
+        <div class="my-6 lg:mt-8 lg:mb-0">
+
+        </div>
+
+        <a href="https://spbrb.ru/articles_00_main.htm" class="block w-full text-center md:w-100 md:mx-auto btn-secondary lg:hidden">Читать все статьи</a>
+
+    </section>
+
 </x-user-layout>
