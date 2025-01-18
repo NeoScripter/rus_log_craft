@@ -41,7 +41,7 @@
 
         @for ($i = 0; $i < $SLIDES; $i++)
             <div class="basis-full shrink-0">
-                <img class="object-cover object-center w-full h-full" src="{{ asset('images/home/intro-2.webp') }}"
+                <img class="object-cover object-center w-full h-full" src="{{ asset('images/home/gallery-slide-' . $i + 1 . '.webp') }}"
                     alt="Home carousel">
             </div>
         @endfor

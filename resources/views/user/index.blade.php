@@ -185,7 +185,8 @@
                 @endphp
 
                 @for ($i = 0; $i < count($titles); $i++)
-                    <li class="rounded-xl bg-[#FAFAFA] md:flex md:gap-8">
+                    <li
+                        class="rounded-xl bg-[#F6F5EF] md:flex md:gap-8 transition-colors hover:bg-[#FAFAFA] group duration-300">
 
                         <div class="aspect-[3/1] md:aspect-auto md:flex-1 h-auto relative ">
                             <img class="absolute inset-0 object-cover object-center w-full h-full rounded-xl"
@@ -198,7 +199,7 @@
                                 проектах бревенчатых коттеджей и бань</p>
 
                             <a href=""
-                                class="grid content-center w-8 h-8 p-2 ml-auto rounded-md bg-green-primary">
+                                class="grid content-center w-8 h-8 p-2 ml-auto transition-colors duration-300 rounded-md bg-green-primary group-hover:bg-golden-primary">
                                 <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
                                     alt="">
                             </a>
@@ -346,152 +347,31 @@
 
     </section>
 
-    <section class="section-primary overflow-clip">
+    @include('user.partials.home-bottom-carousel')
 
-        <div class="lg:flex lg:items-center lg:justify-between">
-            <h2 class="text-2xl titles md:text-4xl"><span class="golden-title">Галерея</span> домов</h2>
+    <section class="section-primary">
 
-            <a href="" class="hidden text-center lg:block btn-primary w-100">СМОТРЕТЬ ПРОЕКТЫ ДОМОВ</a>
-        </div>
+        <div class="rounded-lg overflow-clip bg-[#E5E3DB] md:flex">
 
-        <div class="my-6 lg:mt-8 lg:mb-0">
-
-
-            @php
-                $SLIDES = 5;
-            @endphp
-
-            <div x-data="carousel({ totalSlides: {{ $SLIDES }} })" class="relative">
-                <!-- Carousel Track -->
-                <div :style="{ transform: `translateX(${offset}px)` }"
-                    class="flex items-center gap-2 transition-transform duration-500 md:gap-14" @touchstart="startSwipe($event)"
-                    @touchmove="moveSwipe($event)" @touchend="endSwipe()">
-                    @for ($i = 0; $i < $SLIDES; $i++)
-                        <div class="relative basis-3/4 home-slide shrink-0" :class="currentSlide !== {{ $i }} ? 'after:absolute after:inset-0 after:bg-white/70' : ''">
-                            <img class="object-cover object-center w-full h-full"
-                                src="{{ asset('images/home/home-carousel.webp') }}" alt="Home carousel">
-                        </div>
-                    @endfor
-                </div>
-
-                <!-- Navigation Arrows -->
-                <div class="absolute items-center justify-between hidden md:flex top-1/2 left-4 right-4 sm:left-[8.5%] sm:right-[8.5%] lg:left-[9%] lg:right-[9%] xl:left-[9.5%] xl:right-[9.5%]">
-                    <button @click="prevSlide"
-                        class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
-                        <img class="h-5" src="{{ asset('images/svgs/arrow-left.svg') }}" alt="">
-                    </button>
-
-                    <button @click="nextSlide"
-                        class="flex items-center justify-center w-10 p-2 rounded-md aspect-square bg-light-gray">
-                        <img class="h-5" src="{{ asset('images/svgs/arrow-right.svg') }}" alt="">
-                    </button>
-                </div>
-
-                <!-- Pagination Dots -->
-                <div class="flex items-center justify-center gap-2 mt-4">
-                    <template x-for="(slide, index) in totalSlides" :key="index">
-                        <button @click="goToSlide(index)"
-                            :class="currentSlide === index ? 'bg-dim-gray w-2.5' :
-                                'bg-light-gray w-2'"
-                            class="rounded-full aspect-square"></button>
-                    </template>
-                </div>
+            <div class="w-full h-72 sm:h-100 md:w-1/2 md:h-110 lg:w-2/5 lg:h-90">
+                <img class="object-cover object-bottom w-full h-full"
+                    src="{{ asset('images/home/calculator.webp') }}" alt="">
             </div>
 
-            <script>
-                function carousel({
-                    totalSlides
-                }) {
-                    return {
-                        totalSlides,
-                        currentSlide: 2,
-                        slideWidth: 0,
-                        containerWidth: 0,
-                        gap: 0,
-                        offset: 0,
-                        touchStartX: 0,
-                        touchEndX: 0,
+            <div class="px-4 py-6 md:py-8 md:px-10 md:w-1/2 lg:py-10 lg:w-3/5 xl:px-16">
+                <h2 class="mb-4 text-2xl titles md:text-4xl">Рассчитайте стоимость сруба для вашего дома</h2>
 
-                        init() {
-                            // Calculate slide dimensions on initialization and resize
-                            this.calculateDimensions();
-                            this.updateOffset();
+                <p class="mb-6">Хотите узнать, сколько будет стоить строительство вашего дома из бревна? Мы
+                    предлагаем удобный и быстрый способ расчета стоимости сруба, чтобы вы могли спланировать свой бюджет
+                    и сделать первый шаг к реализации вашей мечты.</p>
 
-                            // Recalculate dimensions and offsets on window resize
-                            window.addEventListener('resize', () => {
-                                this.calculateDimensions();
-                                this.updateOffset();
-                            });
-                        },
-
-                        calculateDimensions() {
-                            // Get a single slide to measure its width and the gap between slides
-                            const slide = document.querySelector('.home-slide');
-                            const container = slide.parentNode;
-                            this.slideWidth = slide.offsetWidth;
-                            this.gap = parseFloat(getComputedStyle(container).gap) || 0;
-
-                            this.containerWidth = container.offsetWidth;
-                        },
-
-                        updateOffset() {
-                            // Calculate the width of a single slide including the gap
-                            const slideWidthWithGap = this.slideWidth + this.gap;
-
-                            // Adjust the offset to center the current slide
-                            this.offset = ((this.currentSlide * slideWidthWithGap) - ((this.containerWidth - this.slideWidth) / 2)) * -1;
-
-                            // Special case for the first slide to ensure it is properly centered
-                            if (this.currentSlide === 0) {
-                                this.offset = (this.containerWidth - this.slideWidth) / 2;
-                            }
-                        },
-
-                        nextSlide() {
-                            this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-                            this.updateOffset();
-                        },
-
-                        prevSlide() {
-                            this.currentSlide =
-                                this.currentSlide === 0 ? this.totalSlides - 1 : this.currentSlide - 1;
-                            this.updateOffset();
-                        },
-
-                        goToSlide(index) {
-                            this.currentSlide = index;
-                            this.updateOffset();
-                        },
-
-                        startSwipe(event) {
-                            this.touchStartX = event.touches[0].clientX;
-                        },
-
-                        moveSwipe(event) {
-                            this.touchEndX = event.touches[0].clientX;
-                        },
-
-                        endSwipe() {
-                            const swipeDistance = this.touchStartX - this.touchEndX;
-
-                            if (swipeDistance > 100) {
-                                this.nextSlide();
-                            } else if (swipeDistance < -100) {
-                                this.prevSlide();
-                            }
-
-                            this.touchStartX = 0;
-                            this.touchEndX = 0;
-                        },
-                    };
-                }
-            </script>
-
+                <a href="" class="block text-center w-full !bg-transparent btn-secondary">ПЕРЕЙТИ В
+                    КАЛЬКУЛЯТОР</a>
+            </div>
         </div>
 
-        <a href="" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">СМОТРЕТЬ ПРОЕКТЫ
-            ДОМОВ</a>
-
     </section>
+
+    @include('user.partials.call-form')
 
 </x-user-layout>
