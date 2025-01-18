@@ -24,16 +24,16 @@
                             <a href="">Проекты домов</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Дома из бревна</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома из бревна</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Бани из бревна</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Бани из бревна</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Гаражи из бревна</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Гаражи из бревна</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Хозпостройки</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Хозпостройки</a>
                                 </li>
                             </ul>
                         </li>
@@ -45,22 +45,22 @@
                             <a href="">Услуги</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Проектирование</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Проектирование</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Дома и бани "под ключ"</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома и бани "под ключ"</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Изготовление срубов</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Изготовление срубов</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Строительство фундаментов</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Строительство фундаментов</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Возведение крыш</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Возведение крыш</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Беседки, столы и скамейки</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Беседки, столы и скамейки</a>
                                 </li>
                             </ul>
                         </li>
@@ -70,10 +70,10 @@
                             <a href="">Галерея</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Готовые проекты</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm" role="menuitem">Процесс строительства</a>
+                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Процесс строительства</a>
                                 </li>
                             </ul>
                         </li>
@@ -145,6 +145,6 @@
         </div>
     </div>
 
-    <a href="" class="block text-center">Разработчик сайта</a>
+    <a href="https://github.com/NeoScripter" target="_blank" class="block text-center hover:underline focus-visible:underline underline-offset-4">Разработчик сайта</a>
 
 </footer>
