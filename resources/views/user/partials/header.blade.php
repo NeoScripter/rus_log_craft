@@ -123,7 +123,7 @@ class="sticky top-0 z-20 bg-white border-b border-gray-200">
                 <a href="" aria-label="View house projects">Проекты домов</a>
             </li>
             <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false" class="relative"  aria-haspopup="true" aria-expanded="showMenu">
-                <a href="" class="inline-flex items-center gap-2">
+                <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2">
                     Услуги
                     <img src="{{ asset('images/partials/header/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
                 </a>

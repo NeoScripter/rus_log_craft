@@ -21,6 +21,11 @@ Route::get('/', function () {
     return view('user.index', compact('projects'));
 });
 
+Route::get('/services', function () {
+
+    return view('user.services');
+})->name('user.services');
+
 Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'verified'])->name('admin');
