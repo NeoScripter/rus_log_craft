@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactForm;
 use Livewire\Attributes\Validate;
 
-class Webform extends Component
+class Pageform extends Component
 {
     #[Validate('required|string|min:3|max:100')]
     public $full_name;
@@ -56,6 +56,6 @@ class Webform extends Component
 
     public function render()
     {
-        return view('livewire.webform');
+        return view('livewire.pageform');
     }
 }

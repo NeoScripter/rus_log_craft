@@ -14,20 +14,18 @@ class ContactForm extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $first_name;
-    public $last_name;
+    public $full_name;
     public $email;
-    public $whatsapp;
+    public $phone;
     public $userMessage;
     /**
      * Create a new message instance.
      */
-    public function __construct($first_name, $last_name, $email, $whatsapp, $message)
+    public function __construct($full_name, $email, $phone, $message)
     {
-        $this->first_name = $first_name;
-        $this->last_name = $last_name;
+        $this->full_name = $full_name;
         $this->email = $email;
-        $this->whatsapp = $whatsapp;
+        $this->phone = $phone;
         $this->userMessage = $message;
     }
 
@@ -49,7 +47,7 @@ class ContactForm extends Mailable
     {
         return new Content(
             view: 'emails.contact-form',
-            with: ['first_name' => $this->first_name, 'last_name' => $this->last_name, 'email' => $this->email, 'whatsapp' => $this->whatsapp, 'userMessage' => $this->userMessage],
+            with: ['full_name' => $this->full_name, 'email' => $this->email, 'phone' => $this->phone, 'userMessage' => $this->userMessage],
         );
     }
 

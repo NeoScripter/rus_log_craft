@@ -17,6 +17,8 @@
 
     <main class="py-16 space-y-16 sm:space-y-8 md:space-y-10 lg:space-y-16 md:py-8 lg:py-16">
         {{ $slot }}
+
+        <livewire:webform />
     </main>
 
     @include('user.partials.footer')

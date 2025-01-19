@@ -14,9 +14,9 @@
 
         </div>
 
-        <div class="flex flex-col gap-4 my-6 sm:flex-row md:gap-10">
+        <div x-data class="flex flex-col gap-4 my-6 sm:flex-row md:gap-10">
             <button class="flex-1 btn-primary">наш каталог проектов</button>
-            <button class="flex-1 btn-secondary">заказать звонок</button>
+            <button @click="$dispatch('open-form')" class="flex-1 btn-secondary">заказать звонок</button>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-6 lg:gap-8">
@@ -50,14 +50,16 @@
             <div class="grid my-6 sm:my-10 gap-y-6 gap-x-4 sm:grid-cols-2 md:gap-x-6 lg:gap-x-10 md:grid-cols-3">
                 @foreach ($projects as $project)
                     <div class="flex flex-col bg-white rounded-lg overflow-clip">
-                        <div class="relative h-72">
+                        <div class="relative h-72 group overflow-clip">
+
+                            <span class="absolute inset-0 z-10 transition-colors duration-500 group-hover:bg-black/50"></span>
 
                             <span
                                 class="absolute top-0 right-0 block px-6 py-3 text-xl font-bold bg-white rounded-md text-green-primary">
                                 {{ $project->volume }} м²
                             </span>
 
-                            <img class="object-cover object-center w-full h-full" src="{{ Storage::url($project->image) }}"
+                            <img class="object-cover object-center w-full h-full transition-transform duration-500 group-hover:scale-110" src="{{ Storage::url($project->image) }}"
                                 alt="{{ $project->name }}">
                         </div>
 
@@ -217,74 +219,7 @@
 
     @include('user.partials.home-quality')
 
-    <section class="py-8 section-primary md:py-12 lg:py-15"
-        style="background: linear-gradient(180deg, rgba(229, 233, 236, 0.00) 0%, #E5E9EC 100%);">
-
-        <div class="md:flex md:gap-10 lg:gap-32">
-
-            <div class="md:flex-1 md:flex md:flex-col">
-                <p class="mb-4 text-2xl titles md:mb-6 md:text-4xl">Хотите узнать больше о строительстве вашего будущего
-                    дома?</p>
-                <p class="mb-8 md:mb-6">Оставьте свои контактные данные, и наш специалист свяжется с вами в ближайшее
-                    время. Ответим на все ваши вопросы и поможем сделать первый шаг к уютному и экологичному дому из
-                    бревна!</p>
-
-                <div class="hidden md:block md:mt-auto md:max-w-140 md:flex-1">
-                    <img class="object-cover object-center w-full h-full"
-                        src="{{ asset('images/home/webform.webp') }}" alt="">
-                </div>
-            </div>
-
-            <form action="" class="space-y-4 md:flex-1 lg:space-y-6">
-
-                <div class="">
-                    <label for="name" class="sr-only">Ваше ФИО</label>
-                    <input type="text" id="name"
-                        class="w-full px-6 py-4 bg-transparent border rounded-md border-dim-gray"
-                        placeholder="Ваше ФИО" required>
-                </div>
-
-                <div class="">
-                    <label for="phone" class="sr-only">Телефон для связи</label>
-                    <input type="tel" id="phone"
-                        class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
-                        placeholder="Телефон для связи" required>
-                </div>
-
-                <div class="">
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email"
-                        class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray" placeholder="E-mail"
-                        required>
-                </div>
-
-                <div class="">
-                    <label for="message" class="sr-only">Сообщение</label>
-                    <textarea id="message" rows="4" class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
-                        placeholder="Сообщение" required></textarea>
-                </div>
-
-                <div>
-                    <div class="flex items-start gap-6 me-4">
-                        <input checked id="checkbox" type="checkbox" value=""
-                            class="w-6 h-6 bg-gray-100 border-gray-300 rounded-sm text-green-primary focus:ring-green-primary focus:ring-2">
-                        <label for="checkbox" class="text-sm font-bold text-gray-900">Нажимая кнопку отправить, вы
-                            соглашаетесь с Политикой в отношении обработки персональных данных , а так же с обработкой
-                            персональных данных</label>
-                    </div>
-                </div>
-
-                <button class="w-full btn-primary">Отправить</button>
-
-            </form>
-
-            <div class="mt-8 md:hidden">
-                <img src="{{ asset('images/home/webform.webp') }}" alt="">
-            </div>
-
-        </div>
-
-    </section>
+    <livewire:pageform />
 
     @include('user.partials.home-accordion')
 
@@ -301,7 +236,7 @@
             <p class="z-10 sm:basis-full md:hidden">Закажите строительство под ключ и наслаждайтесь уютом и красотой
                 натурального дерева.</p>
 
-            <button class="!bg-[#F6F5EF] btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать
+            <button class="btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать
                 звонок</button>
 
             <div
@@ -313,7 +248,7 @@
                 <p class="">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.
                 </p>
 
-                <button class="!bg-[#F6F5EF] btn-secondary z-10 w-full lg:mt-2">Заказать звонок</button>
+                <button class="z-10 w-full btn-secondary lg:mt-2">Заказать звонок</button>
             </div>
 
             <ul
@@ -365,7 +300,7 @@
                     предлагаем удобный и быстрый способ расчета стоимости сруба, чтобы вы могли спланировать свой бюджет
                     и сделать первый шаг к реализации вашей мечты.</p>
 
-                <a href="" class="block text-center w-full !bg-transparent btn-secondary">ПЕРЕЙТИ В
+                <a href="" class="block w-full text-center btn-secondary">ПЕРЕЙТИ В
                     КАЛЬКУЛЯТОР</a>
             </div>
         </div>
@@ -430,24 +365,6 @@
 
     </section>
 
-    <section class="section-primary">
-
-        <h2 class="mb-6 text-2xl titles md:text-4xl lg:mb-8">мы в VK видео</h2>
-
-        <div class="md:flex md:gap-6">
-            {{-- <iframe src="https://vkvideo.ru/video_ext.php?oid=-220754053&id=456242896&hash=5383a10168cb36e9" class="w-full mb-6 md:mb-0 aspect-video md:basis-[60%]" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe> --}}
-
-            <div class="md:basis-[40%]">
-
-                <div class="flex flex-col gap-6 mb-6 md:mb-4 md:gap-4 sm:flex-row md:flex-col">
-                    {{-- <iframe src="https://vkvideo.ru/video_ext.php?oid=-220754053&id=456242896&hash=5383a10168cb36e9" class="w-full aspect-video" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-220754053&id=456242896&hash=5383a10168cb36e9" class="w-full aspect-video" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe> --}}
-                </div>
-
-                <a href="" class="block w-full text-center btn-secondary">Смотреть все видео</a>
-            </div>
-        </div>
-
-    </section>
+    <livewire:videos lazy="on-load" />
 
 </x-user-layout>

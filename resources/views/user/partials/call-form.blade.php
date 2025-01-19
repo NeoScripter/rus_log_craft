@@ -1,4 +1,4 @@
-<section class="py-10 bg-right-bottom bg-no-repeat bg-contain section-primary bg-green-primary md:py-11 lg:py-20"
+<section x-data class="py-10 bg-right-bottom bg-no-repeat bg-contain section-primary bg-green-primary md:py-11 lg:py-20"
         style="background-image: url('{{ asset('images/home/form-pattern.webp') }}')">
 
         <h2 class="titles !text-white text-center text-2xl mb-6 md:text-4xl">Оформить заявку на строительство, получить
@@ -6,7 +6,7 @@
 
         <div class="flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 md:items-center">
 
-            <a href=""
+            <button type="button" @click="$dispatch('open-form')"
                 class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 420 420"
@@ -20,7 +20,7 @@
 
                 </div>
                 Написать нам через сайт
-            </a>
+            </button>
 
             <a href=""
                 class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
