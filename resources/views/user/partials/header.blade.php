@@ -117,36 +117,36 @@ class="sticky top-0 z-20 bg-white border-b border-gray-200">
     <nav aria-label="Main navigation">
         <ul class="px-3 space-y-6 lg:flex lg:space-y-0 lg:items-center lg:justify-between">
             <li>
-                <a href="/" aria-label="Go to Home">Главная</a>
+                <a href="/" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Go to Home">Главная</a>
             </li>
             <li>
-                <a href="" aria-label="View house projects">Проекты домов</a>
+                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="View house projects">Проекты домов</a>
             </li>
             <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false" class="relative"  aria-haspopup="true" aria-expanded="showMenu">
-                <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2">
+                <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2 hover:underline focus-visible:underline underline-offset-2">
                     Услуги
                     <img src="{{ asset('images/partials/header/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
                 </a>
                 <ul x-cloak x-transition x-show="showMenu" role="menu" class="mt-4 ml-2 space-y-4 list-inside lg:absolute lg:top-5 lg:p-4 lg:w-60 lg:shadow-md lg:-left-20 lg:bg-[#F6F5EF]" style="list-style-image: url('{{ asset('images/partials/header/green-ellipse.svg') }}')">
                     <li>
-                        <a href="" class="text-sm font-semibold uppercase" role="menuitem">Строительство деревянных домов и бань «под ключ»</a>
+                        <a href="/services/#saunas" class="text-sm font-semibold uppercase hover:underline focus-visible:underline underline-offset-2" role="menuitem">Строительство деревянных домов и бань «под ключ»</a>
                     </li>
                     <li>
-                        <a href="" class="text-sm font-semibold uppercase" role="menuitem">Готовые проекты и Индивидуальное проектирование</a>
+                        <a href="/services/#design" class="text-sm font-semibold uppercase hover:underline focus-visible:underline underline-offset-2" role="menuitem">Готовые проекты и Индивидуальное проектирование</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="" aria-label="Learn about technologies">Технологии</a>
+                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about technologies">Технологии</a>
             </li>
             <li>
-                <a href="" aria-label="View gallery">Галерея</a>
+                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="View gallery">Галерея</a>
             </li>
             <li>
-                <a href="" aria-label="Learn about the company">О компании</a>
+                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about the company">О компании</a>
             </li>
             <li>
-                <a href="" aria-label="Contact us">Контакты</a>
+                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Contact us">Контакты</a>
             </li>
             <li class="hidden lg:flex lg:items-center lg:justify-center">
                 <a href="" aria-label="Search" class="block">

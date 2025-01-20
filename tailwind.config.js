@@ -11,6 +11,12 @@ export default {
 
     theme: {
         extend: {
+            scrollMargin: {
+                '5rem': '5rem',
+                '12rem': '12rem',
+                '15rem': '15rem',
+                '20rem': '20rem',
+              },
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 main: ["Inter 18pt", ...defaultTheme.fontFamily.sans],

@@ -22,7 +22,7 @@
                 Написать нам через сайт
             </button>
 
-            <a href=""
+            <a href="mailto:info@spbrb.ru"
                 class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

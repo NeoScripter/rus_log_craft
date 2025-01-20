@@ -100,7 +100,7 @@
 
         @endisset
 
-        <a href="" class="block w-full text-center btn-primary"> Смотреть все проекты</a>
+        <a href="{{ route('user.services') }}" class="block w-full text-center btn-primary"> Смотреть все проекты</a>
 
     </section>
 
@@ -170,7 +170,7 @@
             <div class="sm:flex sm:flex-col sm:justify-between sm:w-90 lg:w-125">
                 <h2 class="text-4xl titles sm:text-2xl md:text-4xl">мы <br> предлагаем</h2>
                 <p class="my-6 text-xl font-semibold">стройте с легкостью</p>
-                <button class="hidden btn-primary sm:block md:max-w-[25rem]">смотреть все услуги</button>
+                <a href="{{ route('user.services') }}" class="hidden text-center btn-primary sm:block md:max-w-[25rem]">смотреть все услуги</a>
             </div>
 
             <ul class="space-y-4 md:flex-1">
@@ -184,34 +184,43 @@
                         'Возведение крыш',
                         'Беседки, столы и скамейки',
                     ];
+
+                    $paths = [
+                        '/services/#design',
+                        '/services/#saunas',
+                        '/services/#huts',
+                        '/services/#foundations',
+                        '/services/#roofs',
+                        '/services/#benches',
+                    ];
                 @endphp
 
                 @for ($i = 0; $i < count($titles); $i++)
                     <li
-                        class="rounded-xl bg-[#F6F5EF] md:flex md:gap-8 transition-colors hover:bg-[#FAFAFA] group duration-300">
+                        class="block">
 
-                        <div class="aspect-[3/1] md:aspect-auto md:flex-1 h-auto relative ">
-                            <img class="absolute inset-0 object-cover object-center w-full h-full rounded-xl"
-                                src="{{ asset('images/home/home-services-' . $i + 1 . '.webp') }}" alt="">
-                        </div>
-
-                        <div class="p-4 md:flex-1">
-                            <p class="mb-2 text-xl font-bold">{{ $titles[$i] }}</p>
-                            <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных
-                                проектах бревенчатых коттеджей и бань</p>
-
-                            <a href=""
-                                class="grid content-center w-8 h-8 p-2 ml-auto transition-colors duration-300 rounded-md bg-green-primary group-hover:bg-golden-primary">
-                                <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
-                                    alt="">
-                            </a>
-                        </div>
+                        <a href="{{ $paths[$i] }}" class="block rounded-xl bg-[#F6F5EF] md:flex md:gap-8 transition-colors hover:bg-[#FAFAFA] group duration-300">
+                            <div class="aspect-[3/1] md:aspect-auto md:flex-1 h-auto relative ">
+                                <img class="absolute inset-0 object-cover object-center w-full h-full rounded-xl"
+                                    src="{{ asset('images/home/home-services-' . $i + 1 . '.webp') }}" alt="">
+                            </div>
+                            <div class="p-4 md:flex-1">
+                                <p class="mb-2 text-xl font-bold">{{ $titles[$i] }}</p>
+                                <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных
+                                    проектах бревенчатых коттеджей и бань</p>
+                                <div
+                                    class="grid content-center w-8 h-8 p-2 ml-auto transition-colors duration-300 rounded-md bg-green-primary group-hover:bg-golden-primary">
+                                    <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                        </a>
 
                     </li>
                 @endfor
             </ul>
 
-            <button class="w-full mt-6 btn-primary sm:hidden">смотреть все услуги</button>
+            <a href="{{ route('user.services') }}" class="block w-full mt-6 text-center btn-primary sm:hidden">смотреть все услуги</a>
 
         </div>
 
@@ -225,7 +234,7 @@
 
     <section class="lg:px-32 xl:px-40">
 
-        <div
+        <div x-data
             class="relative flex flex-col pt-8 sm:py-8 md:py-14 bg-[#F6F5EF] gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:ml-auto md:flex-nowrap md:gap-10 lg:justify-end px-4">
 
             <div class="text-2xl titles sm:basis-full md:basis-[50%] md:text-4xl lg:hidden">Дом под ключ </div>
@@ -236,7 +245,7 @@
             <p class="z-10 sm:basis-full md:hidden">Закажите строительство под ключ и наслаждайтесь уютом и красотой
                 натурального дерева.</p>
 
-            <button class="btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать
+            <button @click="$dispatch('open-form')" class="btn-secondary z-10 sm:basis-[50%] md:basis-[60%] md:hidden">Заказать
                 звонок</button>
 
             <div
@@ -248,7 +257,7 @@
                 <p class="">Закажите строительство под ключ и наслаждайтесь уютом и красотой натурального дерева.
                 </p>
 
-                <button class="z-10 w-full btn-secondary lg:mt-2">Заказать звонок</button>
+                <button @click="$dispatch('open-form')" class="z-10 w-full btn-secondary lg:mt-2">Заказать звонок</button>
             </div>
 
             <ul

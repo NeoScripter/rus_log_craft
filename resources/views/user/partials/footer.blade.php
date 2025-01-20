@@ -10,18 +10,18 @@
                 <div class="space-y-11 basis-full md:flex md:space-y-0 md:items-start md:gap-11 md:justify-around">
                     <div class="space-y-4">
                         <li>
-                            <a href="">Главная</a>
+                            <a href="/" class="hover:underline focus-visible:underline underline-offset-4">Главная</a>
                         </li>
                         <li>
-                            <a href="">О компании</a>
+                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">О компании</a>
                         </li>
                         <li>
-                            <a href="">Контакты</a>
+                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Контакты</a>
                         </li>
                     </div>
                     <div>
                         <li>
-                            <a href="">Проекты домов</a>
+                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Проекты домов</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
                                     <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома из бревна</a>
@@ -42,32 +42,32 @@
                 <div class="space-y-11 basis-full md:flex md:space-y-0 md:items-start md:gap-11 md:justify-around">
                     <div>
                         <li>
-                            <a href="">Услуги</a>
+                            <a href="{{ route('user.services') }}" class="hover:underline focus-visible:underline underline-offset-4">Услуги</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Проектирование</a>
+                                    <a href="/services/#design" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Проектирование</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома и бани "под ключ"</a>
+                                    <a href="/services/#saunas" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома и бани "под ключ"</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Изготовление срубов</a>
+                                    <a href="/services/#huts" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Изготовление срубов</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Строительство фундаментов</a>
+                                    <a href="/services/#foundations" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Строительство фундаментов</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Возведение крыш</a>
+                                    <a href="/services/#roofs" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Возведение крыш</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Беседки, столы и скамейки</a>
+                                    <a href="/services/#benches" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Беседки, столы и скамейки</a>
                                 </li>
                             </ul>
                         </li>
                     </div>
                     <div>
                         <li>
-                            <a href="">Галерея</a>
+                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Галерея</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
                                     <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>
