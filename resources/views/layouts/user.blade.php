@@ -15,7 +15,11 @@
 
     @include('user.partials.header')
 
-    <main class="py-16 space-y-16 sm:space-y-8 md:space-y-10 lg:space-y-16 md:py-8 lg:py-16">
+    <main {{ $attributes->class([
+        'space-y-16 sm:space-y-8 md:space-y-10 lg:space-y-16',
+        'py-16 md:py-8 lg:py-16' => $top_padding,
+        'pb-16 md:pb-8 lg:pb-16' => !$top_padding
+    ]) }}>
         {{ $slot }}
 
         <livewire:webform />

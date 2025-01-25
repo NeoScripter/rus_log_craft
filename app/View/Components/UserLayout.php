@@ -8,12 +8,13 @@ use Illuminate\View\Component;
 
 class UserLayout extends Component
 {
+    public $top_padding;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($topPadding = true)
     {
-        //
+        $this->top_padding = $topPadding;
     }
 
     /**

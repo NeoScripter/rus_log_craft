@@ -39,70 +39,7 @@
 
     @include('user.partials.home-carousel')
 
-    <section class="relative pb-6 section-primary sm:pb-10">
-
-        <div class="absolute inset-0 bg-left-top bg-no-repeat bg-cover -top-10 bg-light-gray -z-10"
-            style="background-image: url({{ asset('images/svgs/green-circle.svg') }})"></div>
-
-        <h2 class="text-xl uppercase titles md:text-3xl">новые проекты</h2>
-
-        @isset($projects)
-            <div class="grid my-6 sm:my-10 gap-y-6 gap-x-4 sm:grid-cols-2 md:gap-x-6 lg:gap-x-10 md:grid-cols-3">
-                @foreach ($projects as $project)
-                    <div class="flex flex-col bg-white rounded-lg overflow-clip">
-                        <div class="relative h-72 group overflow-clip">
-
-                            <span class="absolute inset-0 z-10 transition-colors duration-500 group-hover:bg-black/50"></span>
-
-                            <span
-                                class="absolute top-0 right-0 block px-6 py-3 text-xl font-bold bg-white rounded-md text-green-primary">
-                                {{ $project->volume }} м²
-                            </span>
-
-                            <img class="object-cover object-center w-full h-full transition-transform duration-500 group-hover:scale-110" src="{{ Storage::url($project->image) }}"
-                                alt="{{ $project->name }}">
-                        </div>
-
-                        <div class="flex flex-col flex-1 gap-3 p-4">
-                            <div class="text-xl titles">{{ $project->name }}</div>
-                            <span class="block mt-auto text-dim-gray">{{ $project->article }}</span>
-
-                            <div class="flex items-center justify-between gap-1">
-
-                                <div class="flex items-center flex-1 gap-2">
-                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/volume.svg') }}"
-                                        alt="Volume svg">
-                                    {{ $project->volume }} м²
-                                </div>
-
-                                <div class="flex items-center flex-1 gap-2">
-                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/floors.svg') }}"
-                                        alt="Volume svg">
-                                    {{ $project->floors . $project->floors > 1 ? 'этажа' : 'этаж' }}
-                                </div>
-
-                                <div class="flex items-center flex-1 gap-2">
-                                    <img class="w-6 aspect-square" src="{{ asset('images/svgs/rooms.svg') }}"
-                                        alt="Volume svg">
-                                    {{ $project->rooms }}
-                                </div>
-
-
-                            </div>
-
-                            <a href="{{ $project->link }}" class="block mt-1 text-center btn-secondary">Подробнее</a>
-                        </div>
-
-
-                    </div>
-                @endforeach
-            </div>
-
-        @endisset
-
-        <a href="{{ route('user.services') }}" class="block w-full text-center btn-primary"> Смотреть все проекты</a>
-
-    </section>
+    @include('user.partials.house-grid', ['title' => 'новые проекты'])
 
     <section class="section-primary">
 
@@ -162,69 +99,7 @@
 
     </section>
 
-    <section class="py-10 lg:py-16 section-primary"
-        style="background: linear-gradient(180deg, rgba(229, 227, 219, 0.20) 0%, #E5E3DB 100%);">
-
-        <div class="sm:flex sm:gap-6 md:gap-10">
-
-            <div class="sm:flex sm:flex-col sm:justify-between sm:w-90 lg:w-125">
-                <h2 class="text-4xl titles sm:text-2xl md:text-4xl">мы <br> предлагаем</h2>
-                <p class="my-6 text-xl font-semibold">стройте с легкостью</p>
-                <a href="{{ route('user.services') }}" class="hidden text-center btn-primary sm:block md:max-w-[25rem]">смотреть все услуги</a>
-            </div>
-
-            <ul class="space-y-4 md:flex-1">
-
-                @php
-                    $titles = [
-                        'Проектирование',
-                        'Дома и бани "под ключ',
-                        'Изготовление срубов',
-                        'Строительство фундаментов',
-                        'Возведение крыш',
-                        'Беседки, столы и скамейки',
-                    ];
-
-                    $paths = [
-                        '/services/#design',
-                        '/services/#saunas',
-                        '/services/#huts',
-                        '/services/#foundations',
-                        '/services/#roofs',
-                        '/services/#benches',
-                    ];
-                @endphp
-
-                @for ($i = 0; $i < count($titles); $i++)
-                    <li
-                        class="block">
-
-                        <a href="{{ $paths[$i] }}" class="block rounded-xl bg-[#F6F5EF] md:flex md:gap-8 transition-colors hover:bg-[#FAFAFA] group duration-300">
-                            <div class="aspect-[3/1] md:aspect-auto md:flex-1 h-auto relative ">
-                                <img class="absolute inset-0 object-cover object-center w-full h-full rounded-xl"
-                                    src="{{ asset('images/home/home-services-' . $i + 1 . '.webp') }}" alt="">
-                            </div>
-                            <div class="p-4 md:flex-1">
-                                <p class="mb-2 text-xl font-bold">{{ $titles[$i] }}</p>
-                                <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных
-                                    проектах бревенчатых коттеджей и бань</p>
-                                <div
-                                    class="grid content-center w-8 h-8 p-2 ml-auto transition-colors duration-300 rounded-md bg-green-primary group-hover:bg-golden-primary">
-                                    <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                @endfor
-            </ul>
-
-            <a href="{{ route('user.services') }}" class="block w-full mt-6 text-center btn-primary sm:hidden">смотреть все услуги</a>
-
-        </div>
-
-    </section>
+    @include('user.partials.service-links')
 
     @include('user.partials.home-quality')
 

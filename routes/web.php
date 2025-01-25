@@ -21,6 +21,12 @@ Route::get('/', function () {
     return view('user.index', compact('projects'));
 });
 
+Route::get('/about', function () {
+    $projects = Project::where('is_featured', true)->limit(3)->get();
+
+    return view('user.about', compact('projects'));
+})->name('user.about');
+
 Route::get('/services', function () {
 
     return view('user.services');
