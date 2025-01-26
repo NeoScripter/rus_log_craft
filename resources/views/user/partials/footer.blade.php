@@ -13,7 +13,7 @@
                             <a href="/" class="hover:underline focus-visible:underline underline-offset-4">Главная</a>
                         </li>
                         <li>
-                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">О компании</a>
+                            <a href="{{ route('user.about') }}" class="hover:underline focus-visible:underline underline-offset-4">О компании</a>
                         </li>
                         <li>
                             <a href="" class="hover:underline focus-visible:underline underline-offset-4">Контакты</a>
@@ -73,7 +73,7 @@
                                     <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Процесс строительства</a>
+                                    <a href="{{ route('user.tech') }}" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Процесс строительства</a>
                                 </li>
                             </ul>
                         </li>

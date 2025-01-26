@@ -137,7 +137,7 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
                 </ul>
             </li>
             <li>
-                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about technologies">Технологии</a>
+                <a href="{{ route('user.tech') }}" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about technologies">Технологии</a>
             </li>
             <li>
                 <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="View gallery">Галерея</a>

@@ -17,8 +17,10 @@
 
     <main {{ $attributes->class([
         'space-y-16 sm:space-y-8 md:space-y-10 lg:space-y-16',
-        'py-16 md:py-8 lg:py-16' => $top_padding,
-        'pb-16 md:pb-8 lg:pb-16' => !$top_padding
+        'pt-16 md:pt-8 lg:pt-16' => $top_padding,
+        'pt-0 md:pt-0 lg:pt-0' => !$top_padding,
+        'pb-16 md:pb-8 lg:pb-16' => $bottom_padding,
+        'pb-0 md:pb-0 lg:pb-0' => !$bottom_padding
     ]) }}>
         {{ $slot }}
 
