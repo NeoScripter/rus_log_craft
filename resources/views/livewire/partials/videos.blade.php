@@ -3,7 +3,7 @@
     <h2 class="mb-6 text-2xl titles md:text-4xl lg:mb-8">мы в VK видео</h2>
 
     <div class="md:flex md:gap-6">
-        <iframe src="https://vkvideo.ru/video_ext.php?oid=-220754053&id=456242896&hash=5383a10168cb36e9" class="w-full mb-6 md:mb-0 aspect-video md:basis-[60%]" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe  class="w-full mb-6 md:mb-0 aspect-video md:basis-[60%]" src="https://www.youtube.com/embed/5k4n69v77nE?si=5sowc5iLJg-ucP71" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <div class="md:basis-[40%]">
 
