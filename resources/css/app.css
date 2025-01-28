@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Black.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Black.woff") format("woff");
     font-weight: 900;
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-ExtraBold.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-ExtraBold.woff") format("woff");
     font-weight: bold;
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Bold.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Bold.woff") format("woff");
     font-weight: bold;
@@ -30,7 +30,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Italic.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Italic.woff") format("woff");
     font-weight: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Light.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Light.woff") format("woff");
     font-weight: 300;
@@ -48,7 +48,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Medium.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Medium.woff") format("woff");
     font-weight: 500;
@@ -57,7 +57,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Regular.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Regular.woff") format("woff");
     font-weight: normal;
@@ -66,7 +66,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-Thin.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-Thin.woff") format("woff");
     font-weight: 100;
@@ -75,7 +75,7 @@
 }
 
 @font-face {
-    font-family: "Inter 18pt";
+    font-family: "Inter";
     src: url("/resources/fonts/Inter18pt-SemiBold.woff2") format("woff2"),
         url("/resources/fonts/Inter18pt-SemiBold.woff") format("woff");
     font-weight: 600;

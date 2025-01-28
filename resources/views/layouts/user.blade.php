@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="overflow-x-clip">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="overflow-x-clip font-main">
 
 <head>
     <meta charset="utf-8">

@@ -18,8 +18,8 @@ export default {
                 '20rem': '20rem',
               },
             fontFamily: {
+                main: ["Inter", ...defaultTheme.fontFamily.sans],
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                main: ["Inter 18pt", ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
                 'xxxs': '0.5rem', // 8px
