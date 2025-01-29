@@ -37,6 +37,12 @@ Route::get('/gallery', function () {
     return view('user.gallery');
 })->name('user.gallery');
 
+Route::get('/contacts', function () {
+    $projects = Project::where('is_featured', true)->limit(3)->get();
+
+    return view('user.contacts', compact('projects'));
+})->name('user.contacts');
+
 Route::get('/services', function () {
 
     return view('user.services');

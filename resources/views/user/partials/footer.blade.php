@@ -16,7 +16,7 @@
                             <a href="{{ route('user.about') }}" class="hover:underline focus-visible:underline underline-offset-4">О компании</a>
                         </li>
                         <li>
-                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Контакты</a>
+                            <a href="{{ route('user.contacts') }}" class="hover:underline focus-visible:underline underline-offset-4">Контакты</a>
                         </li>
                     </div>
                     <div>

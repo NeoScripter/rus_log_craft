@@ -146,7 +146,7 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
                 <a href="{{ route('user.about') }}" class="header-li" aria-label="Learn about the company">О компании</a>
             </li>
             <li>
-                <a href="" class="header-li" aria-label="Contact us">Контакты</a>
+                <a href="{{ route('user.contacts') }}" class="header-li" aria-label="Contact us">Контакты</a>
             </li>
             <li class="hidden lg:flex lg:items-center lg:justify-center">
                 <a href="" aria-label="Search" class="block">
