@@ -85,7 +85,7 @@
         <div class="flex flex-col items-start gap-6 xs:order-1 xl:order-4">
             <a href="mailto:info@spbrb.ru" class="inline-flex items-center gap-2 font-semibold underline uppercase underline-offset-2">
                 <img src="{{ asset('images/partials/footer/email.svg')}}" alt="Mail icon" aria-hidden="true">
-                info@spbrb.ru
+                <span class="transition-colors duration-300 hover:text-dark-black hover:bg-white focus-visible:text-dark-black focus-visible:bg-white">info@spbrb.ru</span>
             </a>
             <ul class="flex items-center gap-6" aria-label="Social media links">
                 <li>
@@ -145,6 +145,6 @@
         </div>
     </div>
 
-    <a href="https://github.com/NeoScripter" target="_blank" class="block text-center hover:underline focus-visible:underline underline-offset-4">Разработчик сайта</a>
+    <a href="https://bespokewebsites.pro/" target="_blank" class="block text-center hover:underline focus-visible:underline underline-offset-4">Разработчик сайта</a>
 
 </footer>

@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="md:basis-1/3 lg:basis-1/2">
+            <div x-data class="md:basis-1/3 lg:basis-1/2">
                 <p class="mb-4">Мы разрабатываем уникальные проекты из бревна, учитывая все ваши требования и
                     пожелания.</p>
 
@@ -66,7 +66,7 @@
 
                 <div class="my-6 text-xl font-bold text-dark-black">Разработка проекта БЕСПЛАТНО при заказе сруба</div>
 
-                <button class="block w-full text-center btn-secondary">РАССЧИТАТЬ ПРОЕКТ</button>
+                <button @click="$dispatch('open-form')" class="block w-full text-center btn-secondary">РАССЧИТАТЬ ПРОЕКТ</button>
             </div>
 
         </div>

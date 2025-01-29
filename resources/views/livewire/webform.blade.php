@@ -1,7 +1,7 @@
 <div>
 
     @if ($show)
-        <div wire:transition class="fixed inset-0 z-30 w-screen h-screen overflow-y-auto sm:pt-[5vh] bg-black/50">
+        <div wire:transition class="fixed inset-0 z-50 w-screen h-screen overflow-y-auto sm:pt-[5vh] bg-black/50">
 
             <div x-data @click.away="$dispatch('close-form')" class="w-full px-4 py-6 mx-auto bg-white md:px-10 md:py-16 max-w-200" >
 
@@ -20,7 +20,7 @@
                     <div class="">
                         <label for="name" class="sr-only">Ваше ФИО</label>
                         <input wire:model.blur="full_name" type="text" id="name"
-                            class="w-full px-6 py-4 bg-transparent border rounded-md border-dim-gray"
+                            class="w-full px-6 py-4 input-field"
                             placeholder="Ваше ФИО" required>
                         @error('name') <span class="block text-sm text-red-600">{{ $message }}</span> @enderror
                     </div>
@@ -28,7 +28,7 @@
                     <div class="">
                         <label for="phone" class="sr-only">Телефон для связи</label>
                         <input wire:model.blur="phone"  type="tel" id="phone"
-                            class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
+                            class="w-full px-6 py-5 input-field"
                             placeholder="Телефон для связи" required>
                         @error('phone') <span class="block text-sm text-red-600">{{ $message }}</span> @enderror
                     </div>
@@ -36,14 +36,14 @@
                     <div class="">
                         <label for="email" class="sr-only">Email</label>
                         <input wire:model.blur="email" type="email" id="email"
-                            class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray" placeholder="E-mail"
+                            class="w-full px-6 py-5 input-field" placeholder="E-mail"
                             required>
                         @error('email') <span class="block text-sm text-red-600">{{ $message }}</span> @enderror
                     </div>
 
                     <div class="">
                         <label for="message" class="sr-only">Сообщение</label>
-                        <textarea wire:model.blur="message" id="message" rows="4" class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
+                        <textarea wire:model.blur="message" id="message" rows="4" class="w-full px-6 py-5 input-field"
                             placeholder="Сообщение" required></textarea>
                         @error('message') <span class="block text-sm text-red-600">{{ $message }}</span> @enderror
                     </div>

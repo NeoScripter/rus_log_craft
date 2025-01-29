@@ -1,7 +1,7 @@
 <x-user-layout :bottom-padding="false">
 
     <div class="inline-flex items-center gap-4 section-primary">
-        <div>Главная</div>
+        <a href="/">Главная</a>
         <div class="mt-1">
             <img src="{{ asset('images/svgs/black-line.svg') }}" alt="">
         </div>
@@ -233,9 +233,10 @@
                         <div class="hidden xl:flex xl:gap-6">
 
                             <div class="flex flex-col justify-between flex-1">
-                                <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+                                <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.
+                                </p>
                                 <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
-                                class="block text-center btn-secondary">Подробнее о технологии</a>
+                                    class="block text-center btn-secondary">Подробнее о технологии</a>
                             </div>
 
                             <div class="max-w-60">
@@ -250,7 +251,7 @@
 
                         @for ($i = 4; $i <= 9; $i++)
                             <div @class(['hidden' => $i >= 7, 'xs:block' => $i >= 7])>
-                                <img src="{{ asset('images/tech/third/manual-'. $i .'.webp')}}" alt="">
+                                <img src="{{ asset('images/tech/third/manual-' . $i . '.webp') }}" alt="">
                             </div>
                         @endfor
                     </div>
@@ -269,6 +270,183 @@
         </div>
 
     </section>
+
+    <section class="section-primary">
+
+        <div class="p-4 space-y-8 border border-gray-200 rounded-lg md:p-6">
+
+            <div class="flex flex-col gap-10 sm:flex-row">
+                <div class="space-y-4 sm:space-y-6 md:space-y-8 sm:flex-1">
+                    <h2 class="text-2xl titles md:text-4xl">Использования шипа в чашке при канадской технологии рубки.
+                    </h2>
+                    <p class="md:text-2xl">Шип является усовершенствованием классической канадской рубки, он
+                        обеспечивает большую жесткость конструкции сруба, а главное, уменьшает "продуваемость" угла и
+                        делает дом более теплым.</p>
+                </div>
+
+                <div class="md:hidden sm:flex-1">
+                    <img src="{{ asset('images/tech/fouth/fourth-1.webp') }}" alt="">
+                </div>
+            </div>
+
+            <div class="sm:flex sm:flex-col sm:gap-10 md:flex-row">
+                <div class="hidden md:block md:max-w-142 md:flex-1">
+                    <img src="{{ asset('images/tech/fouth/fourth-1.webp') }}" alt="">
+                </div>
+
+                <div class="flex flex-col gap-10 md:flex-1">
+                    <div class="p-6 space-y-6 bg-light-gray">
+                        <p class="mb-4 text-xl font-bold">Совет от генерального директора</p>
+
+                        <p>Комплексный подход при изготовлении срубов позволяет получить крепкие и теплые дома и бани.
+                        </p>
+
+                        <p>Обязательно сформулируйте для себя технические условия, которые вы позже предъявите
+                            строителям. Если вы не хотите иметь щелей в углах дома, то необходимо использование затесов
+                            и шипов при изготовлении чашек, а также металлических стяжек при торцевом соединении бревен.
+                        </p>
+
+                        <p>Если вы не хотите иметь щелей между бревнами в стенах, примените технологию завешивания
+                            наружных углов, используйте зазор «поднутрение», задайте минимальную величину продольных
+                            пазов в накрывающих венцах (обычно не менее 8-10 см).</p>
+                    </div>
+
+                    <a href="https://spbrb.ru/tech_canadsk_ship.htm" target="_blank"
+                        class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
+                </div>
+            </div>
+
+            <div class="md:flex md:gap-10 md:items-start lg:justify-between">
+
+                <div class="flex flex-col gap-6 sm:gap-10 md:flex-1 xl:max-w-200">
+                    <p>Шип (курдюк) и, соответственно, паз для него затруднительно сделать одним топором, здесь нужна
+                        математическая точность, качественный инструмент и виртуозное владение им. У рубщиков компании
+                        Русь Бревенчатая присутствуют все три указанных компонента.
+                    </p>
+
+                    <div>
+                        <img src="{{ asset('images/tech/fouth/fourth-2.webp') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="hidden md:block md:flex-1 md:max-w-80 xl:max-w-150">
+                    <img src="{{ asset('images/tech/fouth/fourth-3.webp') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-primary">
+
+        <div class="p-4 space-y-6 border border-gray-200 rounded-lg md:space-y-10 xl:space-y-12 md:p-6">
+
+            <div class="space-y-4 sm:space-y-6 md:space-y-8">
+                <h2 class="text-2xl titles md:text-4xl">Рубка в норвежскую чашку. Лафет или полуовальное бревно.</h2>
+                <p class="md:text-2xl">Традиционная скандинавская технология строительства деревянных домов. Лафет
+                    представляет собой бревно, обтесанное с двух противоположных сторон, что придает стенам дома плоскую
+                    внутреннюю и внешнюю поверхность, сохраняя при этом естественную текстуру дерева.</p>
+            </div>
+
+            <div class="md:flex md:gap-10">
+                <div
+                    class="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-between md:flex-col md:flex-nowrap md:flex-1">
+                    <div class="sm:order-1 sm:basis-[46%] md:order-none md:max-w-80">
+                        <img src="{{ asset('images/tech/bottom/bottom-1.webp') }}" alt="">
+                    </div>
+
+                    <a href="https://spbrb.ru/tech_lafet.htm" target="_blank"
+                        class="block text-center btn-secondary md:max-w-90 sm:order-2 sm:flex-1 md:order-none">Подробнее
+                        о технологии</a>
+
+                    <div class=" sm:basis-[46%]">
+                        <p class="mb-4 text-xl font-bold md:mb-6">Преимущества стен из лафета:</p>
+                        <ul class="ml-3 space-y-4 md:space-y-6"
+                            style="list-style-image: url('{{ asset('images/tech/green-dot.png') }}')">
+                            <li class="pl-1">Лафет сочетает в себе традиционный внешний вид бревенчатого дома с более
+                                гладкими и аккуратными линиями, придавая постройке индивидуальность и привлекательность.
+                            </li>
+                            <li class="pl-1">Лафет и норвежская рубка обеспечивают отличную теплоизоляцию. Плотное
+                                соединение брёвен минимизирует теплопотери, что позволяет дому сохранять тепло
+                                даже в суровых климатических условиях.</li>
+                            <li class="pl-1">Внутренние и внешние поверхности лафета готовы к финишной отделке
+                                и требуют минимальной обработки, что ускоряет процесс строительства и уменьшает затраты
+                                на отделочные материалы.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hidden md:block md:flex-1 max-w-140">
+                    <img src="{{ asset('images/tech/bottom/bottom-2.webp') }}" alt="">
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-10 md:flex-row">
+                <div class="md:max-w-130 md:flex-1">
+                    <img src="{{ asset('images/tech/bottom/bottom-3.webp') }}" alt="">
+                </div>
+
+                <div class="sm:text-xl md:flex-1 md:text-2xl">
+                    Одним из главных преимуществ норвежской рубки является высокая устойчивость к деформациям. Благодаря
+                    особому профилю брёвен и точному соединению, сруб меньше подвержен скручиванию, усадке
+                    и растрескиванию. Это делает дома, построенные по этой технологии, чрезвычайно прочными
+                    и долговечными.
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 sm:gap-10 md:gap-6 md:flex-row lg:hidden">
+                <div class="md:order-1 md:flex-1">
+                    <p class="mb-6">Процесс создания лафета включает в себя удаление коры и обрезку бревна до нужной
+                        длины. Затем бревно обрабатывается на специальном станке, который снимает верхний слой
+                        древесины, делая его плоским. В результате получается бревно с двумя плоскими сторонами и двумя
+                        округлыми. Существующие антисептики смогут надежно уберечь Ваши стены, оставив Вашему взору всю
+                        фактуру дерева.</p>
+
+                    <p>Характерные угловые соединения добавляют строению стильный, несколько архаичный вид, который
+                        особенно ценится знатоками деревянного зодчества.</p>
+                </div>
+                <div class="max-w-52 md:flex-1">
+                    <img src="{{ asset('images/tech/bottom/bottom-4.webp') }}" alt="">
+                </div>
+            </div>
+
+            <div class="md:flex md:gap-10 lg:items-start">
+                <div class="md:flex-1">
+                    <div class="hidden lg:flex lg:gap-6">
+                        <div class="max-w-52 lg:flex-1 lg:hidden xl:block">
+                            <img src="{{ asset('images/tech/bottom/bottom-4.webp') }}" alt="">
+                        </div>
+
+                        <div class="lg:flex-1">
+                            <p class="mb-4">Процесс создания лафета включает в себя удаление коры и обрезку бревна до
+                                нужной длины. Затем бревно обрабатывается на специальном станке, который снимает верхний
+                                слой древесины, делая его плоским. В результате получается бревно с двумя плоскими
+                                сторонами и двумя округлыми. Существующие антисептики смогут надежно уберечь Ваши стены,
+                                оставив Вашему взору всю фактуру дерева.</p>
+
+                            <p>Характерные угловые соединения добавляют строению стильный, несколько архаичный вид,
+                                который особенно ценится знатоками деревянного зодчества.</p>
+                        </div>
+                    </div>
+
+                    <p class="mb-6 lg:mt-6">Мы тщательно подбираем древесину, учитывая особенности каждого бревна, и следуем всем тонкостям
+                        традиционной технологии. Наши дома — это не просто строения, это комфортное и долговечное жилье,
+                        которое сохранит тепло и уют на долгие годы.</p>
+
+                    <p class="md:text-2xl">Если Вам сложно определиться, какой тип бревна Вам выбрать: круглый или лафет, напоминаем, что Вы
+                        можете их объединить, сделав внешние стены из кругляка, а внутренние - из лафета.</p>
+                </div>
+
+                <div class="hidden md:block md:flex-1 lg:max-w-130">
+                    <img src="{{ asset('images/tech/bottom/bottom-5.webp') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="text-xl font-bold section-primary sm:text-2xl">
+        В заключение необходимо добавить, что в нашей компании вы можете заказать сруб по любой технологии: простая русская чашка, канадская чашка с затёсом, канадская чашка с затёсом и шипом, норвежская чашка (она также включает и затёсы и шипы) - выбор за вами, мы же постараемся дать вам наиболее точную характеристику каждого метода, чтобы вы могли принять обдуманное и взвешенное решение.
+    </div>
 
     <livewire:pageform />
 

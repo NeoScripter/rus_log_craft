@@ -114,3 +114,11 @@ html {
 .golden-title {
     @apply text-golden-primary uppercase !leading-[120%] transition-colors underline-offset-2 underline hover:text-white hover:bg-golden-primary cursor-pointer;
 }
+
+.header-li {
+    @apply relative select-none hover:underline focus-visible:underline underline-offset-2 lg:focus-visible:no-underline lg:hover:no-underline lg:after:w-50 lg:hover:after:bg-black/10 lg:after:bg-transparent lg:after:h-18 lg:after:left-1/2 lg:after:top-1/2 lg:after:-translate-x-1/2 lg:after:-translate-y-1/2 lg:after:absolute lg:after:transition-colors lg:after:duration-300;
+}
+
+.input-field {
+    @apply transition-colors duration-300 bg-transparent border rounded-md focus:shadow-none focus:outline-none focus:ring-0 border-dim-gray hover:border-dark-black focus-visible:border-dark-black placeholder:transition-colors placeholder:duration-300 hover:placeholder-dark-black ring-0 focus-visible:placeholder-dark-black;
+}

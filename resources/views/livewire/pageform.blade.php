@@ -21,7 +21,7 @@
             <div class="relative">
                 <label for="name-page" class="sr-only">Ваше ФИО</label>
                 <input wire:model.blur="full_name" type="text" id="name-page"
-                    class="w-full px-6 py-4 bg-transparent border rounded-md border-dim-gray" placeholder="Ваше ФИО"
+                    class="w-full px-6 py-5 input-field" placeholder="Ваше ФИО"
                     required>
                 @error('full_name')
                     <span class="absolute block text-sm text-red-600">{{ $message }}</span>
@@ -31,7 +31,7 @@
             <div class="relative">
                 <label for="phone-page" class="sr-only">Телефон для связи</label>
                 <input wire:model.blur="phone" type="tel" id="phone-page"
-                    class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray"
+                    class="w-full px-6 py-5 input-field"
                     placeholder="Телефон для связи" required>
                 @error('phone')
                     <span class="absolute block text-sm text-red-600">{{ $message }}</span>
@@ -41,7 +41,7 @@
             <div class="relative">
                 <label for="email-page" class="sr-only">Email</label>
                 <input wire:model.blur="email" type="email" id="email-page"
-                    class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray" placeholder="E-mail"
+                    class="w-full px-6 py-5 input-field" placeholder="E-mail"
                     required>
                 @error('email')
                     <span class="absolute block text-sm text-red-600">{{ $message }}</span>
@@ -51,7 +51,7 @@
             <div class="relative">
                 <label for="message-page" class="sr-only">Сообщение</label>
                 <textarea wire:model.blur="message" id="message-page" rows="4"
-                    class="w-full px-6 py-5 bg-transparent border rounded-md border-dim-gray" placeholder="Сообщение" required></textarea>
+                    class="w-full px-6 py-5 input-field" placeholder="Сообщение" required></textarea>
                 @error('message')
                     <span class="absolute block text-sm text-red-600">{{ $message }}</span>
                 @enderror

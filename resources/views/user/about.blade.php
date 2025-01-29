@@ -46,7 +46,7 @@
                 <div class="w-40 pb-8 sm:pb-0">
                     <img class="object-cover object-center" src="{{ asset('images/about/tv-logo.webp') }}" alt="Россия телеканал">
                 </div>
-                <a href="" class="block px-6 py-2 text-sm font-bold tracking-wide text-center text-white uppercase transition-colors duration-300 bg-transparent border-2 border-white rounded-lg sm:flex-1 hover:text-green-primary focus-visible:text-green-primary hover:bg-white focus-visible:bg-white md:text-base">Подробнее</a>
+                <a href="https://spbrb.ru/tv5-Canal-Angel-day.htm" target="_blank" class="block px-6 py-2 text-sm font-bold tracking-wide text-center text-white uppercase transition-colors duration-300 bg-transparent border-2 border-white rounded-lg sm:flex-1 hover:text-green-primary focus-visible:text-green-primary hover:bg-white focus-visible:bg-white md:text-base">Подробнее</a>
             </div>
         </div>
 

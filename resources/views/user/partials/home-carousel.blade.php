@@ -33,7 +33,7 @@
         this.touchStartX = 0;
         this.touchEndX = 0;
     },
-}" class="relative overflow-clip">
+}" x-init="setInterval(() => {currentSlide = (currentSlide + 1) % totalSlides}, 3000)" class="relative overflow-clip">
 
     <div :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
         class="flex items-center transition-transform duration-500" @touchstart="startSwipe($event)"

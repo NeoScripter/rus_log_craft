@@ -7,7 +7,7 @@
         <div class="flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 md:items-center">
 
             <button type="button" @click="$dispatch('open-form')"
-                class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
+                class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-all duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent focus-visible:rounded-none hover:rounded-none justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 420 420"
                         stroke="#000" fill="none">
@@ -23,7 +23,7 @@
             </button>
 
             <a href="mailto:info@spbrb.ru"
-                class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
+                class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-all duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:rounded-none hover:rounded-none focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="icons">
@@ -38,7 +38,7 @@
             </a>
 
             <a href=""
-                class="py-4 px-8 bg-[#FAFAFA] text-green-primary rounded-lg transition-colors duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
+                class="py-4 px-8 bg-[#FAFAFA] focus-visible:rounded-none hover:rounded-none text-green-primary rounded-lg transition-all duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="icons">

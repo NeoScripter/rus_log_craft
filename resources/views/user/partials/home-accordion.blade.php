@@ -1,7 +1,7 @@
 <section class="section-primary">
 
-    <h2 class="text-2xl md:text-4xl titles text-balance">6 причин выбрать бревенчатый дом <br> <span
-            class="mb-6 golden-title">ручной рубки</span></h2>
+    <h2 class="text-2xl md:text-4xl titles text-balance">6 причин выбрать бревенчатый дом <br> <a href="{{ route('user.tech')}}"
+            class="mb-6 golden-title">ручной рубки</a></h2>
 
     <div class="md:flex md:gap-10 md:items-end md:justify-between">
 

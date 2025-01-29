@@ -55,7 +55,7 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
         </ul>
         <a href="mailto:info@spbrb.ru" class="inline-flex items-center gap-2 font-semibold underline uppercase underline-offset-2">
             <img src="{{ asset('images/partials/header/mail.svg')}}" alt="Mail icon" aria-hidden="true">
-            info@spbrb.ru
+            <span class="transition-colors duration-300 hover:text-white hover:bg-dark-black focus-visible:text-white focus-visible:bg-dark-black">info@spbrb.ru</span>
         </a>
     </div>
 
@@ -117,13 +117,13 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
     <nav aria-label="Main navigation">
         <ul class="px-3 space-y-6 lg:flex lg:space-y-0 lg:items-center lg:justify-between">
             <li>
-                <a href="/" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Go to Home">Главная</a>
+                <a href="/" class="header-li" aria-label="Go to Home">Главная</a>
             </li>
             <li>
-                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="View house projects">Проекты домов</a>
+                <a href="" class="header-li" aria-label="View house projects">Проекты домов</a>
             </li>
             <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false" class="relative"  aria-haspopup="true" aria-expanded="showMenu">
-                <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2 hover:underline focus-visible:underline underline-offset-2">
+                <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2 header-li">
                     Услуги
                     <img src="{{ asset('images/partials/header/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
                 </a>
@@ -137,16 +137,16 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
                 </ul>
             </li>
             <li>
-                <a href="{{ route('user.tech') }}" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about technologies">Технологии</a>
+                <a href="{{ route('user.tech') }}" class="header-li" aria-label="Learn about technologies">Технологии</a>
             </li>
             <li>
-                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="View gallery">Галерея</a>
+                <a href="" class="header-li" aria-label="View gallery">Галерея</a>
             </li>
             <li>
-                <a href="{{ route('user.about') }}" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Learn about the company">О компании</a>
+                <a href="{{ route('user.about') }}" class="header-li" aria-label="Learn about the company">О компании</a>
             </li>
             <li>
-                <a href="" class="hover:underline focus-visible:underline underline-offset-2" aria-label="Contact us">Контакты</a>
+                <a href="" class="header-li" aria-label="Contact us">Контакты</a>
             </li>
             <li class="hidden lg:flex lg:items-center lg:justify-center">
                 <a href="" aria-label="Search" class="block">
