@@ -32,6 +32,10 @@ Route::get('/tech', function () {
     return view('user.tech');
 })->name('user.tech');
 
+Route::get('/gallery', function () {
+
+    return view('user.gallery');
+})->name('user.gallery');
 
 Route::get('/services', function () {
 

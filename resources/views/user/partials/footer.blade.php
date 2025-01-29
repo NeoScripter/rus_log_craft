@@ -67,7 +67,7 @@
                     </div>
                     <div>
                         <li>
-                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Галерея</a>
+                            <a href="{{ route('user.gallery') }}" class="hover:underline focus-visible:underline underline-offset-4">Галерея</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
                                     <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>

@@ -140,7 +140,7 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
                 <a href="{{ route('user.tech') }}" class="header-li" aria-label="Learn about technologies">Технологии</a>
             </li>
             <li>
-                <a href="" class="header-li" aria-label="View gallery">Галерея</a>
+                <a href="{{ route('user.gallery') }}" class="header-li" aria-label="View gallery">Галерея</a>
             </li>
             <li>
                 <a href="{{ route('user.about') }}" class="header-li" aria-label="Learn about the company">О компании</a>
