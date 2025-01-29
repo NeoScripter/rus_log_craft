@@ -171,16 +171,16 @@
         <div class="p-4 space-y-10 border border-gray-200 rounded-lg md:space-y-8 md:p-6">
 
             <div class="space-y-4 sm:space-y-6 md:space-y-8">
-                <h2 class="text-2xl titles md:text-4xl">Рубка сруба в канадскую чашку.Создание затесов при рубке в
+                <h2 class="text-2xl titles md:text-4xl">Рубка сруба в канадскую чашку. Создание затесов при рубке в
                     канадскую чашку.</h2>
                 <p class="md:text-2xl">Классическая канадская технология рубки, обеспечивает самозаклинивание щелей в
                     перерубе, появляющихся при усушке и усадке сруба. Альтернатива классической русской рубке.</p>
             </div>
 
-            <div>
-                <div>
-                    <div>
-                        <div class="">
+            <div class="space-y-10 md:space-y-8">
+                <div class="flex flex-col gap-10 md:gap-8 md:flex-row">
+                    <div class="md:flex-1">
+                        <div class="md:mb-8">
                             <p class="mb-4 text-xl font-bold md:mb-6">Преимущества технологии:</p>
                             <ul class="ml-3 space-y-4 md:space-y-6"
                                 style="list-style-image: url('{{ asset('images/tech/green-dot.png') }}')">
@@ -192,15 +192,19 @@
                                     долговечностью.</li>
                             </ul>
                         </div>
-                        <div>
-                            <div><img src="{{ asset('images/tech/third/demo-6.webp') }}" alt=""></div>
-                            <p>Основным отличием канадской чашки является наличие затеса.</p>
-                            <a href="">Подробнее о технологии</a>
+                        <div class="hidden space-y-6 md:block md:flex-1 xl:hidden">
+                            <div class="md:max-w-60">
+                                <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
+                            </div>
+                            <p class="text-2xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+                            <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
+                                class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
                         </div>
 
                     </div>
 
-                    <div>
+                    <div
+                        class="flex flex-col gap-4 sm:flex-row md:flex-col md:flex-1 md:max-w-100 xl:max-w-210 xl:gap-10 xl:flex-row">
                         <div>
                             <img src="{{ asset('images/tech/third/demo-4.webp') }}" alt="">
                         </div>
@@ -209,8 +213,58 @@
                             <img src="{{ asset('images/tech/third/demo-5.webp') }}" alt="">
                         </div>
                     </div>
+
+                    <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
+                        class="hidden text-center sm:block md:hidden btn-secondary">Подробнее о
+                        технологии</a>
+
+                    <div class="hidden gap-4 sm:flex md:hidden">
+                        <p class="flex-1 block text-xl font-bold">Основным отличием канадской чашки является наличие
+                            затеса.</p>
+                        <div class="flex-1">
+                            <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
+                        </div>
+                    </div>
                 </div>
 
+                <div class="flex flex-col gap-3 md:gap-10 xl:flex-row">
+
+                    <div class="md:order-1 xl:flex-1 xl:flex xl:flex-col xl:justify-between">
+                        <div class="hidden xl:flex xl:gap-6">
+
+                            <div class="flex flex-col justify-between flex-1">
+                                <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+                                <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
+                                class="block text-center btn-secondary">Подробнее о технологии</a>
+                            </div>
+
+                            <div class="max-w-60">
+                                <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
+                            </div>
+                        </div>
+                        <p class="">На рисунках вы можете ознакомиться со строительством сруба при рубке
+                            в русскую и канадскую чашку для круглого бревна, более традиционного для России.</p>
+                    </div>
+
+                    <div class="grid gap-3 xs:grid-cols-2 sm:grid-cols-3 md:max-w-220">
+
+                        @for ($i = 4; $i <= 9; $i++)
+                            <div @class(['hidden' => $i >= 7, 'xs:block' => $i >= 7])>
+                                <img src="{{ asset('images/tech/third/manual-'. $i .'.webp')}}" alt="">
+                            </div>
+                        @endfor
+                    </div>
+
+                    <div class="mt-4 space-y-6 sm:hidden">
+                        <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+                        <div class="max-w-60">
+                            <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
+                        </div>
+                        <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
+                            class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
+                    </div>
+
+                </div>
             </div>
         </div>
 

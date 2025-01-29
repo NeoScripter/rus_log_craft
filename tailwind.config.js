@@ -35,7 +35,7 @@ export default {
             },
             maxWidth: {
                 "screen-3xl": "1440px",
-                ...generateWidths(10, 200),
+                ...generateWidths(10, 300),
             },
             maxHeight: {
                 130: "32.5rem",
