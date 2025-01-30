@@ -127,7 +127,13 @@ class="sticky top-0 z-50 bg-white border-b border-gray-200">
                     Услуги
                     <img src="{{ asset('images/partials/header/popup-arrow-up.svg')}}" alt="Expand submenu" aria-hidden="true" class="w-3 mt-0.5 transition-transform" :class="showMenu ? '' : 'rotate-180'">
                 </a>
-                <ul x-cloak x-transition x-show="showMenu" role="menu" class="mt-4 ml-2 space-y-4 list-inside lg:absolute lg:top-5 lg:p-4 lg:w-60 lg:shadow-md lg:-left-20 lg:bg-[#F6F5EF]" style="list-style-image: url('{{ asset('images/partials/header/green-ellipse.svg') }}')">
+                <ul x-cloak
+                x-transition:enter="transition ease-in duration-300"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90" x-show="showMenu" role="menu" class="mt-4 ml-2 space-y-4 text-balance list-inside lg:absolute lg:top-5 lg:p-4 lg:w-60 lg:shadow-md lg:-left-20 lg:bg-[#F6F5EF]" style="list-style-image: url('{{ asset('images/partials/header/green-ellipse.svg') }}')">
                     <li>
                         <a href="/services/#saunas" class="text-sm font-semibold uppercase hover:underline focus-visible:underline underline-offset-2" role="menuitem">Строительство деревянных домов и бань «под ключ»</a>
                     </li>
