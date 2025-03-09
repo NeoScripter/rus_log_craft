@@ -16,7 +16,7 @@ class ProjectFactory extends Factory
             'name_en' => fake()->sentence(3),
             'name_cn' => fake()->sentence(3),
             'name_jp' => fake()->sentence(3),
-            'type' => fake()->randomElement(['house', 'house_bath', 'house_garage', 'bath', 'utility']),
+            'type' => fake()->randomElement(['house', 'house_bath', 'bath', 'utility']),
             'article' => $this->generateArticle(),
             'is_featured' => true,
             'has_terrace' => fake()->boolean(),

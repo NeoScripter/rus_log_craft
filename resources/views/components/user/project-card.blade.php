@@ -1,6 +1,6 @@
 @props(['project'])
 
-<div class="flex flex-col bg-white rounded-lg overflow-clip">
+<div class="flex flex-col bg-white rounded-lg overflow-clip border border-[#E5E3DB]">
     <div class="relative group h-72 overflow-clip">
 
         <span class="absolute inset-0 z-10 transition-colors duration-500 group-hover:bg-black/50"></span>

@@ -103,6 +103,14 @@ html {
     @apply px-6 py-4 text-sm font-bold tracking-wide uppercase transition-colors duration-300 bg-transparent border-2 rounded-lg text-green-primary hover:bg-green-light focus-visible:bg-green-light hover:border-transparent focus-visible:border-transparent border-green-primary md:text-base;
 }
 
+.btn-filter {
+    @apply px-6 py-2 text-sm font-bold tracking-wide text-gray-400 uppercase transition-colors duration-300 bg-transparent border-2 border-gray-400 rounded-lg md:text-base hover:border-black focus-visible:border-black hover:text-black focus-visible:text-black;
+}
+
+.btn-filter.active {
+    @apply border-green-primary hover:border-green-primary focus-visible:border-green-primary hover:text-green-primary focus-visible:text-green-primary text-green-primary;
+}
+
 .section-primary {
     @apply px-4 lg:px-32 xl:px-40;
 }

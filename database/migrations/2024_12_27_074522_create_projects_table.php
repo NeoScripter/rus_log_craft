@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('name_jp');
 
             // Project attributes
-            $table->enum('type', ['house', 'house_bath', 'house_garage', 'bath', 'utility']);
+            $table->enum('type', ['house', 'house_bath', 'bath', 'utility']);
             $table->string('article');
 
             $table->boolean('is_featured')->default(false);

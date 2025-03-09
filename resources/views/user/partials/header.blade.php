@@ -106,7 +106,7 @@
         <header class="flex items-center justify-between my-8 lg:hidden">
             <div class="text-lg font-bold uppercase">Меню</div>
             <button @click="showPopup = false" aria-label="Закрыть меню навигации" class="p-2">
-                <img src="{{ asset('images/partials/header/close-btn.svg') }}" alt="" aria-hidden="true">
+                <img src="{{ asset('images/partials/header/close-btn.svg') }}" alt="Закрыть" aria-hidden="true">
             </button>
         </header>
         <nav aria-label="Main navigation">

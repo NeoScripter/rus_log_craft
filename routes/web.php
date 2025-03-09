@@ -30,9 +30,8 @@ Route::get('/about', function () {
 })->name('user.about');
 
 Route::get('/catalog', function () {
-    $projects = Project::all();
 
-    return view('user.catalog', compact('projects'));
+    return view('user.catalog');
 })->name('user.catalog');
 
 Route::get('/tech', function () {
