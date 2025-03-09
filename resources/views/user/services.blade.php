@@ -129,75 +129,30 @@
 
         <div class="grid gap-4 xs:grid-cols-2 sm:gap-6 md:gap-y-8 lg:gap-x-8">
 
+            <x-user.service-card title="Дополнительное утепление сруба">
+                Дополнительное утепление сруба улучшает теплоизоляцию и энергоэффективность вашего дома,
+                предотвращая потери тепла и обеспечивая комфорт в любую погоду. Современные утеплители помогают
+                создать надежный барьер от холода и влаги.
+            </x-user.service-card>
 
-            <div
-                class="lg:gap-18 group flex flex-col justify-between gap-10 rounded-xl border border-[#E5E3DB] p-4 transition-colors duration-300 hover:bg-golden-primary md:gap-16 xl:gap-24">
+            <x-user.service-card title="Монтаж полов и межэтажных перекрытий">
+                Вы можете заказать у нас строительство утепленных полов и перекрытий между этажами, что обеспечивает
+                прочность и стабильность внутренней структуры, создавая надежную основу для дальнейшей отделки.
+                Используемые материалы и технологии гарантируют долговечность и высокую нагрузочную способность.
+            </x-user.service-card>
 
-                <div class="flex items-start justify-between gap-6">
-                    <p
-                        class="text-xl font-bold !leading-[120%] tracking-wide text-dark-black group-hover:text-white md:text-2xl">
-                        Дополнительное утепление сруба</p>
-                    <div class="w-2 h-2 rounded-sm shrink-0 bg-green-primary group-hover:bg-white"></div>
-                </div>
+            <x-user.service-card title="Обсады, наличники, лестницы и др.">
+                Проектирование и установка обсад, наличников и лестниц добавляют завершенность и индивидуальность
+                вашему интерьеру, а высококачественная отделка обеспечивает долговечность и эстетичный вид. Эти
+                элементы изготавливаются с учетом вашего стиля и функциональных требований.
+            </x-user.service-card>
 
-                <div class="text-sm group-hover:text-white md:text-base">
-                    Дополнительное утепление сруба улучшает теплоизоляцию и энергоэффективность вашего дома,
-                    предотвращая потери тепла и обеспечивая комфорт в любую погоду. Современные утеплители помогают
-                    создать надежный барьер от холода и влаги.
-                </div>
-            </div>
+            <x-user.service-card title="Шлифовка и окрашивание рубленых стен">
+                Шлифовка рубленых стен придает поверхности идеальную гладкость, а окрашивание защищает древесину и
+                подчеркивает её природную текстуру. Используемые покрытия обеспечивают долговечность и эстетичный
+                внешний вид, сохраняя красоту вашего сруба.
+            </x-user.service-card>
 
-            <div
-                class="lg:gap-18 group flex flex-col justify-between gap-10 rounded-xl border border-[#E5E3DB] p-4 transition-colors duration-300 hover:bg-golden-primary md:gap-16 xl:gap-24">
-
-                <div class="flex items-start justify-between gap-6">
-                    <p
-                        class="text-xl font-bold !leading-[120%] tracking-wide text-dark-black group-hover:text-white md:text-2xl">
-                        Монтаж полов и межэтажных перекрытий</p>
-                    <div class="w-2 h-2 rounded-sm shrink-0 bg-green-primary group-hover:bg-white"></div>
-                </div>
-
-                <div class="text-sm group-hover:text-white md:text-base">
-                    Вы можете заказать у нас строительство утепленных полов и перекрытий между этажами, что обеспечивает
-                    прочность и стабильность внутренней структуры, создавая надежную основу для дальнейшей отделки.
-                    Используемые материалы и технологии гарантируют долговечность и высокую нагрузочную способность.
-                </div>
-            </div>
-
-
-            <div
-                class="lg:gap-18 group flex flex-col justify-between gap-10 rounded-xl border border-[#E5E3DB] p-4 transition-colors duration-300 hover:bg-golden-primary md:gap-16 xl:gap-24">
-
-                <div class="flex items-start justify-between gap-6">
-                    <p
-                        class="text-xl font-bold !leading-[120%] tracking-wide text-dark-black group-hover:text-white md:text-2xl">
-                        Обсады, наличники, лестницы и др.</p>
-                    <div class="w-2 h-2 rounded-sm shrink-0 bg-green-primary group-hover:bg-white"></div>
-                </div>
-
-                <div class="text-sm group-hover:text-white md:text-base">
-                    Проектирование и установка обсад, наличников и лестниц добавляют завершенность и индивидуальность
-                    вашему интерьеру, а высококачественная отделка обеспечивает долговечность и эстетичный вид. Эти
-                    элементы изготавливаются с учетом вашего стиля и функциональных требований.
-                </div>
-            </div>
-
-            <div
-                class="lg:gap-18 group flex flex-col justify-between gap-10 rounded-xl border border-[#E5E3DB] p-4 transition-colors duration-300 hover:bg-golden-primary md:gap-16 xl:gap-24">
-
-                <div class="flex items-start justify-between gap-6">
-                    <p
-                        class="text-xl font-bold !leading-[120%] tracking-wide text-dark-black group-hover:text-white md:text-2xl">
-                        Шлифовка и окрашивание рубленых стен</p>
-                    <div class="w-2 h-2 rounded-sm shrink-0 bg-green-primary group-hover:bg-white"></div>
-                </div>
-
-                <div class="text-sm group-hover:text-white md:text-base">
-                    Шлифовка рубленых стен придает поверхности идеальную гладкость, а окрашивание защищает древесину и
-                    подчеркивает её природную текстуру. Используемые покрытия обеспечивают долговечность и эстетичный
-                    внешний вид, сохраняя красоту вашего сруба.
-                </div>
-            </div>
 
         </div>
 
