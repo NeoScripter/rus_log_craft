@@ -115,7 +115,7 @@
                     <a href="/" class="header-li" aria-label="Go to Home">Главная</a>
                 </li>
                 <li>
-                    <a href="" class="header-li" aria-label="View house projects">Проекты домов</a>
+                    <a href="/catalog" class="header-li" aria-label="View house projects">Проекты домов</a>
                 </li>
                 <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false"
                     class="relative" aria-haspopup="true" aria-expanded="showMenu">

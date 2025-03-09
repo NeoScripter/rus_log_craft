@@ -21,7 +21,7 @@
                     </div>
                     <div>
                         <li>
-                            <a href="" class="hover:underline focus-visible:underline underline-offset-4">Проекты домов</a>
+                            <a href="/catalog" class="hover:underline focus-visible:underline underline-offset-4">Проекты домов</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
                                     <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Дома из бревна</a>
@@ -70,7 +70,7 @@
                             <a href="{{ route('user.gallery') }}" class="hover:underline focus-visible:underline underline-offset-4">Галерея</a>
                             <ul role="menu" class="mt-1 ml-1 space-y-1 list-inside" style="list-style-image: url('{{ asset('images/partials/footer/ellipse.svg') }}')">
                                 <li>
-                                    <a href="" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>
+                                    <a href="/catalog" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Готовые проекты</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('user.tech') }}" class="text-sm hover:underline focus-visible:underline underline-offset-4" role="menuitem">Процесс строительства</a>

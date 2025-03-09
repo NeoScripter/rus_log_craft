@@ -1,12 +1,6 @@
 <x-user-layout :bottom-padding="false">
 
-    <div class="inline-flex items-center gap-4 section-primary">
-        <a class="select-none hover:underline focus-visible:underline underline-offset-2" href="/">Главная</a>
-        <div class="mt-1">
-            <img src="{{ asset('images/svgs/black-line.svg') }}" alt="">
-        </div>
-        <div>Технологии</div>
-    </div>
+    <x-user.breadcrumbs page_name="Технологии" />
 
     <section class="section-primary text-balance">
 

@@ -29,6 +29,12 @@ Route::get('/about', function () {
     return view('user.about', compact('projects'));
 })->name('user.about');
 
+Route::get('/catalog', function () {
+    $projects = Project::all();
+
+    return view('user.catalog', compact('projects'));
+})->name('user.catalog');
+
 Route::get('/tech', function () {
 
     return view('user.tech');
