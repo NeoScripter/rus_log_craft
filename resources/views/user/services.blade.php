@@ -9,7 +9,7 @@
 
         <div x-data class="space-y-6 sm:space-y-8 md:space-y-14">
 
-            <x-user.service-section section_id="design" title="Проектирование" image_path="images/services/design/design-">
+            <x-user.services.service-section section_id="design" title="Проектирование" image_path="images/services/design/design-">
 
                 <p>Мы создаем уникальные проекты, учитывая все ваши пожелания и особенности участка, чтобы
                     обеспечить идеальное сочетание функциональности и комфорта. Наши архитекторы имеют необходимый
@@ -22,10 +22,10 @@
                     <button @click="$dispatch('open-form')" class="btn-secondary lg:flex-1">Заказать проект</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
 
-            <x-user.service-section section_id="saunas" title='Дома и бани "под ключ"'
+            <x-user.services.service-section section_id="saunas" title='Дома и бани "под ключ"'
                 image_path="images/services/saunas/saunas-">
 
                 <p>Мы строим дома и бани под ключ, обеспечивая полный цикл работ — от проектирования до отделки,
@@ -40,9 +40,9 @@
                         звонок</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
-            <x-user.service-section section_id="huts" title='Изготовление срубов' :total_slides="4"
+            <x-user.services.service-section section_id="huts" title='Изготовление срубов' :total_slides="4"
                 image_path="images/services/huts/hut-">
 
                 <p>Мы занимаемся профессиональным изготовлением срубов из высококачественной древесины, гарантируя
@@ -58,9 +58,9 @@
                     <button class="btn-secondary lg:flex-1">Калькулятор стоимости сруба</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
-            <x-user.service-section section_id="foundations" title='Строительство фундаментов'
+            <x-user.services.service-section section_id="foundations" title='Строительство фундаментов'
                 image_path="images/services/foundations/foundation-">
 
                 <p>Мы предлагаем своим клиентам только монолитные бетонные фундаменты под ключ. <br> Важно, перед
@@ -78,9 +78,9 @@
                         звонок</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
-            <x-user.service-section section_id="roofs" title='Возведение крыш' :total_slides="4"
+            <x-user.services.service-section section_id="roofs" title='Возведение крыш' :total_slides="4"
                 image_path="images/services/roofs/roofs-">
 
                 <p>Мы выполняем возведение крыш для бревенчатых домов и бань, используя надежные кровельные
@@ -96,9 +96,9 @@
                         звонок</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
-            <x-user.service-section section_id="benches" title='Беседки, столы и скамейки' :total_slides="4"
+            <x-user.services.service-section section_id="benches" title='Беседки, столы и скамейки' :total_slides="4"
                 image_path="images/services/benches/bench-">
 
                 <p>Строительная компания "Русь Бревенчатая" предлагает Вам проектирование, изготовление и монтаж
@@ -117,7 +117,7 @@
                         звонок</button>
                 </div>
 
-            </x-user.service-section>
+            </x-user.services.service-section>
 
         </div>
 
@@ -129,30 +129,29 @@
 
         <div class="grid gap-4 xs:grid-cols-2 sm:gap-6 md:gap-y-8 lg:gap-x-8">
 
-            <x-user.service-card title="Дополнительное утепление сруба">
+            <x-user.services.service-card title="Дополнительное утепление сруба">
                 Дополнительное утепление сруба улучшает теплоизоляцию и энергоэффективность вашего дома,
                 предотвращая потери тепла и обеспечивая комфорт в любую погоду. Современные утеплители помогают
                 создать надежный барьер от холода и влаги.
-            </x-user.service-card>
+            </x-user.services.service-card>
 
-            <x-user.service-card title="Монтаж полов и межэтажных перекрытий">
+            <x-user.services.service-card title="Монтаж полов и межэтажных перекрытий">
                 Вы можете заказать у нас строительство утепленных полов и перекрытий между этажами, что обеспечивает
                 прочность и стабильность внутренней структуры, создавая надежную основу для дальнейшей отделки.
                 Используемые материалы и технологии гарантируют долговечность и высокую нагрузочную способность.
-            </x-user.service-card>
+            </x-user.services.service-card>
 
-            <x-user.service-card title="Обсады, наличники, лестницы и др.">
+            <x-user.services.service-card title="Обсады, наличники, лестницы и др.">
                 Проектирование и установка обсад, наличников и лестниц добавляют завершенность и индивидуальность
                 вашему интерьеру, а высококачественная отделка обеспечивает долговечность и эстетичный вид. Эти
                 элементы изготавливаются с учетом вашего стиля и функциональных требований.
-            </x-user.service-card>
+            </x-user.services.service-card>
 
-            <x-user.service-card title="Шлифовка и окрашивание рубленых стен">
+            <x-user.services.service-card title="Шлифовка и окрашивание рубленых стен">
                 Шлифовка рубленых стен придает поверхности идеальную гладкость, а окрашивание защищает древесину и
                 подчеркивает её природную текстуру. Используемые покрытия обеспечивают долговечность и эстетичный
                 внешний вид, сохраняя красоту вашего сруба.
-            </x-user.service-card>
-
+            </x-user.services.service-card>
 
         </div>
 

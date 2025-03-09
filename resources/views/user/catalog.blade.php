@@ -18,10 +18,11 @@
 
     <livewire:pageform />
 
-    @include('user.partials.delivery')
+
+    @include('user.partials.home-bottom-carousel')
+
+    @include('user.partials.calculate-price')
 
     @include('user.partials.call-form')
-
-    @include('user.partials.articles')
 
 </x-user-layout>
