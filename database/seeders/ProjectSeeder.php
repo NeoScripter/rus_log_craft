@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Image;
 use App\Models\Project;
 use Database\Factories\ProjectFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -14,6 +15,6 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        Project::factory(6)->create();
+        Image::factory(7)->create();
     }
 }
