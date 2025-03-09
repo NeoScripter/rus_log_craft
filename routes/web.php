@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Models\Project;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,5 +59,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/set-locale/{locale}', function ($locale) {
+    if (in_array($locale, ['ru', 'en', 'cn', 'jp'])) {
+        Session::put('locale', $locale);
+        App::setlocale($locale);
+    }
+    return back();
+})->name('set-locale');
 
 require __DIR__.'/auth.php';
