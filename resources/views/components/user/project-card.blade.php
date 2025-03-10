@@ -38,7 +38,7 @@
 
         </div>
 
-        <a href="{{ $project->link }}" class="block mt-1 text-center btn-secondary">Подробнее</a>
+        <a href="{{ route('user.project', $project) }}" class="block mt-1 text-center btn-secondary">Подробнее</a>
     </div>
 
 

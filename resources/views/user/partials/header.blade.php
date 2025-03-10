@@ -112,14 +112,14 @@
         <nav aria-label="Main navigation">
             <ul class="px-3 space-y-6 lg:flex lg:items-center lg:justify-between lg:space-y-0">
                 <li>
-                    <a href="/" class="header-li" aria-label="Go to Home">Главная</a>
+                    <a href="/" class="header-li {{ request()->routeIs('user.home') ? 'current' : '' }}" aria-label="Go to Home">Главная</a>
                 </li>
                 <li>
-                    <a href="/catalog" class="header-li" aria-label="View house projects">Проекты домов</a>
+                    <a href="/catalog" class="header-li {{ request()->is('catalog') ? 'current' : '' }}" aria-label="View house projects">Проекты домов</a>
                 </li>
                 <li x-data="{ showMenu: false }" @mouseenter="showMenu = true" @mouseleave="showMenu = false"
                     class="relative" aria-haspopup="true" aria-expanded="showMenu">
-                    <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2 header-li">
+                    <a href="{{ route('user.services') }}" class="inline-flex items-center gap-2 header-li {{ request()->routeIs('user.services') ? 'current' : '' }}">
                         Услуги
                         <img src="{{ asset('images/partials/header/popup-arrow-up.svg') }}" alt="Expand submenu"
                             aria-hidden="true" class="mt-0.5 w-3 transition-transform"
@@ -145,18 +145,18 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ route('user.tech') }}" class="header-li"
+                    <a href="{{ route('user.tech') }}" class="header-li {{ request()->routeIs('user.tech') ? 'current' : '' }}"
                         aria-label="Learn about technologies">Технологии</a>
                 </li>
                 <li>
-                    <a href="{{ route('user.gallery') }}" class="header-li" aria-label="View gallery">Галерея</a>
+                    <a href="{{ route('user.gallery') }}" class="header-li {{ request()->routeIs('user.gallery') ? 'current' : '' }}" aria-label="View gallery">Галерея</a>
                 </li>
                 <li>
-                    <a href="{{ route('user.about') }}" class="header-li" aria-label="Learn about the company">О
+                    <a href="{{ route('user.about') }}" class="header-li {{ request()->routeIs('user.about') ? 'current' : '' }}" aria-label="Learn about the company">О
                         компании</a>
                 </li>
                 <li>
-                    <a href="{{ route('user.contacts') }}" class="header-li" aria-label="Contact us">Контакты</a>
+                    <a href="{{ route('user.contacts') }}" class="header-li {{ request()->routeIs('user.contacts') ? 'current' : '' }}" aria-label="Contact us">Контакты</a>
                 </li>
                 <li class="hidden lg:flex lg:items-center lg:justify-center">
                     <a href="" aria-label="Search" class="block">

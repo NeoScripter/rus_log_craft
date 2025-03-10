@@ -1,4 +1,4 @@
-<x-user-layout :bottom-padding="false">
+<x-user-layout>
 
     <x-user.breadcrumbs page_name="Контакты" />
 
@@ -107,6 +107,6 @@
 
     @include('user.partials.home-bottom-carousel')
 
-    @include('user.partials.call-form')
+    @include('user.partials.call-form', ['class' => 'aligned-mb'])
 
 </x-user-layout>

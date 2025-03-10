@@ -82,6 +82,6 @@
 
     @include('user.partials.house-grid', ['title' => 'Популярные проекты домов'])
 
-    @include('user.partials.call-form')
+    @include('user.partials.call-form', ['class' => 'aligned-mb'])
 
 </x-user-layout>

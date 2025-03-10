@@ -1,4 +1,4 @@
-<section x-data class="py-10 bg-right-bottom bg-no-repeat bg-contain section-primary bg-green-primary md:py-11 lg:py-20"
+<section x-data class="{{ $class ?? '' }} py-10 bg-right-bottom bg-no-repeat bg-contain section-primary bg-green-primary md:py-11 lg:py-20"
         style="background-image: url('{{ asset('images/home/form-pattern.webp') }}')">
 
         <h2 class="titles !text-white text-center text-2xl mb-6 md:text-4xl">Оформить заявку на строительство, получить

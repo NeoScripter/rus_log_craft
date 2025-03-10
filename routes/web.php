@@ -21,7 +21,7 @@ Route::get('/', function () {
     $projects = Project::where('is_featured', true)->get();
 
     return view('user.index', compact('projects'));
-});
+})->name('user.home');
 
 Route::get('/about', function () {
     $projects = Project::where('is_featured', true)->limit(3)->get();
@@ -33,6 +33,12 @@ Route::get('/catalog', function () {
 
     return view('user.catalog');
 })->name('user.catalog');
+
+Route::get('/catalog/{project}', function (Project $project) {
+    $project->load(['images', 'plans']);
+
+    return view('user.project', compact('project'));
+})->name('user.project');
 
 Route::get('/tech', function () {
 

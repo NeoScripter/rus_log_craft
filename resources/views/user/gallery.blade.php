@@ -1,4 +1,4 @@
-<x-user-layout :bottom-padding="false">
+<x-user-layout>
 
     <x-user.breadcrumbs page_name="Галерея проектов" />
 
@@ -42,6 +42,6 @@
         <a class="block text-center btn-primary" href="https://spbrb.ru/gallery_main.htm">Смотреть больше фото</a>
     </div>
 
-    @include('user.partials.call-form')
+    @include('user.partials.call-form', ['class' => 'aligned-mb'])
 
 </x-user-layout>
