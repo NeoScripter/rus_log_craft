@@ -2,13 +2,15 @@
 
 namespace Database\Factories;
 
+use App\Models\Project;
+use App\Models\Image;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Storage;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Project>
- */
 class ProjectFactory extends Factory
 {
+    protected $model = Project::class;
+
     public function definition(): array
     {
         return [
@@ -38,7 +40,49 @@ class ProjectFactory extends Factory
             'description_en' => fake()->paragraph(),
             'description_cn' => fake()->paragraph(),
             'description_jp' => fake()->paragraph(),
+            'article' => $this->generateArticle(),
+            'is_featured' => true,
         ];
+    }
+
+    public function configure()
+    {
+        return $this->afterCreating(function (Project $project) {
+
+            $projectFolder = storage_path("app/public/projects/project-{$project->id}");
+
+            if (is_dir($projectFolder)) {
+                $imagePaths = collect(scandir($projectFolder))
+                    ->filter(fn ($file) => preg_match('/\.(jpg|jpeg|png|webp)$/i', $file = "$projectFolder/$file"))
+                    ->values();
+
+                foreach ($imagePaths as $index => $imagePath) {
+                    Image::create([
+                        'project_id' => $project->id,
+                        'path' => 'projects/project-' . $project->id . '/' . basename($imagePath),
+                        'type' => 'image',
+                        'order' => $index + 1,
+                    ]);
+                }
+            }
+
+            $planFolder = storage_path('app/public/projects/plan');
+
+            if (is_dir($planFolder = $planImagesFolder = storage_path('app/public/projects/plan'))) {
+                $planImages = collect(glob($planFolder . '/*.{jpg,jpeg,png,webp}', GLOB_BRACE))
+                    ->shuffle()
+                    ->take(fake()->numberBetween(1, 4));
+
+                foreach ($planImages as $index => $planImagePath) {
+                    Image::create([
+                        'project_id' => $project->id,
+                        'path' => 'projects/plan/' . basename($planImagePath),
+                        'type' => 'plan',
+                        'order' => $index + 1,
+                    ]);
+                }
+            }
+        });
     }
 
     protected function generateArticle(): string

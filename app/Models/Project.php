@@ -15,12 +15,16 @@ class Project extends Model
 
     public function plans(): HasMany
     {
-        return $this->hasMany(Image::class)->where('type', 'plan');
+        return $this->hasMany(Image::class)->where('type', 'plan')->orderBy('order', 'asc');
     }
-
 
     public function images(): HasMany
     {
-        return $this->hasMany(Image::class)->where('type', 'image');
+        return $this->hasMany(Image::class)->where('type', 'image')->orderBy('order', 'asc');
+    }
+
+    public function firstImage()
+    {
+        return $this->hasOne(Image::class)->where('type', 'image')->orderBy('order', 'asc');
     }
 }

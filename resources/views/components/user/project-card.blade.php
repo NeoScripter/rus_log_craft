@@ -11,7 +11,7 @@
         </span>
 
         <img class="object-cover object-center w-full h-full transition-transform duration-500 group-hover:scale-110"
-            src="{{ Storage::url($project->images()->first()->path) }}" alt="{{ $project->{'name_' . app()->getLocale()} }}">
+            src="{{ Storage::url($project->firstImage()->first()->path) }}" alt="{{ $project->{'name_' . app()->getLocale()} }}">
     </div>
 
     <div class="flex flex-col flex-1 gap-3 p-4">

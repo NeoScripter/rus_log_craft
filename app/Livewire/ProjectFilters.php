@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Livewire;
 
 use App\Models\Project;
@@ -20,12 +21,6 @@ class ProjectFilters extends Component
     {
         $this->type = request()->query('type', '');
     }
-
-  /*   public function updating()
-    {
-        $this->resetPage();
-    }
- */
 
     public function setPerPage($screenSize)
     {
@@ -76,7 +71,7 @@ class ProjectFilters extends Component
         }
 
         return view('livewire.project-filters', [
-            'projects' => $query->latest()->paginate($this->perPage)
+            'projects' => $query->latest()->with('firstImage')->paginate($this->perPage)
         ]);
     }
 }
