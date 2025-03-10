@@ -22,12 +22,12 @@
         <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-6 lg:gap-8">
 
             @php
-                $links = ['#', '#', '#', '#'];
+                $links = ['house', 'house_bath', 'bath', 'utility'];
                 $names = ['Дома из бревна', 'Дома с баней', 'Бани из бревна', 'Хозпостройки'];
             @endphp
 
             @foreach ($names as $idx => $name)
-                <a href="{{ $links[$idx] }}" class="flex flex-col gap-4 px-4 py-6 bg-light-gray">
+                <a href="{{ '/catalog?type=' . $links[$idx] }}" class="flex flex-col gap-4 px-4 py-6 bg-light-gray">
                     <img class="flex-1 object-center" src="{{ asset('images/home/hero-' . $idx + 1 . '.webp') }}"
                         alt="{{ $name }}">
                     <div class="text-xl font-bold text-center text-dark-black md:text-2xl">{{ $name }}</div>

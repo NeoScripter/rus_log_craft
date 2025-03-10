@@ -1,5 +1,6 @@
 <div>
-    <div class="relative items-start gap-8 uppercase md:flex">
+    <div class="relative items-start gap-8 uppercase md:flex" x-data x-init="$wire.setPerPage(window.innerWidth);"
+        @resize.window.debounce.200ms="$wire.setPerPage(window.innerWidth);">
 
         <form wire:submit.prevent
             class="top-32 mb-6 space-y-4 rounded-md border border-gray-400 p-6 md:sticky md:max-w-[374px] md:basis-1/2">
@@ -8,11 +9,13 @@
             </header>
 
             <div class="pb-4 space-y-2 border-b border-gray-400">
-                <x-user.filter-btn  title="Показать все" click="resetFilters" :is_active="$type === ''" class="w-full" />
+                <x-user.filter-btn title="Показать все" click="resetFilters" :is_active="$type === ''" class="w-full" />
                 <x-user.filter-btn title="Дома" click="$set('type','house')" :is_active="$type === 'house'" class="w-full" />
-                <x-user.filter-btn title="Дома с баней" click="$set('type','house_bath')" :is_active="$type === 'house_bath'" class="w-full" />
+                <x-user.filter-btn title="Дома с баней" click="$set('type','house_bath')" :is_active="$type === 'house_bath'"
+                    class="w-full" />
                 <x-user.filter-btn title="Бани" click="$set('type','bath')" :is_active="$type === 'bath'" class="w-full" />
-                <x-user.filter-btn title="Хозпостройки" click="$set('type','utility')" :is_active="$type === 'utility'" class="w-full" />
+                <x-user.filter-btn title="Хозпостройки" click="$set('type','utility')" :is_active="$type === 'utility'"
+                    class="w-full" />
             </div>
 
             <div class="pb-4 border-b border-gray-400">
@@ -50,7 +53,7 @@
             </div>
         </form>
 
-        <div class="grid gap-x-4 gap-y-6 md:grid-cols-2 md:gap-x-6 lg:gap-x-10 xl:grid-cols-3">
+        <div class="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:gap-x-10 xl:grid-cols-3">
             @foreach ($projects as $project)
                 <x-user.project-card :project="$project" />
             @endforeach

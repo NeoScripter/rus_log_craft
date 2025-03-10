@@ -14,9 +14,30 @@ class ProjectFilters extends Component
     public $area = '';
     public $hasTerrace = false;
     public $hasGarage = false;
+    public $perPage = 20;
 
-    public function updating()
+    public function mount()
     {
+        $this->type = request()->query('type', '');
+    }
+
+  /*   public function updating()
+    {
+        $this->resetPage();
+    }
+ */
+
+    public function setPerPage($screenSize)
+    {
+
+        if ($screenSize < 768) {
+            $this->perPage = 5;
+        } else if (($screenSize < 1024)) {
+            $this->perPage = 10;
+        } else {
+            $this->perPage = 15;
+        }
+
         $this->resetPage();
     }
 
@@ -55,7 +76,7 @@ class ProjectFilters extends Component
         }
 
         return view('livewire.project-filters', [
-            'projects' => $query->latest()->paginate(20)
+            'projects' => $query->latest()->paginate($this->perPage)
         ]);
     }
 }
