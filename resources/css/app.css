@@ -138,3 +138,12 @@ html {
 .aligned-mb {
     @apply !-mb-32 sm:!-mb-24 md:!-mb-20 lg:!-mb-32;
 }
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
