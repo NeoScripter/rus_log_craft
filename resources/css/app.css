@@ -130,3 +130,4 @@ html {
 .input-field {
     @apply transition-colors duration-300 bg-transparent border rounded-md focus:shadow-none focus:outline-none focus:ring-0 border-dim-gray hover:border-dark-black focus-visible:border-dark-black placeholder:transition-colors placeholder:duration-300 hover:placeholder-dark-black ring-0 focus-visible:placeholder-dark-black;
 }
+
