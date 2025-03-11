@@ -1,9 +1,10 @@
 <section class="section-primary overflow-clip">
 
     <div class="lg:flex lg:items-center lg:justify-between">
-        <h2 class="text-2xl titles md:text-4xl"><span class="golden-title">Галерея</span> домов</h2>
+        <h2 class="text-2xl titles md:text-4xl"><span class="golden-title">{{ __('Галерея') }}</span> {{ __('домов') }}</h2>
 
-        <a href="" class="hidden text-center lg:block btn-primary w-100">СМОТРЕТЬ ПРОЕКТЫ ДОМОВ</a>
+        <a href="" class="hidden text-center lg:block btn-primary w-100">{{ __('СМОТРЕТЬ ПРОЕКТЫ
+        ДОМОВ') }}</a>
     </div>
 
     <div class="my-6 lg:mt-8 lg:mb-0">
@@ -135,7 +136,7 @@
 
     </div>
 
-    <a href="" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">СМОТРЕТЬ ПРОЕКТЫ
-        ДОМОВ</a>
+    <a href="" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">{{ __('СМОТРЕТЬ ПРОЕКТЫ
+        ДОМОВ') }}</a>
 
 </section>

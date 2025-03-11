@@ -4,22 +4,28 @@
     <div class="sm:flex sm:gap-6 md:gap-10">
 
         <div class="sm:flex sm:flex-col sm:justify-between sm:w-90 lg:w-125">
-            <h2 class="text-4xl titles sm:text-2xl md:text-4xl">мы <br> предлагаем</h2>
-            <p class="my-6 text-xl font-semibold">стройте с легкостью</p>
+            <h2 class="text-4xl titles sm:text-2xl md:text-4xl">
+                {{ __('partials/service_links.мы предлагаем') }}
+            </h2>
+            <p class="my-6 text-xl font-semibold">
+                {{ __('partials/service_links.стройте с легкостью') }}
+            </p>
             <a href="{{ route('user.services') }}"
-                class="hidden text-center btn-primary sm:block md:max-w-[25rem]">смотреть все услуги</a>
+                class="hidden text-center btn-primary sm:block md:max-w-[25rem]">
+                {{ __('partials/service_links.смотреть все услуги') }}
+            </a>
         </div>
 
         <ul class="space-y-4 md:flex-1">
 
             @php
                 $titles = [
-                    'Проектирование',
-                    'Дома и бани "под ключ',
-                    'Изготовление срубов',
-                    'Строительство фундаментов',
-                    'Возведение крыш',
-                    'Беседки, столы и скамейки',
+                    __('partials/service_links.Проектирование'),
+                    __('partials/service_links.Дома и бани "под ключ"'),
+                    __('partials/service_links.Изготовление срубов'),
+                    __('partials/service_links.Строительство фундаментов'),
+                    __('partials/service_links.Возведение крыш'),
+                    __('partials/service_links.Беседки, столы и скамейки'),
                 ];
 
                 $paths = [
@@ -43,8 +49,7 @@
                         </div>
                         <div class="p-4 md:flex-1">
                             <p class="mb-2 text-xl font-bold">{{ $titles[$i] }}</p>
-                            <p class="mb-3 text-dim-gray">Архитекторы компании воплотят ваши идеи в качественных
-                                проектах бревенчатых коттеджей и бань</p>
+                            <p class="mb-3 text-dim-gray">{{ __('partials/service_links.Архитекторы компании воплотят ваши идеи') }}</p>
                             <div
                                 class="grid content-center w-8 h-8 p-2 ml-auto transition-colors duration-300 rounded-md bg-green-primary group-hover:bg-golden-primary">
                                 <img class="w-5 h-5" src="{{ asset('images/svgs/arrow-down-right.svg') }}"
@@ -57,8 +62,7 @@
             @endfor
         </ul>
 
-        <a href="{{ route('user.services') }}" class="block w-full mt-6 text-center btn-primary sm:hidden">смотреть все
-            услуги</a>
+        <a href="{{ route('user.services') }}" class="block w-full mt-6 text-center btn-primary sm:hidden">{{ __('partials/service_links.смотреть все услуги') }}</a>
 
     </div>
 

@@ -1,34 +1,40 @@
 <section class="section-primary">
 
-    <h2 class="text-2xl md:text-4xl titles text-balance">6 причин выбрать бревенчатый дом <br> <a href="{{ route('user.tech')}}"
-            class="mb-6 golden-title">ручной рубки</a></h2>
+    <h2 class="text-2xl titles text-balance md:text-4xl">
+        {{ __('partials/home_accordion.6 причин выбрать бревенчатый дом') }} <br>
+        <a href="{{ route('user.tech') }}" class="mb-6 golden-title">
+            {{ __('partials/home_accordion.ручной рубки') }}
+        </a>
+    </h2>
 
-    <div class="md:flex md:gap-10 md:items-end md:justify-between">
+    <div class="md:flex md:items-end md:justify-between md:gap-10">
 
         @php
             $questions = [
-                'Эстетика и уникальность',
-                'Экологичность',
-                'Энергоэффективность',
-                'Прочность и долговечность',
-                'Индивидуальность',
-                'Психологический эффект',
+                __('partials/home_accordion.Эстетика и уникальность'),
+                __('partials/home_accordion.Экологичность'),
+                __('partials/home_accordion.Энергоэффективность'),
+                __('partials/home_accordion.Прочность и долговечность'),
+                __('partials/home_accordion.Индивидуальность'),
+                __('partials/home_accordion.Психологический эффект'),
             ];
 
             $answers = [
-                'дома из ручной рубки обладают неповторимым характером и органической красотой. Каждое бревно имеет свою форму и текстуру, что создает уникальный и неповторимый внешний вид дома, придающий ему особый шарм.',
-                'строительство осуществляется с использованием натуральных материалов, что снижает экологическую нагрузку на окружающую среду. Древесина является возобновляемым ресурсом, а процесс обработки бревен вручную обеспечивает минимальное использование энергии.',
-                'благодаря толстым стенам из натурального дерева, дома из ручной рубки обладают превосходными теплоизоляционными свойствами. Это позволяет создавать уютное и комфортное внутреннее пространство, а также снижает затраты на отопление и кондиционирование воздуха.',
-                'древесина, используемая при строительстве домов из ручной рубки, обладает высокой прочностью и долговечностью. Толстые бревна обеспечивают надежную защиту от ветра, дождя и других природных воздействий, что делает такие дома стойкими к различным климатическим условиям.',
-                'возможность ручной обработки бревен позволяет создавать индивидуальные и уникальные дизайны для каждого дома. Владельцы могут выбирать форму и размеры бревен, а также стиль обработки, чтобы создать дом, который полностью отвечает их потребностям и предпочтениям.',
-                'благодаря естественной текстуре и аромату дерева, пребывание в бревенчатом доме способствует созданию уютной и спокойной атмосферы, что благотворно влияет на психическое здоровье и общее благополучие.',
+                __('partials/home_accordion.дома из ручной рубки обладают неповторимым характером'),
+                __('partials/home_accordion.строительство осуществляется с использованием натуральных материалов'),
+                __('partials/home_accordion.благодаря толстым стенам из натурального дерева'),
+                __('partials/home_accordion.древесина, используемая при строительстве домов из ручной рубки'),
+                __(
+                    'partials/home_accordion.возможность ручной обработки бревен позволяет создавать уникальные дизайны',
+                ),
+                __('partials/home_accordion.благодаря естественной текстуре и аромату дерева'),
             ];
         @endphp
 
-        <div class="my-6 space-y-4 md:basis-[60%] md:mb-0 lg:basis-1/2">
+        <div class="my-6 space-y-4 md:mb-0 md:basis-[60%] lg:basis-1/2">
             @for ($i = 0; $i < count($questions); $i++)
                 <div x-data="{ expanded: false }"
-                    class="rounded-md transition-colors duration-300 border border-[#E5E3DB] focus-within:border-golden-primary hover:border-golden-primary">
+                    class="rounded-md border border-[#E5E3DB] transition-colors duration-300 focus-within:border-golden-primary hover:border-golden-primary">
                     <button
                         class="flex items-center justify-between w-full p-6 transition-colors outline-none durat ion-300 group"
                         @click="expanded = !expanded">
@@ -42,7 +48,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="arrow">
                                     <path id="Vector 12" d="M1 1.5L17 17.5M17 17.5V1.5M17 17.5H1" stroke-width="2"
-                                        class="stroke-[#212125] group-hover:stroke-golden-primary group-focus-visible:stroke-golden-primary transition-colors duration-300" />
+                                        class="stroke-[#212125] transition-colors duration-300 group-hover:stroke-golden-primary group-focus-visible:stroke-golden-primary" />
                                 </g>
                             </svg>
 
@@ -59,9 +65,9 @@
             @endfor
         </div>
 
-        <div class="max-w-100 md:basis-[40%] md:max-w-176 lg:basis-1/2">
+        <div class="max-w-100 md:max-w-176 md:basis-[40%] lg:basis-1/2">
             <img class="object-cover object-center w-full h-full" src="{{ asset('images/home/home-accordion.webp') }}"
-                alt="">
+                alt="{{ __('Фото деревянного дома') }}">
         </div>
     </div>
 

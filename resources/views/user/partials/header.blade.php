@@ -86,12 +86,12 @@
                         alt="English flag" class="object-contain object-center w-full h-full">
                 </div>
                 <div>
-                    <img src="{{ asset('images/partials/header/arrow-down.svg') }}" alt="{{ __('partials/footer.Стрелка вниз') }}">
+                    <img src="{{ asset('images/partials/header/arrow-down.svg') }}" alt="{{ __('partials/header.Стрелка вниз') }}">
                 </div>
             </button>
 
             <button aria-label="Search" class="block">
-                <img src="{{ asset('images/partials/header/search.svg') }}" alt="{{ __('partials/footer.Поиск') }}" aria-hidden="true">
+                <img src="{{ asset('images/partials/header/search.svg') }}" alt="{{ __('partials/header.Поиск') }}" aria-hidden="true">
             </button>
 
             <button @click="showPopup = true" class="block p-2" aria-label="Open navigation menu">
@@ -109,7 +109,7 @@
         aria-hidden="!showPopup && !isLarge">
         <header class="flex items-center justify-between my-8 lg:hidden">
             <div class="text-lg font-bold uppercase">{{ __('partials/header.Меню') }}</div>
-            <button @click="showPopup = false" aria-label="{{ __('partials/footer.Закрыть меню навигации') }}" class="p-2">
+            <button @click="showPopup = false" aria-label="{{ __('partials/header.Закрыть меню навигации') }}" class="p-2">
                 <img src="{{ asset('images/partials/header/close-btn.svg') }}" alt="{{ __('partials/header.Закрыть') }}" aria-hidden="true">
             </button>
         </header>

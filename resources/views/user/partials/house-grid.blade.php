@@ -16,6 +16,6 @@
 
     @endisset
 
-    <a href="{{ route('user.services') }}" class="block w-full text-center btn-primary"> Смотреть все проекты</a>
+    <a href="{{ route('user.services') }}" class="block w-full text-center btn-primary">{{ __('partials/home_grid.Смотреть все проекты')}}</a>
 
 </section>
