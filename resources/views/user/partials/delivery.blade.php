@@ -2,23 +2,25 @@
 
     <div class="flex flex-col gap-6 md:flex-row lg:gap-10">
 
-        <div class="space-y-4 md:order-1 sm:space-y-6 md:space-y-8 md:basis-1/2 lg:basis-2/3">
-            <h2 class="text-2xl titles md:text-4xl">Доставка и сборка</h2>
+        <div class="space-y-4 sm:space-y-6 md:order-1 md:basis-1/2 md:space-y-8 lg:basis-2/3">
+            <h2 class="text-2xl titles md:text-4xl">{{ __('partials/delivery.Доставка и сборка') }}</h2>
 
             <div>
-                <p class="mb-2">Деревянные дома рубятся на территории нашей площадки, что обеспечивает наблюдение за качеством работ и материала, четкое соблюдение технологии строительства. При этом клиент полностью контролирует весь процесс строительства - с начала закладки дома до его сдачи.</p>
+                <p class="mb-2">{{ __('partials/delivery.Деревянные дома рубятся на площадке') }}</p>
 
-                <p>После подписания акта приема-передачи сруба, он разбирается и доставляется к месту сборки автомобильным транспортом. Сборка сруба осуществляется специалистами нашей фирмы, что гарантирует ее качество и надежность.</p>
+                <p>{{ __('partials/delivery.После подписания акта приема-передачи') }}</p>
             </div>
 
             <div>
-                <h3 class="text-xl font-bold tracking-wide !leading-[120%] text-dark-black mb-4">Поставка срубов автомобильным транспортом.</h3>
-                <p>Неоспоримые достоинства автомобильной доставки - мобильность, гибкость графика поставок, возможность круглосуточной отгрузки, уменьшение страхового запаса без увеличения рисков. Для оборудования места разгрузки автотранспорта необходимы минимальные затраты.</p>
+                <h3 class="mb-4 text-xl font-bold !leading-[120%] tracking-wide text-dark-black">
+                    {{ __('partials/delivery.Поставка срубов автомобильным транспортом') }}
+                </h3>
+                <p>{{ __('partials/delivery.Неоспоримые достоинства автомобильной доставки') }}</p>
             </div>
         </div>
 
-        <div class="sm:ml-auto w-max md:ml-0 md:basis-1/2 lg:basis-[47rem]">
-            <img src="{{ asset("images/services/delivery-bg.png") }}" alt="">
+        <div class="w-max sm:ml-auto md:ml-0 md:basis-1/2 lg:basis-[47rem]">
+            <img src="{{ asset('images/services/delivery-bg.png') }}" alt="Карта России">
         </div>
 
     </div>

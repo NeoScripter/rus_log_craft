@@ -1,8 +1,7 @@
 <section x-data class="{{ $class ?? '' }} py-10 bg-right-bottom bg-no-repeat bg-contain section-primary bg-green-primary md:py-11 lg:py-20"
         style="background-image: url('{{ asset('images/home/form-pattern.webp') }}')">
 
-        <h2 class="titles !text-white text-center text-2xl mb-6 md:text-4xl">Оформить заявку на строительство, получить
-            консультацию или задать вопрос можно любым удобным способом:</h2>
+        <h2 class="titles !text-white text-center text-2xl mb-6 md:text-4xl">{{ __('partials/call_form.Оформить заявку на строительство') }}</h2>
 
         <div class="flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 md:items-center">
 
@@ -19,7 +18,7 @@
                     </svg>
 
                 </div>
-                Написать нам через сайт
+                {{ __('partials/call_form.Написать нам через сайт') }}
             </button>
 
             <a href="mailto:info@spbrb.ru"
@@ -34,7 +33,7 @@
                         </g>
                         </svg>
                 </div>
-                Отправить письмо на почту
+                {{ __('partials/call_form.Отправить письмо на почту') }}
             </a>
 
             <a href=""
@@ -53,7 +52,7 @@
                         </svg>
 
                 </div>
-                Написать в WhatsApp
+                {{ __('partials/call_form.Написать в WhatsApp') }}
             </a>
         </div>
 

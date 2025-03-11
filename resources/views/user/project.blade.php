@@ -1,7 +1,7 @@
 <x-user-layout>
 
     @isset($project)
-        <x-user.breadcrumbs :page_name="$project->{'name_' . app()->getLocale()} ?? 'Проект без названия'">
+        <x-user.breadcrumbs :page_name="$project->{'name_' . app()->getLocale()} ?? __('components.без названия')">
             <x-slot:second_path>
                 <a class="select-none underline-offset-2 hover:underline focus-visible:underline" href="/catalog">Каталог</a>
                 <div class="mt-1">
@@ -21,19 +21,18 @@
                     <p>{{ $project->article ?? 'Артикул отсутствует' }}</p>
 
                     <div class="my-4 flex flex-wrap items-center gap-6 bg-[#F6F5EF] p-4 sm:my-6">
-                        <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/volume.svg')" alt="Объем дома" :value="($project->total_area ?? 'Не указано') . 'м²'" />
+                        <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/volume.svg')" alt="__('components.Объем дома')" :value="($project->total_area ?? __('components.Не указано')) . __('components.м²')" />
 
-                        <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/floors.svg')" alt="Этажность" :value="($project->floors ?? 1) . (($project->floors ?? 1) > 1 ? ' этажа' : ' этаж')" />
+                        <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/floors.svg')" alt="__('components.Этажность')" :value="($project->floors ?? 1) . (($project->floors ?? 1) > 1 ? ' этажа' : ' этаж')" />
 
-                        <x-user.projects.icon class="basis-[200px]" :src="asset('images/svgs/rooms.svg')" alt="Тип комнат" :value="$project->{'room_type_' . app()->getLocale()} ?? 'Не указано'" />
+                        <x-user.projects.icon class="basis-[200px]" :src="asset('images/svgs/rooms.svg')" alt="__('components.Тип комнат')" :value="$project->{'room_type_' . app()->getLocale()} ?? __('components.Не указано')" />
                     </div>
                 </div>
 
                 <div x-data="{ preview: '' }" class="mb-6 ms:mb-10 overflow-x-clip md:w-1/2">
                     <div class="mb-4 hidden overflow-clip rounded-md sm:block md:h-[363px] lg:h-[435px] xl:h-[670px]">
-                        <img :src="preview ||
-                            '{{ $project->firstImage ? Storage::url($project->firstImage->path) : asset('images/house-placeholder.webp') }}'"
-                            alt="Фото проекта {{ $project->{'name_' . app()->getLocale()} ?? 'без названия' }}"
+                        <img :src="preview || '{{ $project->firstImage ? Storage::url($project->firstImage->path) : asset('images/house-placeholder.webp') }}'"
+                            alt="Фото проекта {{ $project->{'name_' . app()->getLocale()} ?? __('components.без названия') }}"
                             class="object-cover object-center w-full h-full">
                     </div>
 
@@ -42,7 +41,7 @@
                         @foreach ($project->images as $image)
                             <div class="rounded-md aspect-square h-72 overflow-clip sm:h-26 sm:cursor-pointer">
                                 <img @click="preview = $el.src" src={{ Storage::url($image->path) }}
-                                    alt="Изображение проекта {{ $project->{'name_' . app()->getLocale()} ?? 'без названия' }}"
+                                    alt="Изображение проекта {{ $project->{'name_' . app()->getLocale()} ?? __('components.без названия') }}"
                                     class="object-cover object-center w-full h-full">
                             </div>
                         @endforeach
@@ -55,32 +54,33 @@
                         <p>{{ $project->article ?? 'Артикул отсутствует' }}</p>
 
                         <div class="my-4 flex flex-wrap items-center gap-6 bg-[#F6F5EF] p-4 sm:my-6">
-                            <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/volume.svg')" alt="Объем дома"
-                                :value="($project->total_area ?? 'Не указано') . 'м²'" />
+                            <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/volume.svg')"
+                                alt="{{ __('components.Объем дома') }}" :value="($project->total_area ?? __('components.Не указано')) . __('components.м²')" />
 
-                            <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/floors.svg')" alt="Этажность"
-                                :value="($project->floors ?? 1) . (($project->floors ?? 1) > 1 ? ' этажа' : ' этаж')" />
+                            <x-user.projects.icon class="basis-[100px]" :src="asset('images/svgs/floors.svg')"
+                                alt="{{ __('components.Этажность') }}" :value="($project->floors ?? 1) . (($project->floors ?? 1) > 1 ? ' этажа' : ' этаж')" />
 
-                            <x-user.projects.icon class="basis-[200px]" :src="asset('images/svgs/rooms.svg')" alt="Тип комнат"
-                                :value="$project->{'room_type_' . app()->getLocale()} ?? 'Не указано'" />
+                            <x-user.projects.icon class="basis-[200px]" :src="asset('images/svgs/rooms.svg')"
+                                alt="{{ __('components.Тип комнат') }}" :value="$project->{'room_type_' . app()->getLocale()} ?? __('components.Не указано')" />
+
                         </div>
                     </div>
 
                     <div class="grid gap-4">
                         <x-user.projects.table-row title="Площадь застройки">
-                            {{ $project->build_area ?? 'Не указано' }} м2
+                            {{ $project->build_area ?? __('components.Не указано') }} м2
                         </x-user.projects.table-row>
                         <x-user.projects.table-row title="Этажи">
-                            {{ $project->floors ?? 'Не указано' }}
+                            {{ $project->floors ?? __('components.Не указано') }}
                         </x-user.projects.table-row>
                         <x-user.projects.table-row title="Общая площадь дома">
-                            {{ $project->total_area ?? 'Не указано' }} м2
+                            {{ $project->total_area ?? __('components.Не указано') }} м2
                         </x-user.projects.table-row>
                         <x-user.projects.table-row title="Жилая площадь">
-                            {{ $project->living_area ?? 'Не указано' }} м2
+                            {{ $project->living_area ?? __('components.Не указано') }} м2
                         </x-user.projects.table-row>
                         <x-user.projects.table-row title="Площадь кровли">
-                            {{ $project->roof_area ?? 'Не указано' }} м2
+                            {{ $project->roof_area ?? __('components.Не указано') }} м2
                         </x-user.projects.table-row>
                         <x-user.projects.table-row title="Спальня">
                             {{ $project->bedrooms > 1 ? $project->bedrooms : 'нет' }}
@@ -95,7 +95,7 @@
 
                     <div class="my-8">
                         <p class="mb-3 text-xl font-bold md:text-2xl">Цена сруба дома или бани: от
-                            {{ $project->price_per_sqm ?? 'Не указано' }} руб. за кв.м</p>
+                            {{ $project->price_per_sqm ?? __('components.Не указано') }} руб. за кв.м</p>
                         <p class="text-sm uppercase md:text-base">При заказе сруба или дома под ключ - проект бесплатно</p>
                     </div>
 
@@ -118,7 +118,7 @@
                     @forelse ($project->plans as $plan)
                         <div class="shrink-0 sm:w-80 md:w-105 lg:w-120">
                             <img src="{{ Storage::url($plan->path) }}"
-                                alt="Планировка проекта {{ $project->{'name_' . app()->getLocale()} ?? 'без названия' }}"
+                                alt="Планировка проекта {{ $project->{'name_' . app()->getLocale()} ?? __('components.без названия') }}"
                                 class="object-cover object-center w-full h-full">
                         </div>
                     @empty
