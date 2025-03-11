@@ -54,9 +54,11 @@
         </form>
 
         <div class="grid gap-x-4 gap-y-6 sm:grid-cols-2 md:gap-x-6 lg:gap-x-10 xl:grid-cols-3">
-            @foreach ($projects as $project)
+            @forelse ($projects as $project)
                 <x-user.project-card :project="$project" />
-            @endforeach
+            @empty
+                <p class="flex-1 text-gray-500">По вашему запросу не найдено ни одного проекта</p>
+            @endforelse
         </div>
     </div>
 
