@@ -44,7 +44,7 @@
                     <div class="flex items-center gap-2 overflow-x-auto scrollbar-hidden sm:gap-5">
 
                         @foreach ($project->images as $image)
-                            <div class="rounded-md cursor-pointer aspect-square h-72 overflow-clip sm:h-26">
+                            <div class="rounded-md sm:cursor-pointer aspect-square h-72 overflow-clip sm:h-26">
                                 <img @click="preview = $el.src" src={{ Storage::url($image->path) }} alt="Фото избы"
                                     class="object-cover object-center w-full h-full">
                             </div>
@@ -108,6 +108,25 @@
                         проект</button>
                 </div>
 
+            </div>
+
+            <div x-data="{ showPlan: false }">
+                <div class="flex flex-col items-center gap-4 my-8 sm:flex-row">
+                    <button @click="showPlan = false" class="w-full sm:w-60 btn-filter" :class="showPlan ? '' : 'active'">Описание</button>
+                    <button @click="showPlan = true" class="w-full sm:w-60 btn-filter" :class="showPlan ? 'active' : ''">Планировка</button>
+                </div>
+
+                <div x-show="showPlan" x-transition class="flex flex-col items-center gap-6 overflow-x-auto scrollbar-hidden sm:flex-row">
+                    @foreach ($project->plans as $plan)
+                        <div class="shrink-0 sm:w-80 md:w-105 lg:w-120">
+                            <img src={{Storage::url($plan->path)}} alt="" class="object-cover object-center w-full h-full">
+                        </div>
+                    @endforeach
+                </div>
+
+                <div x-show="!showPlan" x-transition class="lg:text-xl max-w-300">
+                    {{ $project->{'description_' . app()->getLocale()} }}
+                </div>
             </div>
 
         </section>
