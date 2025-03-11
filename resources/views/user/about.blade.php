@@ -6,39 +6,47 @@
         style="background-image: url('{{ asset('images/about/about-hero.webp') }}')">
         <div class="absolute inset-0 z-10 bg-black/40"></div>
 
-        <div class="z-20 font-bold sm:text-2xl">О компании</div>
+        <div class="z-20 font-bold sm:text-2xl">
+            {{ __('pages/about.О компании') }}
+        </div>
 
-        <h1 class="titles z-20 text-xl text-balance sm:text-4xl !text-white">«Русь Бревенчатая» - Уют и экологичность в
-            домах из натурального бревна.</h1>
+        <h1 class="titles z-20 text-xl text-balance sm:text-4xl !text-white">
+            {{ __('pages/about.Русь Бревенчатая - Уют и экологичность') }}
+        </h1>
     </section>
 
     <section class="grid gap-12 sm:gap-6 md:gap-18 section-primary sm:grid-cols-3">
 
-        <x-user.about.highlight top="20 лет" small="с 2014 года на рынке деревянного домостоения" />
-        <x-user.about.highlight top="160+" small="проекта построено по всей России" />
-        <x-user.about.highlight top="300+" small="специалистов в штате" />
+        <x-user.about.highlight top="{{ __('pages/about.20 лет') }}" small="{{ __('pages/about.с 2014 года на рынке') }}" />
+        <x-user.about.highlight top="{{ __('pages/about.160+') }}" small="{{ __('pages/about.проекта построено по России') }}" />
+        <x-user.about.highlight top="{{ __('pages/about.300+') }}" small="{{ __('pages/about.специалистов в штате') }}" />
 
     </section>
 
     <section class="flex flex-col gap-4 section-primary sm:gap-0 lg:flex-row lg:flex-wrap lg:justify-between lg:items-start">
 
         <div class="z-20 p-4 font-bold text-white bg-green-primary sm:w-150 sm:p-6">
-            <p class="pb-8 text-xl">Телеканал "Россия Санкт-Петербург" (редакция "Вести-Культура") и телеканал "Культура", при содействии компании "Русь Бревенчатая" подготовили цикл передач о деревянном зодчестве России.</p>
+            <p class="pb-8 text-xl">
+                {{ __('pages/about.Телеканал Россия Санкт-Петербург') }}
+            </p>
 
             <div class="sm:flex sm:items-center sm:gap-8">
                 <div class="w-40 pb-8 sm:pb-0">
-                    <img class="object-cover object-center" src="{{ asset('images/about/tv-logo.webp') }}" alt="Россия телеканал">
+                    <img class="object-cover object-center" src="{{ asset('images/about/tv-logo.webp') }}" alt="{{ __('pages/about.Россия телеканал') }}">
                 </div>
-                <a href="https://spbrb.ru/tv5-Canal-Angel-day.htm" target="_blank" class="block px-6 py-2 text-sm font-bold tracking-wide text-center text-white uppercase transition-colors duration-300 bg-transparent border-2 border-white rounded-lg sm:flex-1 hover:text-green-primary focus-visible:text-green-primary hover:bg-white focus-visible:bg-white md:text-base">Подробнее</a>
+                <a href="https://spbrb.ru/tv5-Canal-Angel-day.htm" target="_blank"
+                    class="block px-6 py-2 text-sm font-bold tracking-wide text-center text-white uppercase transition-colors duration-300 bg-transparent border-2 border-white rounded-lg sm:flex-1 hover:text-green-primary focus-visible:text-green-primary hover:bg-white focus-visible:bg-white md:text-base">
+                    {{ __('pages/about.Подробнее') }}
+                </a>
             </div>
         </div>
 
         <div class="w-4/5 sm:w-3/5 md:w-1/2 sm:order-1 sm:relative sm:-top-20 md:-top-32 lg:basis-1/3 lg:static lg:z-10">
-            <img class="object-cover object-center w-full" src="{{ asset('images/about/report-1.webp') }}" alt="">
+            <img class="object-cover object-center w-full" src="{{ asset('images/about/report-1.webp') }}" alt="new report">
         </div>
 
         <div class="w-4/5 ml-auto sm:w-3/5 sm:relative sm:-top-10 md:-top-16 lg:order-1 lg:basis-[36rem] lg:mr-auto lg:ml-80 lg:-top-20">
-            <img class="object-cover object-center w-full" src="{{ asset('images/about/report-2.webp') }}" alt="">
+            <img class="object-cover object-center w-full" src="{{ asset('images/about/report-2.webp') }}" alt="new report">
         </div>
 
     </section>
@@ -47,7 +55,7 @@
 
     <section class="section-primary">
 
-        <p class="mb-4 text-xl font-bold sm:mb-6 md:text-2xl">Видео, снятое дроном в феврале 2017г.: строительная площадка с высоты птичьего полета, закладка Храма, освящение первых венцов, запасы зимнего леса.</p>
+        <p class="mb-4 text-xl font-bold sm:mb-6 md:text-2xl">{{ __('pages/about.Видео, снятое дроном') }}</p>
 
         <div class="lg:w-4/5 lg:mx-auto">
             <livewire:aboutVideo lazy="on-load" />
@@ -64,11 +72,13 @@
             </div>
 
             <div class="space-y-4 md:space-y-6">
-                <h2 class="text-xl titles md:text-4xl">Материалы</h2>
+                <h2 class="text-xl titles md:text-4xl">
+                    {{ __('pages/about.Материалы') }}
+                </h2>
 
-                <p>Материалом для строительства деревянных домов и бань является древесина хвойных пород (ель, сосна, лиственница), привезенная из северных районов России. Мы строим дома из круглого массива (диаметр бревен от 26 см) и лафета (толщина 20 см), также возможно использование бревен нестандартной длины (7-12 м).</p>
+                <p>{{ __('pages/about.Материалом для строительства') }}</p>
 
-                <p>Дополнительно к этому наша компания предлагает Вам срубы из "зимнего" леса. Мы ведем заготовку запаса леса в зимней период, когда в древесине содержится наименьшее количество влаги и она меньше подвержена усушке, загниванию, короблению и появлению трещин. Использование "зимнего" леса при строительстве деревянного дома существенно сокращает срок его усадки и позволяет раньше приступить к полной отделке.</p>
+                <p>{{ __('pages/about.Дополнительно к этому наша компания') }}</p>
             </div>
         </div>
 

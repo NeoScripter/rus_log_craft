@@ -1,10 +1,12 @@
 <x-user-layout>
 
-    <x-user.breadcrumbs page_name="Галерея проектов" />
+    <x-user.breadcrumbs page_name="{{ __('pages/gallery.Галерея проектов') }}" />
 
     <div class="section-primary">
 
-        <h1 class="text-4xl titles md:text-6xl">Галерея проектов</h1>
+        <h1 class="text-4xl titles md:text-6xl">
+            {{ __('pages/gallery.Галерея проектов') }}
+        </h1>
 
     </div>
 
@@ -27,8 +29,7 @@
                 <div class="p-4 border border-gray-200 rounded-md">
                     <x-user.gallery-carousel :total_slides="4" image_path="images/gallery/gallery-" />
 
-                    <p class="mt-2 text-xl font-bold md:text-2xl md:mt-4 text-balance">Белоснежные деревянные коттедж и
-                        баня из лафета - внешний вид и интерьеры</p>
+                    <p class="mt-2 text-xl font-bold md:text-2xl md:mt-4 text-balance">{{ __('pages/gallery.Белоснежные коттедж и баня') }}</p>
                 </div>
             @endfor
 
@@ -39,7 +40,7 @@
 
     <div class="section-primary">
 
-        <a class="block text-center btn-primary" href="https://spbrb.ru/gallery_main.htm">Смотреть больше фото</a>
+        <a class="block text-center btn-primary" href="https://spbrb.ru/gallery_main.htm">{{ __('pages/gallery.Смотреть больше фото') }}</a>
     </div>
 
     @include('user.partials.call-form', ['class' => 'aligned-mb'])

@@ -6,6 +6,6 @@
         <img src="{{ asset('images/svgs/tel-popup.svg') }}" alt="Phone number">
     </button>
     <button @click="open = false">
-        <img src="{{ asset('images/svgs/close-popup.svg') }}" alt="{{ __('partials/footer.Закрыть') }}>
+        <img src="{{ asset('images/svgs/close-popup.svg') }}" alt="{{ __('partials/footer.Закрыть') }}">
     </button>
 </div>

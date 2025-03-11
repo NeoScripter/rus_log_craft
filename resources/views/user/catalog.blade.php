@@ -17,11 +17,11 @@
         },
     }" x-init="init()">
 
-        <h1 class="mb-8 text-3xl font-bold titles sm:mb-6 md:mb-14 md:text-6xl">Проекты домов</h1>
+        <h1 class="mb-8 text-3xl font-bold titles sm:mb-6 md:mb-14 md:text-6xl">{{ __('pages/catalog.Проекты домов')}}</h1>
 
         <button @click="showFilters = !showFilters" class="flex items-center gap-2 mb-6 md:hidden">
             <img src="{{ asset('images/catalog/filter-btn.svg') }}" alt="Фильтр">
-            Фильтры
+            {{ __('pages/catalog.Фильтры')}}
         </button>
 
         <livewire:project-filters />

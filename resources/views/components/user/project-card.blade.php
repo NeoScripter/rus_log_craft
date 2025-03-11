@@ -29,7 +29,7 @@
             <x-user.projects.icon
                 :src="asset('images/svgs/floors.svg')"
                 :alt="__('components.Этажность')"
-                :value="$project->floors . ($project->floors > 1 ? ' этажа' : ' этаж')"
+                :value="$project->floors . ($project->floors > 1 ? __('components.этажа') : __('components.этаж'))"
             />
 
             <x-user.projects.icon

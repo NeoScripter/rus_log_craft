@@ -1,36 +1,38 @@
 <x-user-layout>
 
-    <x-user.breadcrumbs page_name="Контакты" />
+    <x-user.breadcrumbs page_name="{{ __('pages/contacts.Контакты') }}" />
 
     <div class="section-primary">
-
-        <h1 class="text-4xl titles md:text-6xl">Контактная информация</h1>
-
+        <h1 class="text-4xl titles md:text-6xl">
+            {{ __('pages/contacts.Контактная информация') }}
+        </h1>
     </div>
 
     <section class="section-primary">
 
         <div x-data class="space-y-6">
             <div class="md:flex md:items-center md:justify-between">
-                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">Телефоны</h2>
-                <button @click="$dispatch('open-form')"
-                    class="hidden w-full text-center btn-primary md:block md:max-w-128">Заказать звонок</button>
+                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">
+                    {{ __('pages/contacts.Телефоны') }}
+                </h2>
+                <button @click="$dispatch('open-form')" class="hidden w-full text-center btn-primary md:block md:max-w-128">
+                    {{ __('pages/contacts.Заказать звонок') }}
+                </button>
             </div>
 
             <div class="grid gap-6 md:grid-cols-2 md:gap-10">
 
-                <x-user.contacts.card title="в Санкт-Петербурге">
-                    (812) 305-34-89 офис <br> +7 921 350-85-24 (моб.)
+                <x-user.contacts.card title="{{ __('pages/contacts.В Санкт-Петербурге') }}">
+                    (812) 305-34-89 {{ __('pages/contacts.Офис') }} <br> +7 921 350-85-24 ({{ __('pages/contacts.Мобильный') }})
                 </x-user.contacts.card>
 
-                <x-user.contacts.card title="в Москве">
-                    +7 916 514-15-93 (моб.)
+                <x-user.contacts.card title="{{ __('pages/contacts.В Москве') }}">
+                    +7 916 514-15-93 ({{ __('pages/contacts.Мобильный') }})
                 </x-user.contacts.card>
 
             </div>
 
-            <button @click="$dispatch('open-form')" class="block w-full text-center btn-primary md:hidden">Заказать
-                звонок</button>
+            <button @click="$dispatch('open-form')" class="block w-full text-center btn-primary md:hidden">{{ __('pages/contacts.Заказать звонок') }}</button>
         </div>
 
         <a href="mailto:info@spbrb.ru"
@@ -47,10 +49,13 @@
         <div class="grid gap-8 md:gap-6 lg:grid-cols-2 lg:gap-10">
 
             <div class="flex flex-col justify-between">
-                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">Строительная
-                    площадка и основной офис</h2>
-                <p class="my-4 md:text-2xl">расположена в 5 минутах от КАД Санкт-Петербурга по адресу: Санкт-Петербург,
-                    пос. Янино, ул. Кольцевая.</p>
+                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">
+                    {{ __('pages/contacts.Строительная площадка и офис') }}
+                </h2>
+                <p class="my-4 md:text-2xl">
+                    {{ __('pages/contacts.Адрес площадки') }}
+                </p>
+
                 <div style="position:relative;overflow:hidden;" class="mt-auto"><a
                         href="https://yandex.com/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint Petersburg</a><a
@@ -63,9 +68,12 @@
             </div>
 
             <div class="flex flex-col justify-between">
-                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">Служебный офис
-                    компании (юридический отдел и тп)</h2>
-                <p class="my-4 md:text-2xl">195027, Санкт-Петербург, Большеохтинский проспект, дом 10.</p>
+                <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">
+                    {{ __('pages/contacts.Служебный офис компании') }}
+                </h2>
+                <p class="my-4 md:text-2xl">
+                    {{ __('pages/contacts.Адрес офиса') }}
+                </p>
                 <div style="position:relative;overflow:hidden;" class="mt-auto"><a
                         href="https://yandex.com/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Saint Petersburg</a><a
@@ -82,18 +90,20 @@
 
 
     <div class="section-primary">
-        <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">Время работы офиса
-            и площадки:</h2>
-        <p class="mt-4 md:text-2xl">понедельник - пятница: 09.00 - 18.00</p>
+        <h2 class="text-2xl font-bold tracking-wider uppercase text-green-primary md:text-4xl">
+            {{ __('pages/contacts.Время работы офиса') }}
+        </h2>
+        <p class="mt-4 md:text-2xl">
+            {{ __('pages/contacts.График работы') }}
+        </p>
     </div>
 
     <div class="text-xl font-bold section-primary md:text-2xl">
-        При первой поездке в наш офис или на площадку рекомендуем распечатать данную страницу, либо записать наши
-        телефоны, чтобы, при необходимости, уточнить свой маршрут при возникновении затруднений.
+        {{ __('pages/contacts.Рекомендация по маршруту') }}
     </div>
 
     <div class="section-primary">
-        <p class="mb-4 text-xl font-bold text-center md:text-2xl">Схема проезда к офису и строительной площадке в Янино:
+        <p class="mb-4 text-xl font-bold text-center md:text-2xl"> {{ __('pages/contacts.Схема проезда') }}
         </p>
         <div class="mx-auto max-w-250">
             <img src="{{ asset('images/contacts/contacts-map.webp') }}" alt="">
@@ -103,7 +113,7 @@
 
     <livewire:pageform />
 
-    @include('user.partials.house-grid', ['title' => 'Популярные проекты домов'])
+    @include('user.partials.house-grid', ['title' => __('pages/contacts.Популярные проекты домов')])
 
     @include('user.partials.home-bottom-carousel')
 
