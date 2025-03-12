@@ -17,9 +17,12 @@ class ProjectFilters extends Component
     public $hasGarage = false;
     public $perPage = 20;
 
+    public $search = '';
+
     public function mount()
     {
         $this->type = request()->query('type', '');
+        $this->search = request()->query('search', '');
     }
 
     public function setPerPage($screenSize)
@@ -38,12 +41,23 @@ class ProjectFilters extends Component
 
     public function resetFilters()
     {
-        $this->reset(['type', 'floors', 'area', 'hasTerrace', 'hasGarage']);
+        $this->reset(['type', 'floors', 'area', 'hasTerrace', 'hasGarage', 'search']);
+
     }
 
     public function render()
     {
         $query = Project::query();
+
+        if ($this->search) {
+            $query->where(function ($q) {
+                $q->where('article', 'LIKE', "%{$this->search}%")
+                  ->orWhere('name_ru', 'LIKE', "%{$this->search}%")
+                  ->orWhere('name_en', 'LIKE', "%{$this->search}%")
+                  ->orWhere('name_cn', 'LIKE', "%{$this->search}%")
+                  ->orWhere('name_jp', 'LIKE', "%{$this->search}%");
+            });
+        }
 
         if ($this->type && $this->type !== 'all') {
             $query->where('type', $this->type);
@@ -69,6 +83,8 @@ class ProjectFilters extends Component
         if ($this->hasGarage) {
             $query->where('has_garage', true);
         }
+
+        $this->dispatch('clearUrlParams');
 
         return view('livewire.project-filters', [
             'projects' => $query->latest()->with('firstImage')->paginate($this->perPage)

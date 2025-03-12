@@ -2,7 +2,7 @@
     <div class="relative items-start gap-8 uppercase md:flex" x-data x-init="$wire.setPerPage(window.innerWidth);"
         @resize.window.debounce.200ms="$wire.setPerPage(window.innerWidth);">
 
-        <form wire:submit.prevent
+        <form x-show="showFilters" x-transition wire:submit.prevent
             class="top-32 mb-6 space-y-4 rounded-md border border-gray-400 p-6 md:sticky md:max-w-[374px] md:basis-1/2">
             <header class="flex items-center justify-between pb-4">
                 <div class="text-xl font-bold">{{__('livewire/filters.Фильтры')}}</div>
@@ -63,4 +63,15 @@
     </div>
 
     <div class="px-6 my-8 lg:px-0">{{ $projects->links() }}</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Livewire.on('clearUrlParams', () => {
+                if (window.history.replaceState) {
+                    const newUrl = window.location.origin + window.location.pathname;
+                    window.history.replaceState({}, document.title, newUrl);
+                }
+            });
+        });
+    </script>
 </div>

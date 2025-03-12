@@ -78,7 +78,7 @@
         </div>
 
 
-        <div class="flex items-center gap-2 md:my-2 md:gap-4 lg:hidden">
+        <div x-data="{ showSearch: false, query: '' }" class="flex items-center gap-2 md:my-2 md:gap-4 lg:hidden">
             <button @click="showLanguages = !showLanguages" aria-label="Open language menu"
                 class="flex items-center h-4 gap-1">
                 <div class="w-6">
@@ -86,13 +86,17 @@
                         alt="English flag" class="object-contain object-center w-full h-full">
                 </div>
                 <div>
-                    <img src="{{ asset('images/partials/header/arrow-down.svg') }}" alt="{{ __('partials/header.Стрелка вниз') }}">
+                    <img src="{{ asset('images/partials/header/arrow-down.svg') }}"
+                        alt="{{ __('partials/header.Стрелка вниз') }}">
                 </div>
             </button>
 
-            <button aria-label="Search" class="block">
-                <img src="{{ asset('images/partials/header/search.svg') }}" alt="{{ __('partials/header.Поиск') }}" aria-hidden="true">
+            <button @click="showSearch = true" aria-label="Search" class="block">
+                <img src="{{ asset('images/partials/header/search.svg') }}" alt="{{ __('partials/header.Поиск') }}"
+                    aria-hidden="true">
             </button>
+
+            @include('user.partials.search-overlay')
 
             <button @click="showPopup = true" class="block p-2" aria-label="Open navigation menu">
                 <img src="{{ asset('images/partials/header/burger.svg') }}" alt="{{ __('partials/header.Меню') }}">
@@ -104,16 +108,18 @@
         x-transition:enter-start="opacity-0 translate-x-full" x-transition:enter-end="opacity-100 translate-x-0"
         x-transition:leave="transition ease-in duration-500" x-transition:leave-start="opacity-0 translate-x-0"
         x-transition:leave-end="opacity-100 translate-x-full" @click.away="showPopup = false" x-cloak
-        class="absolute right-0 top-0 z-20 w-full max-w-90 bg-white px-4 pb-8 shadow-md lg:static lg:max-w-full lg:border-t lg:border-gray-200 lg:bg-[#F6F5EF] lg:px-32 lg:py-6 lg:shadow-none"
+        class="absolute right-0 top-0 z-20 w-full max-w-90 bg-white px-4 pb-8 shadow-md lg:relative lg:max-w-full lg:border-t lg:border-gray-200 lg:bg-[#F6F5EF] lg:px-32 lg:py-6 lg:shadow-none"
         aria-expanded="showPopup || isLarge" role="dialog" aria-labelledby="popup-title"
         aria-hidden="!showPopup && !isLarge">
         <header class="flex items-center justify-between my-8 lg:hidden">
             <div class="text-lg font-bold uppercase">{{ __('partials/header.Меню') }}</div>
-            <button @click="showPopup = false" aria-label="{{ __('partials/header.Закрыть меню навигации') }}" class="p-2">
-                <img src="{{ asset('images/partials/header/close-btn.svg') }}" alt="{{ __('partials/header.Закрыть') }}" aria-hidden="true">
+            <button @click="showPopup = false" aria-label="{{ __('partials/header.Закрыть меню навигации') }}"
+                class="p-2">
+                <img src="{{ asset('images/partials/header/close-btn.svg') }}"
+                    alt="{{ __('partials/header.Закрыть') }}" aria-hidden="true">
             </button>
         </header>
-        <nav aria-label="Main navigation">
+        <nav x-data="{ showSearch: false, query: '' }" aria-label="Main navigation">
             <ul class="px-3 space-y-6 lg:flex lg:items-center lg:justify-between lg:space-y-0">
                 <li>
                     <a href="/" class="header-li {{ request()->routeIs('user.home') ? 'current' : '' }}"
@@ -172,11 +178,14 @@
                         aria-label="Contact us">{{ __('partials/footer.Контакты') }}</a>
                 </li>
                 <li class="hidden lg:flex lg:items-center lg:justify-center">
-                    <a href="" aria-label="{{ __('partials/header.Поиск') }}" class="block">
-                        <img src="{{ asset('images/partials/header/search-large.svg') }}" alt="{{ __('partials/header.Поиск') }}"
-                            class="w-full h-full">
-                    </a>
+                    <button @click="showSearch = true" aria-label="{{ __('partials/header.Поиск') }}"
+                        class="block">
+                        <img src="{{ asset('images/partials/header/search-large.svg') }}"
+                            alt="{{ __('partials/header.Поиск') }}" class="w-full h-full">
+                    </button>
                 </li>
+
+                @include('user.partials.search-overlay')
             </ul>
         </nav>
     </div>
