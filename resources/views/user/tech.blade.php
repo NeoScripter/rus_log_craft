@@ -1,32 +1,35 @@
 <x-user-layout :bottom-padding="false">
 
-    <x-user.breadcrumbs page_name="Технологии" />
+    <x-user.breadcrumbs page_name="{{ __('pages/tech.Технологии') }}" />
 
     <section class="section-primary text-balance">
 
-        <h1 class="text-4xl titles md:text-6xl">Технология ручной рубки домов и бань из бревна от мастеров компании</h1>
+        <h1 class="text-4xl titles md:text-6xl">
+            {{ __('pages/tech.Технология рубки домов и бань') }}
+        </h1>
 
-        <p class="my-6">Деревянное домостроение достаточно сложный процесс и человеку, далекому от строительной
-            индустрии деревянных домов, иногда сложно понять, почему дома, построенные разными компаниями по одному
-            проекту, во-первых, имеют разную стоимость, а, во-вторых, по прошествии нескольких лет, имеют совершенно
-            различный вид.</p>
+        <p class="my-6">
+            {{ __('pages/tech.Деревянное домостроение сложный процесс') }}
+        </p>
 
-        <p class="text-xl font-bold md:text-2xl">Мы, как мастера своего дела, отличамся технологиями:</p>
-
+        <p class="text-xl font-bold md:text-2xl">
+            {{ __('pages/tech.Мастера отличаемся технологиями') }}
+        </p>
     </section>
 
     <section class="section-primary">
 
         <div class="p-4 space-y-4 border border-gray-200 rounded-lg sm:space-y-6 md:space-y-8 md:p-6 lg:flex-nowrap">
 
-            <h2 class="text-2xl titles md:text-4xl">Завешивание наружных углов</h2>
+            <h2 class="text-2xl titles md:text-4xl">
+                {{ __('pages/tech.Завешивание наружных углов') }}
+            </h2>
 
-            <p class="md:text-2xl">Для предотвращения образования щелей после усушки и усадки сруба в компании Русь
-                Бревенчатая применяют методику создания поднутрения, т.е. зазора по оси бревен. Этот зазор выбирается в
-                нижней части бревна по всей его длине, причем с торцов он чуть меньше (5-8 мм вместе с высотой
-                завешивания наружных углов), а, в невидимых частях венца, чуть больше (10-15 мм).</p>
+            <p class="md:text-2xl">
+                {{ __('pages/tech.Предотвращение щелей в срубе') }}
+            </p>
 
-            <div class="flex flex-col gap-3 sm:gap-4 sm:flex-row sm:flex-wrap lg:gap-8">
+            <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 lg:gap-8">
 
                 <div class="max-w-75 md:max-w-90 lg:flex-1">
                     <img class="object-contain object-center w-full h-full"
@@ -39,41 +42,43 @@
                 </div>
 
                 <div class="sm:mt-3 lg:mt-0 lg:flex-1">
-                    <p class="mb-2 md:mb-6">На рисунке показаны силы, действующие на бревно во время усушки и усадки.
-                        Вследствие воздействия этих сил, в первую очередь, появляется трещина в нижней части бревна.
+                    <p class="mb-2 md:mb-6">
+                        {{ __('pages/tech.Силы действующие на бревно') }}
                     </p>
-                    <p>За счет наличия зазора происходит мягкая посадка верхнего бревна на нижнее, а края паза даже
-                        после расширения достаточно плотно примыкают к поверхности нижнего бревна.</p>
+                    <p>
+                        {{ __('pages/tech.Мягкая посадка верхнего бревна') }}
+                    </p>
 
                     <a href="https://spbrb.ru/tech_zavesh_uglov.htm" target="_blank"
-                        class="block mt-6 text-center md:mt-10 btn-secondary md:max-w-90">Подробнее о технологии</a>
+                        class="block mt-6 text-center btn-secondary md:mt-10 md:max-w-90">
+                        {{ __('pages/tech.Подробнее о технологии') }}
+                    </a>
                 </div>
             </div>
 
             <div class="flex flex-col gap-4 xs:flex-row xs:flex-wrap xl:gap-10">
                 <div
-                    class="my-6 md:order-1 lg:order-none lg:basis-[45%] lg:mt-0 xl:flex xl:flex-col xl:justify-between xl:gap-6">
+                    class="my-6 md:order-1 lg:order-none lg:mt-0 lg:basis-[45%] xl:flex xl:flex-col xl:justify-between xl:gap-6">
                     <div class="p-6 bg-light-gray">
-                        <p class="mb-4 text-xl font-bold">Совет от генерального директора</p>
+                        <p class="mb-4 text-xl font-bold">
+                            {{ __('pages/tech.Совет от генерального директора') }}
+                        </p>
 
-                        <p>Применение продольного паза в нижней части венцов, получившего название «поднутрение»,
-                            исключает необходимость регулярного подконопачивания сруба дома или бани. Обратите внимание,
-                            что для предотвращения попадания влаги между венцами, на торцах перерубов этот зазор
-                            уменьшают с 10…15 до 5 мм. Наличие зазора «поднутрение» можно легко проверить на торцах
-                            венцов, образующих дверные и оконные проемы.</p>
+                        <p>
+                            {{ __('pages/tech.Продольный паз и поднутрение') }}
+                        </p>
                     </div>
 
-                    <div class="hidden xl:block">Наш специально продуманный шаг оградит стены вашего дома от негативных
-                        последствий усадки. Серповидные зазоры между брёвнами в дальнейшем закрываться столярными
-                        изделиями.</div>
+                    <div class="hidden xl:block">
+                        {{ __('pages/tech.Продуманный шаг защитит стены') }}
+                    </div>
                 </div>
 
-                <div class="xs:order-2 sm:basis-[35%] sm:flex sm:items-end md:basis-full xl:hidden">Наш специально
-                    продуманный шаг оградит стены вашего дома от негативных последствий усадки. Серповидные зазоры
-                    между брёвнами в дальнейшем закрываться столярными изделиями.</div>
+                <div class="xs:order-2 sm:flex sm:basis-[35%] sm:items-end md:basis-full xl:hidden">
+                    {{ __('pages/tech.Продуманный шаг защитит стены') }}</div>
 
                 <div
-                    class="flex max-w-36 sm:max-w-full sm:basis-[20%] md:ml-auto lg:ml-0 lg:items-start lg:mt-[3.8%] xl:basis-[18%] xl:items-end">
+                    class="flex max-w-36 sm:max-w-full sm:basis-[20%] md:ml-auto lg:ml-0 lg:mt-[3.8%] lg:items-start xl:basis-[18%] xl:items-end">
                     <img class="object-contain mt-auto lg:mt-0" src="{{ asset('images/tech/top/demo-1.webp') }}"
                         alt="">
                 </div>
@@ -93,64 +98,67 @@
         <div class="p-4 space-y-10 border border-gray-200 rounded-lg md:space-y-8 md:p-6 lg:space-y-12">
 
             <div class="space-y-4 sm:space-y-6 md:space-y-8">
-                <h2 class="text-2xl titles md:text-4xl">Торцевое соединение бревен в чашках перерубов с помощью
-                    металлических стяжек.</h2>
-                <p class="md:text-2xl">Стяжка - оцинкованная шпилька длиной около полуметра с резьбою на обоих концах.
-                    Шпилька укладывается в узкий продольный пропил, проходящий поперек стыка бревен. На концах пропил
-                    имеет специальные пазы в виде треугольных призм.</p>
+                <h2 class="text-2xl titles md:text-4xl">
+                    {{ __('pages/tech.Торцевое соединение бревен') }}
+                </h2>
+
+                <p class="md:text-2xl">
+                    {{ __('pages/tech.Описание стяжки') }}
+                </p>
             </div>
 
             <div class="space-y-6 md:space-y-8 lg:space-y-12">
 
                 <div class="flex flex-col gap-10 md:flex-row">
-                    <div class="flex flex-col gap-8 sm:flex-row sm:gap-4 md:flex-col md:flex-1 md:gap-10">
-                        <div class=" sm:flex-1 md:flex-auto">
-                            <p class="mb-4 text-xl font-bold md:mb-6">Плюсы использования стяжек:</p>
+                    <div class="flex flex-col gap-8 sm:flex-row sm:gap-4 md:flex-1 md:flex-col md:gap-10">
+                        <div class="sm:flex-1 md:flex-auto">
+                            <p class="mb-4 text-xl font-bold md:mb-6">
+                                {{ __('pages/tech.Плюсы использования стяжек') }}</p>
                             <ul class="ml-3 space-y-4 md:space-y-6"
                                 style="list-style-image: url('{{ asset('images/tech/green-dot.png') }}')">
-                                <li class="pl-1">С обоих концов на шпильку насаживаются оцинкованные металлические
-                                    шайбы, а поверх них накручиваются оцинкованные гайки.</li>
-                                <li class="pl-1">Гайки в ходе монтажа сруба с усилием закручиваются, в результате
-                                    получается плотное соединение, которое обеспечит плотную стыковку брёвен в углах.
-                                </li>
-                                <li class="pl-1">Обеспечивается большая площадь соприкосновения шайбы с древесиной,
-                                    соответственно получается на порядок меньшее передаваемое давление.</li>
-                                <li class="pl-1">Оцинкованный металл практически не подвержен коррозии и не вызовет
-                                    поражения древесины.</li>
+                                <li class="pl-1">{{ __('pages/tech.Металлические шайбы и гайки') }}</li>
+                                <li class="pl-1">{{ __('pages/tech.Плотное соединение бревен') }}</li>
+                                <li class="pl-1">{{ __('pages/tech.Большая площадь соприкосновения') }}</li>
+                                <li class="pl-1">{{ __('pages/tech.Металл не подвержен коррозии') }}</li>
                             </ul>
                         </div>
-                        <div class="sm:flex-1 md:flex-auto md:w-3/4 lg:max-w-80">
+                        <div class="sm:flex-1 md:w-3/4 md:flex-auto lg:max-w-80">
                             <x-user.tech-carousel :total_slides="4" image_path="images/tech/slides/tech-slide-" />
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-10 sm:flex-row md:flex-1 lg:max-w-140">
                         <div>
-                            <img src="{{ asset('images/tech/second/manual-3.webp') }}" alt="">
+                            <img src="{{ asset('images/tech/second/manual-3.webp') }}" alt="Tech image">
                         </div>
 
                         <div class="md:hidden">
-                            <img src="{{ asset('images/tech/second/demo-3.webp') }}" alt="">
+                            <img src="{{ asset('images/tech/second/demo-3.webp') }}" alt="Tech image">
                         </div>
                     </div>
                 </div>
 
                 <div class="md:flex md:gap-10">
                     <div class="hidden md:block md:flex-1 lg:max-w-140">
-                        <img src="{{ asset('images/tech/second/demo-3.webp') }}" alt="">
+                        <img src="{{ asset('images/tech/second/demo-3.webp') }}" alt="Tech image">
                     </div>
 
-                    <div class="space-y-4 md:space-y-6 md:flex-1">
-                        <p class="titles">Применение данной методики - достаточно сложная система.</p>
-                        <p>Для закладки шпильки нужно сделать узкий и глубокий паз, его стенки должны быть вертикальны
-                            и иметь строго заданные размеры. Изготовление пазов, в виде треугольных призм, также требуют
-                            опыта и сноровки.</p>
-                        <p>Шпилька должна быть достаточно глубоко утоплена в древесину, поскольку над шпилькой делается
-                            паз под шип лежащего выше бревна.
-                            С другой стороны, в нижней части бревна нужно выпилить чашку, а в ней ещё оставить шип,
-                            причём этот шип находится на обоих стыкуемых брёвнах.</p>
-                        <a href="https://spbrb.ru/tech_stjagka.htm"
-                            class="block text-center btn-secondary max-w-100">Подробнее о технологии</a>
+                    <div class="space-y-4 md:flex-1 md:space-y-6">
+                        <p class="titles">
+                            {{ __('pages/tech.Сложность методики') }}
+                        </p>
+
+                        <p>
+                            {{ __('pages/tech.Процесс закладки шпильки') }}
+                        </p>
+
+                        <p>
+                            {{ __('pages/tech.Шпилька должна быть утоплена') }}
+                        </p>
+
+                        <a href="https://spbrb.ru/tech_stjagka.htm" class="block text-center btn-secondary max-w-100">
+                            {{ __('pages/tech.Подробнее о технологии') }}
+                        </a>
                     </div>
                 </div>
 
@@ -165,40 +173,49 @@
         <div class="p-4 space-y-10 border border-gray-200 rounded-lg md:space-y-8 md:p-6">
 
             <div class="space-y-4 sm:space-y-6 md:space-y-8">
-                <h2 class="text-2xl titles md:text-4xl">Рубка сруба в канадскую чашку. Создание затесов при рубке в
-                    канадскую чашку.</h2>
-                <p class="md:text-2xl">Классическая канадская технология рубки, обеспечивает самозаклинивание щелей в
-                    перерубе, появляющихся при усушке и усадке сруба. Альтернатива классической русской рубке.</p>
+                <h2 class="text-2xl titles md:text-4xl">
+                    {{ __('pages/tech.Рубка сруба в канадскую чашку') }}
+                </h2>
+
+                <p class="md:text-2xl">
+                    {{ __('pages/tech.Канадская технология рубки') }}
+                </p>
             </div>
 
             <div class="space-y-10 md:space-y-8">
-                <div class="flex flex-col gap-10 md:gap-8 md:flex-row">
+                <div class="flex flex-col gap-10 md:flex-row md:gap-8">
                     <div class="md:flex-1">
                         <div class="md:mb-8">
-                            <p class="mb-4 text-xl font-bold md:mb-6">Преимущества технологии:</p>
+                            <p class="mb-4 text-xl font-bold md:mb-6">
+                                {{ __('pages/tech.Преимущества технологии') }}
+                            </p>
+
                             <ul class="ml-3 space-y-4 md:space-y-6"
                                 style="list-style-image: url('{{ asset('images/tech/green-dot.png') }}')">
-                                <li class="pl-1">Отличается высокой точностью и качеством. Позволяет создавать сложные
-                                    формы и конструкции, что расширяет возможности для архитекторов и дизайнеров.</li>
-                                <li class="pl-1">Строительство происходит быстрее, чем при использовании традиционных
-                                    методов, что сокращает время проекта.</li>
-                                <li class="pl-1">Конструкции, созданные таким образом, отличаются надёжностью и
-                                    долговечностью.</li>
+                                <li class="pl-1">{{ __('pages/tech.Точность и качество') }}</li>
+                                <li class="pl-1">{{ __('pages/tech.Быстрота строительства') }}</li>
+                                <li class="pl-1">{{ __('pages/tech.Надежность и долговечность') }}</li>
                             </ul>
                         </div>
                         <div class="hidden space-y-6 md:block md:flex-1 xl:hidden">
                             <div class="md:max-w-60">
                                 <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
                             </div>
-                            <p class="text-2xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+
+                            <p class="text-2xl font-bold">
+                                {{ __('pages/tech.Отличие канадской чашки') }}
+                            </p>
+
                             <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
-                                class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
+                                class="block text-center btn-secondary md:max-w-90">
+                                {{ __('pages/tech.Подробнее о технологии') }}
+                            </a>
                         </div>
 
                     </div>
 
                     <div
-                        class="flex flex-col gap-4 sm:flex-row md:flex-col md:flex-1 md:max-w-100 xl:max-w-210 xl:gap-10 xl:flex-row">
+                        class="flex flex-col gap-4 sm:flex-row md:max-w-100 md:flex-1 md:flex-col xl:max-w-210 xl:flex-row xl:gap-10">
                         <div>
                             <img src="{{ asset('images/tech/third/demo-4.webp') }}" alt="">
                         </div>
@@ -209,12 +226,11 @@
                     </div>
 
                     <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
-                        class="hidden text-center sm:block md:hidden btn-secondary">Подробнее о
-                        технологии</a>
+                        class="hidden text-center btn-secondary sm:block md:hidden">{{ __('pages/tech.Подробнее о технологии') }}</a>
 
                     <div class="hidden gap-4 sm:flex md:hidden">
-                        <p class="flex-1 block text-xl font-bold">Основным отличием канадской чашки является наличие
-                            затеса.</p>
+                        <p class="flex-1 block text-xl font-bold">
+                            {{ __('pages/tech.Основное отличие канадской чашки') }}</p>
                         <div class="flex-1">
                             <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
                         </div>
@@ -223,22 +239,21 @@
 
                 <div class="flex flex-col gap-3 md:gap-10 xl:flex-row">
 
-                    <div class="md:order-1 xl:flex-1 xl:flex xl:flex-col xl:justify-between">
+                    <div class="md:order-1 xl:flex xl:flex-1 xl:flex-col xl:justify-between">
                         <div class="hidden xl:flex xl:gap-6">
 
                             <div class="flex flex-col justify-between flex-1">
-                                <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.
+                                <p class="text-xl font-bold">{{ __('pages/tech.Основное отличие канадской чашки') }}
                                 </p>
                                 <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
-                                    class="block text-center btn-secondary">Подробнее о технологии</a>
+                                    class="block text-center btn-secondary">{{ __('pages/tech.Подробнее о технологии') }}</a>
                             </div>
 
                             <div class="max-w-60">
                                 <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
                             </div>
                         </div>
-                        <p class="">На рисунках вы можете ознакомиться со строительством сруба при рубке
-                            в русскую и канадскую чашку для круглого бревна, более традиционного для России.</p>
+                        <p>{{ __('pages/tech.Описание русской и канадской чашки') }}</p>
                     </div>
 
                     <div class="grid gap-3 xs:grid-cols-2 sm:grid-cols-3 md:max-w-220">
@@ -251,12 +266,12 @@
                     </div>
 
                     <div class="mt-4 space-y-6 sm:hidden">
-                        <p class="text-xl font-bold">Основным отличием канадской чашки является наличие затеса.</p>
+                        <p class="text-xl font-bold">{{ __('pages/tech.Основное отличие канадской чашки') }}</p>
                         <div class="max-w-60">
                             <img src="{{ asset('images/tech/third/demo-6.webp') }}" alt="">
                         </div>
                         <a href="https://spbrb.ru/tech_canadsk_zates.htm" target="_blank"
-                            class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
+                            class="block text-center btn-secondary md:max-w-90">{{ __('pages/tech.Подробнее о технологии') }}</a>
                     </div>
 
                 </div>
@@ -270,15 +285,12 @@
         <div class="p-4 space-y-8 border border-gray-200 rounded-lg md:p-6">
 
             <div class="flex flex-col gap-10 sm:flex-row">
-                <div class="space-y-4 sm:space-y-6 md:space-y-8 sm:flex-1">
-                    <h2 class="text-2xl titles md:text-4xl">Использования шипа в чашке при канадской технологии рубки.
-                    </h2>
-                    <p class="md:text-2xl">Шип является усовершенствованием классической канадской рубки, он
-                        обеспечивает большую жесткость конструкции сруба, а главное, уменьшает "продуваемость" угла и
-                        делает дом более теплым.</p>
+                <div class="space-y-4 sm:flex-1 sm:space-y-6 md:space-y-8">
+                    <h2 class="text-2xl titles md:text-4xl">{{ __('pages/tech.Использование шипа в чашке') }}</h2>
+                    <p class="md:text-2xl">{{ __('pages/tech.Описание шипа') }}</p>
                 </div>
 
-                <div class="md:hidden sm:flex-1">
+                <div class="sm:flex-1 md:hidden">
                     <img src="{{ asset('images/tech/fouth/fourth-1.webp') }}" alt="">
                 </div>
             </div>
@@ -290,40 +302,39 @@
 
                 <div class="flex flex-col gap-10 md:flex-1">
                     <div class="p-6 space-y-6 bg-light-gray">
-                        <p class="mb-4 text-xl font-bold">Совет от генерального директора</p>
-
-                        <p>Комплексный подход при изготовлении срубов позволяет получить крепкие и теплые дома и бани.
+                        <p class="mb-4 text-xl font-bold">
+                            {{ __('pages/tech.Совет от генерального директора') }}
                         </p>
 
-                        <p>Обязательно сформулируйте для себя технические условия, которые вы позже предъявите
-                            строителям. Если вы не хотите иметь щелей в углах дома, то необходимо использование затесов
-                            и шипов при изготовлении чашек, а также металлических стяжек при торцевом соединении бревен.
+                        <p>
+                            {{ __('pages/tech.Комплексный подход к срубам') }}
                         </p>
 
-                        <p>Если вы не хотите иметь щелей между бревнами в стенах, примените технологию завешивания
-                            наружных углов, используйте зазор «поднутрение», задайте минимальную величину продольных
-                            пазов в накрывающих венцах (обычно не менее 8-10 см).</p>
+                        <p>
+                            {{ __('pages/tech.Технические условия для строителей') }}
+                        </p>
+
+                        <p>
+                            {{ __('pages/tech.Как избежать щелей между бревнами') }}
+                        </p>
                     </div>
 
                     <a href="https://spbrb.ru/tech_canadsk_ship.htm" target="_blank"
-                        class="block text-center btn-secondary md:max-w-90">Подробнее о технологии</a>
+                        class="block text-center btn-secondary md:max-w-90">{{ __('pages/tech.Подробнее о технологии') }}</a>
                 </div>
             </div>
 
-            <div class="md:flex md:gap-10 md:items-start lg:justify-between">
+            <div class="md:flex md:items-start md:gap-10 lg:justify-between">
 
                 <div class="flex flex-col gap-6 sm:gap-10 md:flex-1 xl:max-w-200">
-                    <p>Шип (курдюк) и, соответственно, паз для него затруднительно сделать одним топором, здесь нужна
-                        математическая точность, качественный инструмент и виртуозное владение им. У рубщиков компании
-                        Русь Бревенчатая присутствуют все три указанных компонента.
-                    </p>
+                    <p>{{ __('pages/tech.Точность при изготовлении шипа') }}</p>
 
                     <div>
                         <img src="{{ asset('images/tech/fouth/fourth-2.webp') }}" alt="">
                     </div>
                 </div>
 
-                <div class="hidden md:block md:flex-1 md:max-w-80 xl:max-w-150">
+                <div class="hidden md:block md:max-w-80 md:flex-1 xl:max-w-150">
                     <img src="{{ asset('images/tech/fouth/fourth-3.webp') }}" alt="">
                 </div>
             </div>
@@ -332,44 +343,41 @@
 
     <section class="section-primary">
 
-        <div class="p-4 space-y-6 border border-gray-200 rounded-lg md:space-y-10 xl:space-y-12 md:p-6">
+        <div class="p-4 space-y-6 border border-gray-200 rounded-lg md:space-y-10 md:p-6 xl:space-y-12">
 
             <div class="space-y-4 sm:space-y-6 md:space-y-8">
-                <h2 class="text-2xl titles md:text-4xl">Рубка в норвежскую чашку. Лафет или полуовальное бревно.</h2>
-                <p class="md:text-2xl">Традиционная скандинавская технология строительства деревянных домов. Лафет
-                    представляет собой бревно, обтесанное с двух противоположных сторон, что придает стенам дома плоскую
-                    внутреннюю и внешнюю поверхность, сохраняя при этом естественную текстуру дерева.</p>
+                <h2 class="text-2xl titles md:text-4xl">
+                    {{ __('pages/tech.Рубка в норвежскую чашку') }}
+                </h2>
+
+                <p class="md:text-2xl">
+                    {{ __('pages/tech.О технологии лафета') }}
+                </p>
             </div>
 
             <div class="md:flex md:gap-10">
                 <div
-                    class="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-between md:flex-col md:flex-nowrap md:flex-1">
+                    class="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-between md:flex-1 md:flex-col md:flex-nowrap">
                     <div class="sm:order-1 sm:basis-[46%] md:order-none md:max-w-80">
                         <img src="{{ asset('images/tech/bottom/bottom-1.webp') }}" alt="">
                     </div>
 
                     <a href="https://spbrb.ru/tech_lafet.htm" target="_blank"
-                        class="block text-center btn-secondary md:max-w-90 sm:order-2 sm:flex-1 md:order-none">Подробнее
-                        о технологии</a>
+                        class="block text-center btn-secondary sm:order-2 sm:flex-1 md:order-none md:max-w-90">{{ __('pages/tech.Подробнее о технологии') }}</a>
 
-                    <div class=" sm:basis-[46%]">
-                        <p class="mb-4 text-xl font-bold md:mb-6">Преимущества стен из лафета:</p>
+                    <div class="sm:basis-[46%]">
+                        <p class="mb-4 text-xl font-bold md:mb-6">{{ __('pages/tech.Преимущества стен из лафета') }}
+                        </p>
                         <ul class="ml-3 space-y-4 md:space-y-6"
                             style="list-style-image: url('{{ asset('images/tech/green-dot.png') }}')">
-                            <li class="pl-1">Лафет сочетает в себе традиционный внешний вид бревенчатого дома с более
-                                гладкими и аккуратными линиями, придавая постройке индивидуальность и привлекательность.
-                            </li>
-                            <li class="pl-1">Лафет и норвежская рубка обеспечивают отличную теплоизоляцию. Плотное
-                                соединение брёвен минимизирует теплопотери, что позволяет дому сохранять тепло
-                                даже в суровых климатических условиях.</li>
-                            <li class="pl-1">Внутренние и внешние поверхности лафета готовы к финишной отделке
-                                и требуют минимальной обработки, что ускоряет процесс строительства и уменьшает затраты
-                                на отделочные материалы.</li>
+                            <li class="pl-1">{{ __('pages/tech.Лафет сочетает традиции и стиль') }}</li>
+                            <li class="pl-1">{{ __('pages/tech.Лафет обеспечивает теплоизоляцию') }}</li>
+                            <li class="pl-1">{{ __('pages/tech.Готовность лафета к отделке') }}</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="hidden md:block md:flex-1 max-w-140">
+                <div class="hidden max-w-140 md:block md:flex-1">
                     <img src="{{ asset('images/tech/bottom/bottom-2.webp') }}" alt="">
                 </div>
             </div>
@@ -380,23 +388,15 @@
                 </div>
 
                 <div class="sm:text-xl md:flex-1 md:text-2xl">
-                    Одним из главных преимуществ норвежской рубки является высокая устойчивость к деформациям. Благодаря
-                    особому профилю брёвен и точному соединению, сруб меньше подвержен скручиванию, усадке
-                    и растрескиванию. Это делает дома, построенные по этой технологии, чрезвычайно прочными
-                    и долговечными.
+                    {{ __('pages/tech.Норвежская рубка устойчива к деформациям') }}
                 </div>
             </div>
 
-            <div class="flex flex-col gap-6 sm:gap-10 md:gap-6 md:flex-row lg:hidden">
+            <div class="flex flex-col gap-6 sm:gap-10 md:flex-row md:gap-6 lg:hidden">
                 <div class="md:order-1 md:flex-1">
-                    <p class="mb-6">Процесс создания лафета включает в себя удаление коры и обрезку бревна до нужной
-                        длины. Затем бревно обрабатывается на специальном станке, который снимает верхний слой
-                        древесины, делая его плоским. В результате получается бревно с двумя плоскими сторонами и двумя
-                        округлыми. Существующие антисептики смогут надежно уберечь Ваши стены, оставив Вашему взору всю
-                        фактуру дерева.</p>
+                    <p class="mb-6">{{ __('pages/tech.Процесс изготовления лафета') }}</p>
 
-                    <p>Характерные угловые соединения добавляют строению стильный, несколько архаичный вид, который
-                        особенно ценится знатоками деревянного зодчества.</p>
+                    <p>{{ __('pages/tech.Угловые соединения и стиль') }}</p>
                 </div>
                 <div class="max-w-52 md:flex-1">
                     <img src="{{ asset('images/tech/bottom/bottom-4.webp') }}" alt="">
@@ -406,28 +406,20 @@
             <div class="md:flex md:gap-10 lg:items-start">
                 <div class="md:flex-1">
                     <div class="hidden lg:flex lg:gap-6">
-                        <div class="max-w-52 lg:flex-1 lg:hidden xl:block">
+                        <div class="max-w-52 lg:hidden lg:flex-1 xl:block">
                             <img src="{{ asset('images/tech/bottom/bottom-4.webp') }}" alt="">
                         </div>
 
                         <div class="lg:flex-1">
-                            <p class="mb-4">Процесс создания лафета включает в себя удаление коры и обрезку бревна до
-                                нужной длины. Затем бревно обрабатывается на специальном станке, который снимает верхний
-                                слой древесины, делая его плоским. В результате получается бревно с двумя плоскими
-                                сторонами и двумя округлыми. Существующие антисептики смогут надежно уберечь Ваши стены,
-                                оставив Вашему взору всю фактуру дерева.</p>
+                            <p class="mb-4">{{ __('pages/tech.Процесс изготовления лафета') }}</p>
 
-                            <p>Характерные угловые соединения добавляют строению стильный, несколько архаичный вид,
-                                который особенно ценится знатоками деревянного зодчества.</p>
+                            <p>{{ __('pages/tech.Угловые соединения и стиль') }}</p>
                         </div>
                     </div>
 
-                    <p class="mb-6 lg:mt-6">Мы тщательно подбираем древесину, учитывая особенности каждого бревна, и следуем всем тонкостям
-                        традиционной технологии. Наши дома — это не просто строения, это комфортное и долговечное жилье,
-                        которое сохранит тепло и уют на долгие годы.</p>
+                    <p class="mb-6 lg:mt-6">{{ __('pages/tech.Подбор древесины и традиции') }}</p>
 
-                    <p class="md:text-2xl">Если Вам сложно определиться, какой тип бревна Вам выбрать: круглый или лафет, напоминаем, что Вы
-                        можете их объединить, сделав внешние стены из кругляка, а внутренние - из лафета.</p>
+                    <p class="md:text-2xl">{{ __('pages/tech.Выбор между кругляком и лафетом') }}</p>
                 </div>
 
                 <div class="hidden md:block md:flex-1 lg:max-w-130">
@@ -439,7 +431,7 @@
     </section>
 
     <div class="text-xl font-bold section-primary sm:text-2xl">
-        В заключение необходимо добавить, что в нашей компании вы можете заказать сруб по любой технологии: простая русская чашка, канадская чашка с затёсом, канадская чашка с затёсом и шипом, норвежская чашка (она также включает и затёсы и шипы) - выбор за вами, мы же постараемся дать вам наиболее точную характеристику каждого метода, чтобы вы могли принять обдуманное и взвешенное решение.
+        {{ __('pages/tech.Выбор технологии строительства') }}
     </div>
 
     <livewire:pageform />
