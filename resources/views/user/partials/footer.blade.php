@@ -160,7 +160,7 @@
         <div class="hidden space-y-4 lg:block lg:basis-2/3">
             <p class="block">{{ __('partials/footer.ООО “Русь Бревенчатая”') }}</p>
             <p class="block uppercase">{{ __('partials/footer.ИНН 7806399979') }}</p>
-            <a href=""
+            <a href="{{ route('user.privacy-policy') }}"
                 class="block underline uppercase underline-offset-2">{{ __('partials/footer.Политика конфиденциальности') }}</a>
         </div>
         <div class="pb-6 border-b border-gray-200 xs:basis-full xs:border-b-0 xs:pr-4 md:flex md:items-center md:gap-5">
@@ -193,7 +193,7 @@
         <div class="space-y-4 lg:hidden">
             <p class="block">{{ __('partials/footer.ООО “Русь Бревенчатая”') }}</p>
             <p class="block uppercase">{{ __('partials/footer.ИНН 7806399979') }}</p>
-            <a href=""
+            <a href="{{ route('user.privacy-policy') }}"
                 class="block underline uppercase underline-offset-2">{{ __('partials/footer.Политика конфиденциальности') }}</a>
         </div>
 

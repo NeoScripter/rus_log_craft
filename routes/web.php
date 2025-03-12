@@ -56,6 +56,11 @@ Route::get('/services', function () {
     return view('user.services');
 })->name('user.services');
 
+Route::get('/privacy-policy', function () {
+
+    return view('user.privacy-policy');
+})->name('user.privacy-policy');
+
 Route::get('/admin', function () {
     return view('admin.admin');
 })->middleware(['auth', 'verified'])->name('admin');
