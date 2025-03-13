@@ -2,7 +2,7 @@
 
     <div class="flex flex-col flex-wrap gap-8 pb-8 border-b border-gray-300 xs:flex-row xs:justify-between xs:gap-6">
         <div class="w-80">
-            <img src="{{ asset('images/partials/footer/logo-footer.webp') }}" alt="Логотип компании 'Русь бревенчатая'"
+            <img src="{{ asset('images/partials/footer/logo-footer_'.app()->getLocale().'.webp') }}" alt="Логотип компании 'Русь бревенчатая'"
                 class="w-full">
         </div>
 
