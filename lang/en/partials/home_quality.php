@@ -1,27 +1,29 @@
 <?php
 
 return [
-    'Наши клиенты выбирают' => 'Наши клиенты выбирают',
-    'качество' => 'качество',
 
-    'мы понимаем, что строительство дома связано со стрессом' => 'Мы понимаем, что строительство дома связано со стрессом: опасения по поводу процесса установки, стихийные бедствия, насекомые и другие факторы.',
+    'Наши клиенты выбирают' => 'Our Clients Choose',
+    'качество' => 'Quality',
 
-    'наши дома решают эти проблемы' => 'Наши дома решают эти проблемы, мы уважаем ваши потребности и гарантируем соблюдение высоких стандартов безопасности и функциональности.',
+    'мы понимаем, что строительство дома связано со стрессом' => 'We understand that building a home can be stressful: concerns about the installation process, natural disasters, insects, and other factors.',
 
-    'наше производство' => 'Наше производство',
+    'наши дома решают эти проблемы' => 'Our homes address these concerns—we respect your needs and ensure high standards of safety and functionality.',
 
-    'Древесина из экологически чистых источников' => 'Древесина, полученная из экологически чистых источников',
-    'премиум древесина поступает из лесов' => 'Премиум древесина, которую мы используем, поступает из лесов, управляемых в соответствии с экологически устойчивыми практиками.',
+    'наше производство' => 'Our Production',
 
-    'Доступные цены' => 'Доступные цены',
-    'мы ценим нашу репутацию' => 'Мы ценим нашу репутацию и ожидания тех, кто нам доверяет. Нет скрытых платежей! Мы ценим ваше доверие и стремимся к полной прозрачности. Работаем по договору.',
+    'Древесина из экологически чистых источников' => 'Wood from Environmentally Friendly Sources',
+    'премиум древесина поступает из лесов' => 'The premium wood we use comes from forests managed according to environmentally sustainable practices.',
 
-    'Удобная доставка до участка' => 'Удобная доставка до участка',
-    'рубка и строительство на нашей площадке' => 'Рубка и строительство на территории нашей площадки, что обеспечивает наблюдение за качеством работ и материала, четкое соблюдение технологии. Доставка к месту сборки автомобильным транспортом.',
+    'Доступные цены' => 'Affordable Prices',
+    'мы ценим нашу репутацию' => 'We value our reputation and the expectations of those who trust us. No hidden fees! We appreciate your trust and are committed to full transparency. We work under contract.',
 
-    'Собственное производство и изготовление' => 'Собственное производство и изготовление',
-    'Мы берем на себя всю работу по проектированию' => 'Мы берем на себя всю работу по проектированию и строительству – разрабатываем архитектурно-эскизный проект и рабочую документацию, реализуем полный цикл производства срубов, завозим материалы на стройплощадку, собираем конструкцию, проводим отделочные работы и сдаем готовый объект. Наша команда состоит из архитекторов, инженеров-конструкторов и инженеров по дереву.',
+    'Удобная доставка до участка' => 'Convenient Delivery to Your Site',
+    'рубка и строительство на нашей площадке' => 'We craft and build on our site, ensuring quality control over materials and construction while strictly following technology standards. Delivery to the assembly site is carried out by truck.',
 
-    'Подходящий вариант для каждого' => 'Подходящий вариант для каждого',
-    'каждый проект уникален' => 'Каждый проект уникален, поэтому мы предлагаем разнообразные строительные решения, специально разработанные с учетом ваших потребностей, оптимизируя время и бюджет.',
+    'Собственное производство и изготовление' => 'In-House Production and Manufacturing',
+    'Мы берем на себя всю работу по проектированию' => 'We handle the entire design and construction process—from developing architectural sketches and technical documentation to producing log structures, delivering materials to the site, assembling the construction, carrying out finishing work, and handing over the completed project. Our team includes architects, structural engineers, and wood specialists.',
+
+    'Подходящий вариант для каждого' => 'A Suitable Option for Everyone',
+    'каждый проект уникален' => 'Every project is unique, so we offer a variety of construction solutions tailored to your needs, optimizing both time and budget.',
+
 ];

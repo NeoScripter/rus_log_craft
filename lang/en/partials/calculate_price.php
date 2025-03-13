@@ -2,8 +2,11 @@
 
 return [
 
-    'Рассчитайте стоимость сруба' => 'Рассчитайте стоимость сруба для вашего дома',
-    'Хотите узнать стоимость дома' => 'Хотите узнать, сколько будет стоить строительство вашего дома из бревна? Мы предлагаем удобный и быстрый способ расчета стоимости сруба, чтобы вы могли спланировать свой бюджет и сделать первый шаг к реализации вашей мечты.',
-    'ПЕРЕЙТИ В КАЛЬКУЛЯТОР' => 'ПЕРЕЙТИ В КАЛЬКУЛЯТОР',
+
+    'Рассчитайте стоимость сруба' => 'Calculate the cost of a log frame for your home',
+
+    'Хотите узнать стоимость дома' => 'Want to know how much it will cost to build your log home? We offer a convenient and fast way to estimate the cost of a log frame, so you can plan your budget and take the first step toward making your dream a reality.',
+
+    'ПЕРЕЙТИ В КАЛЬКУЛЯТОР' => 'GO TO CALCULATOR',
 
 ];

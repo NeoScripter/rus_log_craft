@@ -8,88 +8,105 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'Технологии' => 'Технологии',
-    'Технология рубки домов и бань' => 'Технология ручной рубки домов и бань из бревна от мастеров компании',
-    'Деревянное домостроение сложный процесс' => 'Деревянное домостроение достаточно сложный процесс и человеку, далекому от строительной индустрии деревянных домов, иногда сложно понять, почему дома, построенные разными компаниями по одному проекту, во-первых, имеют разную стоимость, а, во-вторых, по прошествии нескольких лет, имеют совершенно различный вид.',
-    'Мастера отличаемся технологиями' => 'Мы, как мастера своего дела, отличаемся технологиями:',
+    'Технологии' => 'Technologies',
 
-    'Завешивание наружных углов' => 'Завешивание наружных углов',
-    'Предотвращение щелей в срубе' => 'Для предотвращения образования щелей после усушки и усадки сруба в компании Русь Бревенчатая применяют методику создания поднутрения, т.е. зазора по оси бревен. Этот зазор выбирается в нижней части бревна по всей его длине, причем с торцов он чуть меньше (5-8 мм вместе с высотой завешивания наружных углов), а, в невидимых частях венца, чуть больше (10-15 мм).',
-    'Силы действующие на бревно' => 'На рисунке показаны силы, действующие на бревно во время усушки и усадки. Вследствие воздействия этих сил, в первую очередь, появляется трещина в нижней части бревна.',
-    'Мягкая посадка верхнего бревна' => 'За счет наличия зазора происходит мягкая посадка верхнего бревна на нижнее, а края паза даже после расширения достаточно плотно примыкают к поверхности нижнего бревна.',
+    'Технология рубки домов и бань' => 'The Handcrafted Log Home and Bathhouse Construction Technology by Our Master Craftsmen',
 
-    'Подробнее о технологии' => 'Подробнее о технологии',
+    'Деревянное домостроение сложный процесс' => 'Wooden construction is quite a complex process, and for someone unfamiliar with the log home industry, it can sometimes be difficult to understand why houses built by different companies using the same design can, first, vary in price and, second, look completely different after several years.',
 
-    'Совет от генерального директора' => 'Совет от генерального директора',
-    'Продольный паз и поднутрение' => 'Применение продольного паза в нижней части венцов, получившего название «поднутрение», исключает необходимость регулярного подконопачивания сруба дома или бани. Обратите внимание, что для предотвращения попадания влаги между венцами, на торцах перерубов этот зазор уменьшают с 10…15 до 5 мм. Наличие зазора «поднутрение» можно легко проверить на торцах венцов, образующих дверные и оконные проемы.',
+    'Мастера отличаемся технологиями' => 'As experts in our field, we stand out with our technologies:',
 
-    'Продуманный шаг защитит стены' => 'Наш специально продуманный шаг оградит стены вашего дома от негативных последствий усадки. Серповидные зазоры между брёвнами в дальнейшем закрываться столярными изделиями.',
+    'Завешивание наружных углов' => 'Overhanging of Exterior Corners',
 
-    'Торцевое соединение бревен' => 'Торцевое соединение бревен в чашках перерубов с помощью металлических стяжек.',
-    'Описание стяжки' => 'Стяжка - оцинкованная шпилька длиной около полуметра с резьбою на обоих концах. Шпилька укладывается в узкий продольный пропил, проходящий поперек стыка бревен. На концах пропил имеет специальные пазы в виде треугольных призм.',
+    'Предотвращение щелей в срубе' => 'To prevent gaps from forming due to drying and settling, "Rus Brevenchataya" employs a technique known as undercutting, i.e., creating a clearance along the log’s axis. This gap is made along the entire bottom of the log, with a slightly smaller width at the ends (5-8 mm including the overhanging height of the exterior corners) and a slightly larger one in the concealed parts of the log course (10-15 mm).',
 
-    'Плюсы использования стяжек' => 'Плюсы использования стяжек:',
-    'Металлические шайбы и гайки' => 'С обоих концов на шпильку насаживаются оцинкованные металлические шайбы, а поверх них накручиваются оцинкованные гайки.',
-    'Плотное соединение бревен' => 'Гайки в ходе монтажа сруба с усилием закручиваются, в результате получается плотное соединение, которое обеспечит плотную стыковку брёвен в углах.',
-    'Большая площадь соприкосновения' => 'Обеспечивается большая площадь соприкосновения шайбы с древесиной, соответственно получается на порядок меньшее передаваемое давление.',
-    'Металл не подвержен коррозии' => 'Оцинкованный металл практически не подвержен коррозии и не вызовет поражения древесины.',
+    'Силы действующие на бревно' => 'The diagram shows the forces acting on the log during drying and settling. Due to these forces, the first cracks typically appear at the bottom of the log.',
 
-    'Сложность методики' => 'Применение данной методики - достаточно сложная система.',
-    'Процесс закладки шпильки' => 'Для закладки шпильки нужно сделать узкий и глубокий паз, его стенки должны быть вертикальны и иметь строго заданные размеры. Изготовление пазов, в виде треугольных призм, также требуют опыта и сноровки.',
-    'Шпилька должна быть утоплена' => 'Шпилька должна быть достаточно глубоко утоплена в древесину, поскольку над шпилькой делается паз под шип лежащего выше бревна. С другой стороны, в нижней части бревна нужно выпилить чашку, а в ней ещё оставить шип, причём этот шип находится на обоих стыкуемых брёвнах.',
+    'Мягкая посадка верхнего бревна' => 'Thanks to the clearance, the upper log settles gently onto the lower one, and the groove edges remain tightly pressed against the lower log’s surface even after expansion.',
 
-    'Подробнее о технологии' => 'Подробнее о технологии',
+    'Подробнее о технологии' => 'Learn More About the Technology',
 
-    'Рубка сруба в канадскую чашку' => 'Рубка сруба в канадскую чашку. Создание затесов при рубке в канадскую чашку.',
-    'Канадская технология рубки' => 'Классическая канадская технология рубки, обеспечивает самозаклинивание щелей в перерубе, появляющихся при усушке и усадке сруба. Альтернатива классической русской рубке.',
+    'Совет от генерального директора' => 'Advice from the General Director',
 
-    'Преимущества технологии' => 'Преимущества технологии:',
-    'Точность и качество' => 'Отличается высокой точностью и качеством. Позволяет создавать сложные формы и конструкции, что расширяет возможности для архитекторов и дизайнеров.',
-    'Быстрота строительства' => 'Строительство происходит быстрее, чем при использовании традиционных методов, что сокращает время проекта.',
-    'Надежность и долговечность' => 'Конструкции, созданные таким образом, отличаются надёжностью и долговечностью.',
+    'Продольный паз и поднутрение' => 'The use of a longitudinal groove at the bottom of log courses, known as "undercutting," eliminates the need for regular caulking of a log home or bathhouse. It is important to note that to prevent moisture from entering between the logs, the gap at the log ends is reduced from 10-15 mm to 5 mm. The presence of an "undercutting" gap can be easily checked at the ends of logs forming door and window openings.',
 
-    'Отличие канадской чашки' => 'Основным отличием канадской чашки является наличие затеса.',
+    'Продуманный шаг защитит стены' => 'Our specially designed approach will protect your home’s walls from the negative effects of settling. Crescent-shaped gaps between the logs will later be sealed with wooden joinery.',
 
-    'Основное отличие канадской чашки' => 'Основным отличием канадской чашки является наличие затеса.',
+    'Торцевое соединение бревен' => 'End-to-End Log Connection in Corner Joints Using Metal Tie Rods.',
 
-    'Описание русской и канадской чашки' => 'На рисунках вы можете ознакомиться со строительством сруба при рубке в русскую и канадскую чашку для круглого бревна, более традиционного для России.',
+    'Описание стяжки' => 'A tie rod is a galvanized stud bolt about half a meter long with threading on both ends. The stud is placed in a narrow longitudinal groove running across the log joint. At the ends, the groove has special triangular prism-shaped recesses.',
 
-    'Использование шипа в чашке' => 'Использования шипа в чашке при канадской технологии рубки.',
+    'Плюсы использования стяжек' => 'Advantages of Using Tie Rods:',
 
-    'Описание шипа' => 'Шип является усовершенствованием классической канадской рубки, он обеспечивает большую жесткость конструкции сруба, а главное, уменьшает "продуваемость" угла и делает дом более теплым.',
+    'Металлические шайбы и гайки' => 'Galvanized metal washers are placed on both ends of the stud, and galvanized nuts are screwed on top.',
 
-    'Совет от генерального директора' => 'Совет от генерального директора',
+    'Плотное соединение бревен' => 'During the log frame assembly, the nuts are tightened with force, resulting in a firm connection that ensures a tight fit between the logs at the corners.',
 
-    'Комплексный подход к срубам' => 'Комплексный подход при изготовлении срубов позволяет получить крепкие и теплые дома и бани.',
+    'Большая площадь соприкосновения' => 'A larger contact area between the washer and the wood is achieved, significantly reducing the applied pressure.',
 
-    'Технические условия для строителей' => 'Обязательно сформулируйте для себя технические условия, которые вы позже предъявите строителям. Если вы не хотите иметь щелей в углах дома, то необходимо использование затесов и шипов при изготовлении чашек, а также металлических стяжек при торцевом соединении бревен.',
+    'Металл не подвержен коррозии' => 'Galvanized metal is highly resistant to corrosion and will not cause damage to the wood.',
 
-    'Как избежать щелей между бревнами' => 'Если вы не хотите иметь щелей между бревнами в стенах, примените технологию завешивания наружных углов, используйте зазор «поднутрение», задайте минимальную величину продольных пазов в накрывающих венцах (обычно не менее 8-10 см).',
+    'Сложность методики' => 'This method is a highly complex system.',
 
-    'Точность при изготовлении шипа' => 'Шип (курдюк) и, соответственно, паз для него затруднительно сделать одним топором, здесь нужна математическая точность, качественный инструмент и виртуозное владение им. У рубщиков компании Русь Бревенчатая присутствуют все три указанных компонента.',
+    'Процесс закладки шпильки' => 'To insert the stud, a narrow and deep groove must be cut, with its walls kept vertical and precisely measured. Cutting recesses in the shape of triangular prisms also requires skill and experience.',
 
-    'Рубка в норвежскую чашку' => 'Рубка в норвежскую чашку. Лафет или полуовальное бревно.',
+    'Шпилька должна быть утоплена' => 'The stud must be embedded deeply into the wood, as a groove for the tenon of the upper log is made above it. Additionally, a mortise must be cut into the lower part of the log, with a tenon left inside it, ensuring both logs are securely joined.',
 
-    'О технологии лафета' => 'Традиционная скандинавская технология строительства деревянных домов. Лафет представляет собой бревно, обтесанное с двух противоположных сторон, что придает стенам дома плоскую внутреннюю и внешнюю поверхность, сохраняя при этом естественную текстуру дерева.',
+    'Подробнее о технологии' => 'Learn More About the Technology',
 
-    'Преимущества стен из лафета' => 'Преимущества стен из лафета:',
+    'Рубка сруба в канадскую чашку' => 'Log Frame Notching in the Canadian Saddle Notch. Creating Beveled Cuts When Using the Canadian Notching Technique.',
 
-    'Лафет сочетает традиции и стиль' => 'Лафет сочетает в себе традиционный внешний вид бревенчатого дома с более гладкими и аккуратными линиями, придавая постройке индивидуальность и привлекательность.',
+    'Канадская технология рубки' => 'The classic Canadian notching technique ensures the self-locking of corner joints that form during log drying and settling. It serves as an alternative to the traditional Russian notching method.',
 
-    'Лафет обеспечивает теплоизоляцию' => 'Лафет и норвежская рубка обеспечивают отличную теплоизоляцию. Плотное соединение брёвен минимизирует теплопотери, что позволяет дому сохранять тепло даже в суровых климатических условиях.',
+    'Преимущества технологии' => 'Advantages of the Technology:',
 
-    'Готовность лафета к отделке' => 'Внутренние и внешние поверхности лафета готовы к финишной отделке и требуют минимальной обработки, что ускоряет процесс строительства и уменьшает затраты на отделочные материалы.',
+    'Точность и качество' => 'Known for its high precision and quality. Allows for the creation of complex shapes and structures, expanding possibilities for architects and designers.',
 
-    'Норвежская рубка устойчива к деформациям' => 'Одним из главных преимуществ норвежской рубки является высокая устойчивость к деформациям. Благодаря особому профилю брёвен и точному соединению, сруб меньше подвержен скручиванию, усадке и растрескиванию.',
+    'Быстрота строительства' => 'Construction is faster compared to traditional methods, reducing overall project time.',
 
-    'Процесс изготовления лафета' => 'Процесс создания лафета включает в себя удаление коры и обрезку бревна до нужной длины. Затем бревно обрабатывается на специальном станке, который снимает верхний слой древесины, делая его плоским. В результате получается бревно с двумя плоскими сторонами и двумя округлыми. Существующие антисептики смогут надежно уберечь Ваши стены, оставив Вашему взору всю фактуру дерева.',
+    'Надежность и долговечность' => 'Structures built using this technique are highly reliable and durable.',
 
-    'Угловые соединения и стиль' => 'Характерные угловые соединения добавляют строению стильный, несколько архаичный вид, который особенно ценится знатоками деревянного зодчества.',
+    'Отличие канадской чашки' => 'The main difference in the Canadian saddle notch is the presence of a beveled cut.',
 
-    'Подбор древесины и традиции' => 'Мы тщательно подбираем древесину, учитывая особенности каждого бревна, и следуем всем тонкостям традиционной технологии.',
+    'Основное отличие канадской чашки' => 'The key distinguishing feature of the Canadian saddle notch is the beveled cut.',
 
-    'Выбор между кругляком и лафетом' => 'Если Вам сложно определиться, какой тип бревна Вам выбрать: круглый или лафет, напоминаем, что Вы можете их объединить, сделав внешние стены из кругляка, а внутренние - из лафета.',
+    'Описание русской и канадской чашки' => 'The illustrations provide a comparison of log frame construction using the Russian and Canadian saddle notch methods for round logs, which are more traditional in Russia.',
 
-    'Выбор технологии строительства' => 'В заключение необходимо добавить, что в нашей компании вы можете заказать сруб по любой технологии: простая русская чашка, канадская чашка с затёсом, канадская чашка с затёсом и шипом, норвежская чашка (она также включает и затёсы и шипы) - выбор за вами, мы же постараемся дать вам наиболее точную характеристику каждого метода, чтобы вы могли принять обдуманное и взвешенное решение.',
+    'Использование шипа в чашке' => 'Using a Tenon in the Notch for the Canadian Log Construction Technique.',
+
+    'Описание шипа' => 'The tenon is an enhancement of the classic Canadian notch. It increases the overall rigidity of the log frame, significantly reduces corner air leakage, and makes the home warmer.',
+
+    'Совет от генерального директора' => 'Advice from the General Director',
+
+    'Комплексный подход к срубам' => 'A comprehensive approach to log frame construction ensures strong and well-insulated homes and bathhouses.',
+
+    'Технические условия для строителей' => 'Make sure to define technical requirements in advance, which you will later provide to the builders. If you want to avoid gaps in the corners of your home, beveled cuts and tenons should be used when shaping the notches, along with metal tie rods for securing log joints.',
+
+    'Как избежать щелей между бревнами' => 'If you want to prevent gaps between the logs in the walls, use the overhanging corner method, apply an "undercutting" gap, and ensure that the longitudinal grooves in the upper log courses are at least 8-10 cm deep.',
+    'Точность при изготовлении шипа' => 'Crafting a tenon (kurdyuk) and its corresponding groove is difficult to achieve with just an axe—it requires mathematical precision, high-quality tools, and exceptional craftsmanship. The log builders at "Rus Brevenchataya" possess all three of these essential skills.',
+
+    'Рубка в норвежскую чашку' => 'Notching Logs Using the Norwegian Saddle Notch. Flat-Sided Logs or Semi-Oval Logs.',
+
+    'О технологии лафета' => 'A traditional Scandinavian wooden construction technique. A flat-sided log (lafet) is a log that has been hewn flat on two opposite sides, giving the house walls a smooth inner and outer surface while preserving the natural texture of the wood.',
+
+    'Преимущества стен из лафета' => 'Advantages of Flat-Sided Log Walls:',
+
+    'Лафет сочетает традиции и стиль' => 'Flat-sided logs combine the traditional appearance of a log home with smoother, more refined lines, giving the structure individuality and aesthetic appeal.',
+
+    'Лафет обеспечивает теплоизоляцию' => 'Flat-sided logs and Norwegian notching provide excellent thermal insulation. The tight-fitting log joints minimize heat loss, allowing the house to retain warmth even in harsh climatic conditions.',
+
+    'Готовность лафета к отделке' => 'The interior and exterior surfaces of flat-sided logs are ready for final finishing and require minimal additional treatment, speeding up the construction process and reducing finishing material costs.',
+
+    'Норвежская рубка устойчива к деформациям' => 'One of the key advantages of Norwegian notching is its high resistance to deformation. Thanks to the unique log profile and precise joinery, the log structure is less prone to twisting, settling, and cracking.',
+
+    'Процесс изготовления лафета' => 'The process of creating flat-sided logs includes debarking and cutting the log to the required length. The log is then processed on a special machine that removes the outer layer of wood, making it flat. As a result, the log has two flat sides and two rounded sides. Modern antiseptics reliably protect your walls while preserving the natural texture of the wood.',
+
+    'Угловые соединения и стиль' => 'Distinctive corner joints give the structure a stylish, slightly archaic appearance, which is especially appreciated by connoisseurs of traditional wooden architecture.',
+
+    'Подбор древесины и традиции' => 'We carefully select the wood, taking into account the unique characteristics of each log, and follow all the nuances of traditional construction techniques.',
+
+    'Выбор между кругляком и лафетом' => 'If you are unsure whether to choose round logs or flat-sided logs, keep in mind that you can combine both—using round logs for the exterior walls and flat-sided logs for the interior walls.',
+
+    'Выбор технологии строительства' => 'In conclusion, it is important to note that our company offers log construction using any technique: the traditional Russian saddle notch, the Canadian saddle notch with a beveled cut, the Canadian saddle notch with both a beveled cut and a tenon, or the Norwegian saddle notch (which also includes both beveled cuts and tenons). The choice is yours, and we will provide you with the most accurate details about each method so that you can make an informed and well-considered decision.',
 
 ];

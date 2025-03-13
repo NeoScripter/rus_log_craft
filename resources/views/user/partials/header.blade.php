@@ -15,7 +15,7 @@
 }" x-init="init()" class="sticky top-0 z-50 bg-white border-b border-gray-200">
     <div class="flex items-center justify-between gap-2 px-4 py-3 md:my-6 lg:mx-32 lg:my-0 lg:py-4">
         <div class="w-40 lg:w-80">
-            <img src="{{ asset('images/partials/header/logo_'.app()->getLocale().'.webp') }}" alt="Rus Log Craft logo"
+            <img src="{{ asset('images/partials/header/logo_' . app()->getLocale() . '.webp') }}" alt="Rus Log Craft logo"
                 class="object-contain object-center w-full h-full">
         </div>
 
@@ -133,7 +133,7 @@
                     class="relative" aria-haspopup="true" aria-expanded="showMenu">
                     <a href="{{ route('user.services') }}"
                         class="header-li {{ request()->routeIs('user.services') ? 'current' : '' }} inline-flex items-center gap-2">
-                        Услуги
+                        {{ __('partials/footer.Услуги') }}
                         <img src="{{ asset('images/partials/header/popup-arrow-up.svg') }}" alt="Expand submenu"
                             aria-hidden="true" class="mt-0.5 w-3 transition-transform"
                             :class="showMenu ? '' : 'rotate-180'">
@@ -148,12 +148,12 @@
                         <li>
                             <a href="/services/#saunas"
                                 class="text-sm font-semibold uppercase underline-offset-2 hover:underline focus-visible:underline"
-                                role="menuitem">{{ __('partials/header.Строительство деревянных домов и бань «под ключ»') }}</a>
+                                role="menuitem">{{ __('partials/header.Строительство деревянных домов и бань под ключ') }}</a>
                         </li>
                         <li>
                             <a href="/services/#design"
                                 class="text-sm font-semibold uppercase underline-offset-2 hover:underline focus-visible:underline"
-                                role="menuitem">{{ __('partials/header.Готовые проекты и Индивидуальное проектирование') }}</a>
+                                role="menuitem">{{ __('partials/header.Готовые проекты и Индивидуальное проектирование') }}</a>
                         </li>
                     </ul>
                 </li>

@@ -8,55 +8,78 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'Услуги' => 'Услуги',
-    'Услуги компании' => 'Услуги компании “Русь Бревенчатая”',
-    'Проектирование' => 'Проектирование',
-    'Описание проектирования' => 'Мы создаем уникальные проекты, учитывая все ваши пожелания и особенности участка, чтобы обеспечить идеальное сочетание функциональности и комфорта. Наши архитекторы имеют необходимый опыт проектирования, как простых, так и сложных объектов.',
-    'Стоимость проектирования' => 'Стоимость покупки/разработки проекта: бесплатно (при заказе сруба). Стоимость готовых архитектурных проектов: 150 руб. за кв.м. Стоимость индивидуального проектирования: 280 руб. за кв.м.',
-    'Наш каталог проектов' => 'Наш каталог проектов',
-    'Заказать проект' => 'Заказать проект',
-    'Дома и бани под ключ' => 'Дома и бани "под ключ"',
-    'Описание домов и бань' => 'Мы строим дома и бани под ключ, обеспечивая полный цикл работ — от проектирования до отделки, чтобы вы могли сразу наслаждаться своим новым уютным пространством.',
-    'Выбор деревянного дома' => 'Исходя из ваших пожеланий, вы можете выбрать уже готовый деревянный дом из нашего каталога или заказать индивидуальный проект дома из бревна. Мы выполняем работу под ключ с учетом всех ваших потребностей по планировке и особенностей эксплуатации дома.',
-    'Заказать обратный звонок' => 'Заказать обратный звонок',
-    'Изготовление срубов' => 'Изготовление срубов',
-    'Описание изготовления срубов' => 'Мы занимаемся профессиональным изготовлением срубов из высококачественной древесины, гарантируя прочность и долговечность каждой конструкции. Наши срубы обеспечивают отличную теплоизоляцию и создают комфортный микроклимат в вашем будущем доме или бане.',
-    'Цена сруба' => 'Цена сруба дома или бани: от 8 000 руб. за кв.м',
-    'Заказать сруб' => 'Заказать сруб',
-    'Калькулятор стоимости сруба' => 'Калькулятор стоимости сруба',
-    'Строительство фундаментов' => 'Строительство фундаментов',
-    'Описание фундамента' => 'Мы предлагаем своим клиентам только монолитные бетонные фундаменты под ключ. Важно, перед началом фундаментных работ иметь готовый проект дома и четкий план его строительства. Только после утверждения проекта и согласования его со строителями сруба (если проект был заказан на стороне) можно приступать к возведению бетонной конструкции. Не следует забывать об инженерных коммуникациях, особенно при заливке плиты. В этом случае в бетоне устанавливают так называемые "закладные" - специальные трубы, через которые будут подводиться кабели электроснабжения, трубы с водой и канализацией.',
-    'Цена строительства фундамента' => 'Цена строительства фундамента: от 5 000 руб. за куб.м бетона (без стоимости материалов)',
-    'Возведение крыш' => 'Возведение крыш',
-    'Описание крыши' => 'Мы выполняем возведение крыш для бревенчатых домов и бань, используя надежные кровельные материалы и проверенные технологии для самых сложных конфигураций, чтобы обеспечить долговечность и защиту вашей постройки. Наша команда специалистов создает крыши, идеально подходящие по стилю и функциональности, гарантируя отличную тепло- и гидроизоляцию.',
-    'Стоимость монтажа крыши' => 'Стоимость работ по монтажу крыши: от 1 500 руб. за кв.м площади кровли (без стоимости материалов)',
-    'Дополнительные услуги' => 'Дополнительные услуги',
+    'Услуги' => 'Services',
+    'Услуги компании' => 'Services of “Rus Brevenchataya”',
+    'Проектирование' => 'Design',
 
-    'Услуги компании' => 'Услуги компании “Русь Бревенчатая”',
+    'Описание проектирования' => 'We create unique designs, considering all your preferences and site features to ensure the perfect combination of functionality and comfort. Our architects have extensive experience in designing both simple and complex structures.',
 
-    'Возведение крыш' => 'Возведение крыш',
-    'Описание крыши' => 'Мы выполняем возведение крыш для бревенчатых домов и бань, используя надежные кровельные материалы и проверенные технологии для самых сложных конфигураций, чтобы обеспечить долговечность и защиту вашей постройки. Наша команда специалистов создает крыши, идеально подходящие по стилю и функциональности, гарантируя отличную тепло- и гидроизоляцию.',
-    'Стоимость монтажа крыши' => 'Стоимость работ по монтажу крыши: от 1 500 руб. за кв.м площади кровли (без стоимости материалов)',
+    'Стоимость проектирования' => 'Project purchase/development cost: free (when ordering a log frame). Cost of ready-made architectural projects: 150 rub. per m². Cost of custom design: 280 rub. per m².',
 
-    'Беседки, столы и скамейки' => 'Беседки, столы и скамейки',
-    'Описание беседок' => 'Строительная компания "Русь Бревенчатая" предлагает Вам проектирование, изготовление и монтаж беседок, столов и скамеек из натуральной древесины, создавая уютные и долговечные элементы для вашего участка. По Вашему желанию могут быть предусмотрены: полное или частичное (с подветренной стороны) остекление беседок, размещение в них кирпичных или металлических печей, мангалов (барбекю) и даже теплые полы - для Вашего комфорта.',
-    'Качество изделий' => 'Наши изделия отличаются качеством и устойчивостью к погодным условиям, добавляя тепло и комфорт в любое пространство на свежем воздухе.',
-    'Цена малых форм' => 'Цена "малых форм": от 8 000 руб.',
+    'Наш каталог проектов' => 'Our Project Catalog',
+    'Заказать проект' => 'Order a Project',
 
-    'Дополнительные услуги' => 'Дополнительные услуги',
+    'Дома и бани под ключ' => 'Turnkey Houses and Bathhouses',
 
-    'Дополнительное утепление сруба' => 'Дополнительное утепление сруба',
-    'Описание утепления' => 'Дополнительное утепление сруба улучшает теплоизоляцию и энергоэффективность вашего дома, предотвращая потери тепла и обеспечивая комфорт в любую погоду. Современные утеплители помогают создать надежный барьер от холода и влаги.',
+    'Описание домов и бань' => 'We build turnkey houses and bathhouses, providing a full range of services—from design to finishing—so you can immediately enjoy your new cozy space.',
 
-    'Монтаж полов и межэтажных перекрытий' => 'Монтаж полов и межэтажных перекрытий',
-    'Описание монтажа полов' => 'Вы можете заказать у нас строительство утепленных полов и перекрытий между этажами, что обеспечивает прочность и стабильность внутренней структуры, создавая надежную основу для дальнейшей отделки. Используемые материалы и технологии гарантируют долговечность и высокую нагрузочную способность.',
+    'Выбор деревянного дома' => 'Based on your preferences, you can choose a ready-made wooden house from our catalog or order a custom log home design. We provide turnkey solutions that take into account all your layout needs and operational requirements.',
 
-    'Обсады, наличники, лестницы и др.' => 'Обсады, наличники, лестницы и др.',
-    'Описание обсад и лестниц' => 'Проектирование и установка обсад, наличников и лестниц добавляют завершенность и индивидуальность вашему интерьеру, а высококачественная отделка обеспечивает долговечность и эстетичный вид. Эти элементы изготавливаются с учетом вашего стиля и функциональных требований.',
+    'Заказать обратный звонок' => 'Request a Callback',
 
-    'Шлифовка и окрашивание рубленых стен' => 'Шлифовка и окрашивание рубленых стен',
-    'Описание шлифовки' => 'Шлифовка рубленых стен придает поверхности идеальную гладкость, а окрашивание защищает древесину и подчеркивает её природную текстуру. Используемые покрытия обеспечивают долговечность и эстетичный внешний вид, сохраняя красоту вашего сруба.',
+    'Изготовление срубов' => 'Log Frame Manufacturing',
 
-    'Заказать обратный звонок' => 'Заказать обратный звонок',
+    'Описание изготовления срубов' => 'We specialize in the professional manufacturing of log frames using high-quality timber, ensuring the strength and durability of each structure. Our log frames provide excellent thermal insulation and create a comfortable microclimate in your future home or bathhouse.',
+
+    'Цена сруба' => 'Price of a log frame for a house or bathhouse: from 8,000 rub. per m²',
+    'Заказать сруб' => 'Order a Log Frame',
+
+
+    'Калькулятор стоимости сруба' => 'Log Frame Cost Calculator',
+
+    'Строительство фундаментов' => 'Foundation Construction',
+
+    'Описание фундамента' => 'We offer our clients only monolithic concrete foundations on a turnkey basis. It is essential to have a completed house project and a clear construction plan before starting foundation work. Only after the project is approved and coordinated with the log frame builders (if the project was designed externally) can the concrete structure be built. Engineering communications should not be overlooked, especially when pouring the slab. In this case, so-called "embedded parts"—special pipes for electrical cables, water supply, and sewage—are installed in the concrete.',
+
+    'Цена строительства фундамента' => 'Foundation construction cost: from 5,000 rub. per cubic meter of concrete (excluding material costs)',
+
+    'Возведение крыш' => 'Roof Construction',
+
+    'Описание крыши' => 'We construct roofs for log houses and bathhouses using reliable roofing materials and proven technologies, even for the most complex configurations, ensuring the durability and protection of your building. Our team of specialists creates roofs that perfectly match the style and functionality of your home while providing excellent thermal and waterproof insulation.',
+
+    'Стоимость монтажа крыши' => 'Roof installation cost: from 1,500 rub. per m² of roof area (excluding material costs)',
+
+    'Дополнительные услуги' => 'Additional Services',
+
+    'Услуги компании' => 'Services of “Rus Brevenchataya”',
+
+    'Беседки, столы и скамейки' => 'Gazebos, Tables, and Benches',
+
+    'Описание беседок' => 'The construction company "Rus Brevenchataya" offers the design, manufacturing, and installation of gazebos, tables, and benches made of natural wood, creating cozy and durable elements for your outdoor space. Upon request, we can include full or partial glazing (on the windward side), the installation of brick or metal stoves, barbecue grills, and even heated floors for your comfort.',
+
+    'Качество изделий' => 'Our products are distinguished by their quality and resistance to weather conditions, adding warmth and comfort to any outdoor space.',
+
+    'Цена малых форм' => 'Price of "small architectural forms": from 8,000 rub.',
+
+    'Дополнительные услуги' => 'Additional Services',
+
+    'Дополнительное утепление сруба' => 'Additional Log Frame Insulation',
+
+    'Описание утепления' => 'Additional insulation improves the thermal efficiency and energy efficiency of your home, preventing heat loss and ensuring comfort in any weather. Modern insulation materials create a reliable barrier against cold and moisture.',
+
+    'Монтаж полов и межэтажных перекрытий' => 'Installation of Floors and Interfloor Ceilings',
+
+    'Описание монтажа полов' => 'You can order the construction of insulated floors and interfloor ceilings from us, ensuring the strength and stability of the internal structure and creating a reliable foundation for further finishing. The materials and technologies we use guarantee durability and high load-bearing capacity.',
+
+    'Обсады, наличники, лестницы и др.' => 'Casings, Trim, Staircases, and More',
+
+    'Описание обсад и лестниц' => 'The design and installation of casings, trim, and staircases add completeness and individuality to your interior, while high-quality finishing ensures durability and an aesthetically pleasing appearance. These elements are crafted with consideration for your style and functional requirements.',
+
+    'Шлифовка и окрашивание рубленых стен' => 'Sanding and Painting of Handcrafted Log Walls',
+
+    'Описание шлифовки' => 'Sanding handcrafted log walls creates a perfectly smooth surface, while painting protects the wood and highlights its natural texture. The coatings used ensure longevity and an aesthetically pleasing appearance, preserving the beauty of your log structure.',
+
+    'Заказать обратный звонок' => 'Request a Callback',
+
 
 ];
