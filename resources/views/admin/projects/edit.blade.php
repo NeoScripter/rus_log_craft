@@ -71,13 +71,13 @@
 
                 <!-- Description (Multilingual) -->
                 <x-form-field name="description_ru" label="Описание (Русский)"
-                    :isTextarea="true">{{ old('description_ru', $project->description_ru) }}</x-form-field>
+                    :isTextarea="true" :value="old('description_ru', $project->description_ru)"/>
                 <x-form-field name="description_en" label="Описание (Английский)"
-                    :isTextarea="true">{{ old('description_en', $project->description_en) }}</x-form-field>
+                    :isTextarea="true" :value="old('description_en', $project->description_en)"/>
                 <x-form-field name="description_cn" label="Описание (Китайский)"
-                    :isTextarea="true">{{ old('description_cn', $project->description_cn) }}</x-form-field>
+                    :isTextarea="true" :value="old('description_cn', $project->description_cn)"/>
                 <x-form-field name="description_jp" label="Описание (Японский)"
-                    :isTextarea="true">{{ old('description_jp', $project->description_jp) }}</x-form-field>
+                    :isTextarea="true" :value="old('description_jp', $project->description_jp)"/>
 
 
                 <!-- Save and Delete Buttons -->
@@ -90,6 +90,10 @@
                     </x-admin.danger-button>
                 </div>
             </form>
+
+            <livewire:image-handler model="Project" :model-id="$project->id" type="image" label="фото проекта" />
+
+            <livewire:image-handler model="Project" :model-id="$project->id" type="plan" label="фото планов проекта" />
 
         </section>
 

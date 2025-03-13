@@ -8,20 +8,20 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'Проектирование и строительство' => 'Design and construction of log homes and bathhouses',
+    'Проектирование и строительство' => 'Design and construction of log houses and bathhouses',
     'Топ арки из дерева' => 'Top Wooden Arches',
-    'Уют и экологичность' => 'Comfort and eco-friendliness in natural log homes.',
+    'Уют и экологичность' => 'Comfort and eco-friendliness in natural log houses.',
     'Ручная работа и индивидуальный подход в каждом проекте.' => 'Handcrafted work and a personalized approach in every project.',
     'наш каталог проектов' => 'Our project catalog',
     'заказать звонок' => 'Request a call',
-    'Дома из бревна' => 'Log Homes',
-    'Дома с баней' => 'Homes with a Bathhouse',
+    'Дома из бревна' => 'Log houses',
+    'Дома с баней' => 'houses with a Bathhouse',
     'Бани из бревна' => 'Log Bathhouses',
     'Хозпостройки' => 'Outbuildings',
 
     'Если вы точно знаете' => 'If you know exactly what your future house should look like, we know how to build it.',
-    'Мы разрабатываем уникальные проекты' => 'We design unique log home projects tailored to all your needs and preferences.',
-    'Наша команда сопровождает вас' => 'Our skilled architects and designers guide you through every step to ensure your home is original, comfortable, and reflects your individuality. We use modern technologies and high-quality materials to guarantee the durability and aesthetic appeal of your home.',
+    'Мы разрабатываем уникальные проекты' => 'We design unique log house projects tailored to all your needs and preferences.',
+    'Наша команда сопровождает вас' => 'Our skilled architects and designers guide you through every step to ensure your house is original, comfortable, and reflects your individuality. We use modern technologies and high-quality materials to guarantee the durability and aesthetic appeal of your house.',
 
     'Разработка проекта бесплатно' => 'Project development is FREE when ordering a log frame',
     'Рассчитать проект' => 'Calculate the cost',
@@ -30,12 +30,12 @@ return [
     'проектированием' => 'designing ',
     'и' => 'and ',
     'строительством' => 'constructing ',
-    'элитных домов и бань ручной рубки' => 'luxury handcrafted log homes and bathhouses.',
+    'элитных домов и бань ручной рубки' => 'luxury handcrafted log houses and bathhouses.',
 
-    'Производим дома на нашей площадке' => 'We manufacture homes at our facility in the Leningrad region and then assemble them at the client’s site.',
+    'Производим дома на нашей площадке' => 'We manufacture houses at our facility in the Leningrad region and then assemble them at the client’s site.',
 
-    'Дом под ключ' => 'Turnkey Home',
-    'Свяжитесь с нами сегодня' => 'Contact us today, and we’ll start creating your dream home!',
+    'Дом под ключ' => 'Turnkey house',
+    'Свяжитесь с нами сегодня' => 'Contact us today, and we’ll start creating your dream house!',
     'Закажите строительство под ключ' => 'Order a turnkey construction and enjoy the warmth and beauty of natural wood.',
 
     'Заказать звонок' => 'Request a Call',

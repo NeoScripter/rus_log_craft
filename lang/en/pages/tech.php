@@ -10,15 +10,15 @@ return [
 
     'Технологии' => 'Technologies',
 
-    'Технология рубки домов и бань' => 'The Handcrafted Log Home and Bathhouse Construction Technology by Our Master Craftsmen',
+    'Технология рубки домов и бань' => 'The Handcrafted Log house and Bathhouse Construction Technology by Our Master Craftsmen',
 
-    'Деревянное домостроение сложный процесс' => 'Wooden construction is quite a complex process, and for someone unfamiliar with the log home industry, it can sometimes be difficult to understand why houses built by different companies using the same design can, first, vary in price and, second, look completely different after several years.',
+    'Деревянное домостроение сложный процесс' => 'Wooden construction is quite a complex process, and for someone unfamiliar with the log house industry, it can sometimes be difficult to understand why houses built by different companies using the same design can, first, vary in price and, second, look completely different after several years.',
 
     'Мастера отличаемся технологиями' => 'As experts in our field, we stand out with our technologies:',
 
     'Завешивание наружных углов' => 'Overhanging of Exterior Corners',
 
-    'Предотвращение щелей в срубе' => 'To prevent gaps from forming due to drying and settling, "Rus Brevenchataya" employs a technique known as undercutting, i.e., creating a clearance along the log’s axis. This gap is made along the entire bottom of the log, with a slightly smaller width at the ends (5-8 mm including the overhanging height of the exterior corners) and a slightly larger one in the concealed parts of the log course (10-15 mm).',
+    'Предотвращение щелей в срубе' => 'To prevent gaps from forming due to drying and settling, "Rus Log Craft" employs a technique known as undercutting, i.e., creating a clearance along the log’s axis. This gap is made along the entire bottom of the log, with a slightly smaller width at the ends (5-8 mm including the overhanging height of the exterior corners) and a slightly larger one in the concealed parts of the log course (10-15 mm).',
 
     'Силы действующие на бревно' => 'The diagram shows the forces acting on the log during drying and settling. Due to these forces, the first cracks typically appear at the bottom of the log.',
 
@@ -26,11 +26,11 @@ return [
 
     'Подробнее о технологии' => 'Learn More About the Technology',
 
-    'Совет от генерального директора' => 'Advice from the General Director',
+    'Совет от генерального директора' => 'General Director’s advice',
 
-    'Продольный паз и поднутрение' => 'The use of a longitudinal groove at the bottom of log courses, known as "undercutting," eliminates the need for regular caulking of a log home or bathhouse. It is important to note that to prevent moisture from entering between the logs, the gap at the log ends is reduced from 10-15 mm to 5 mm. The presence of an "undercutting" gap can be easily checked at the ends of logs forming door and window openings.',
+    'Продольный паз и поднутрение' => 'The use of a longitudinal groove at the bottom of log courses, known as "undercutting," eliminates the need for regular caulking of a log house or bathhouse. It is important to note that to prevent moisture from entering between the logs, the gap at the log ends is reduced from 10-15 mm to 5 mm. The presence of an "undercutting" gap can be easily checked at the ends of logs forming door and window openings.',
 
-    'Продуманный шаг защитит стены' => 'Our specially designed approach will protect your home’s walls from the negative effects of settling. Crescent-shaped gaps between the logs will later be sealed with wooden joinery.',
+    'Продуманный шаг защитит стены' => 'Our specially designed approach will protect your house’s walls from the negative effects of settling. Crescent-shaped gaps between the logs will later be sealed with wooden joinery.',
 
     'Торцевое соединение бревен' => 'End-to-End Log Connection in Corner Joints Using Metal Tie Rods.',
 
@@ -62,7 +62,7 @@ return [
 
     'Точность и качество' => 'Known for its high precision and quality. Allows for the creation of complex shapes and structures, expanding possibilities for architects and designers.',
 
-    'Быстрота строительства' => 'Construction is faster compared to traditional methods, reducing overall project time.',
+    'Быстрота строительства' => 'Construction is faster compared to traditional methods, reducing overall project contruction time.',
 
     'Надежность и долговечность' => 'Structures built using this technique are highly reliable and durable.',
 
@@ -74,16 +74,16 @@ return [
 
     'Использование шипа в чашке' => 'Using a Tenon in the Notch for the Canadian Log Construction Technique.',
 
-    'Описание шипа' => 'The tenon is an enhancement of the classic Canadian notch. It increases the overall rigidity of the log frame, significantly reduces corner air leakage, and makes the home warmer.',
+    'Описание шипа' => 'The tenon is an enhancement of the classic Canadian notch. It increases the overall rigidity of the log frame, significantly reduces corner air leakage, and makes the house warmer.',
 
-    'Совет от генерального директора' => 'Advice from the General Director',
+    'Совет от генерального директора' => 'General Director’s advice',
 
-    'Комплексный подход к срубам' => 'A comprehensive approach to log frame construction ensures strong and well-insulated homes and bathhouses.',
+    'Комплексный подход к срубам' => 'A comprehensive approach to log frame construction ensures strong and well-insulated houses and bathhouses.',
 
-    'Технические условия для строителей' => 'Make sure to define technical requirements in advance, which you will later provide to the builders. If you want to avoid gaps in the corners of your home, beveled cuts and tenons should be used when shaping the notches, along with metal tie rods for securing log joints.',
+    'Технические условия для строителей' => 'Make sure to define technical requirements in advance, which you will later provide to the builders. If you want to avoid gaps in the corners of your house, beveled cuts and tenons should be used when shaping the notches, along with metal tie rods for securing log joints.',
 
     'Как избежать щелей между бревнами' => 'If you want to prevent gaps between the logs in the walls, use the overhanging corner method, apply an "undercutting" gap, and ensure that the longitudinal grooves in the upper log courses are at least 8-10 cm deep.',
-    'Точность при изготовлении шипа' => 'Crafting a tenon (kurdyuk) and its corresponding groove is difficult to achieve with just an axe—it requires mathematical precision, high-quality tools, and exceptional craftsmanship. The log builders at "Rus Brevenchataya" possess all three of these essential skills.',
+    'Точность при изготовлении шипа' => 'Crafting a tenon (kurdyuk) and its corresponding groove is difficult to achieve with just an axe—it requires mathematical precision, high-quality tools, and exceptional craftsmanship. The log builders at "Rus Log Craft" possess all three of these essential skills.',
 
     'Рубка в норвежскую чашку' => 'Notching Logs Using the Norwegian Saddle Notch. Flat-Sided Logs or Semi-Oval Logs.',
 
@@ -91,7 +91,7 @@ return [
 
     'Преимущества стен из лафета' => 'Advantages of Flat-Sided Log Walls:',
 
-    'Лафет сочетает традиции и стиль' => 'Flat-sided logs combine the traditional appearance of a log home with smoother, more refined lines, giving the structure individuality and aesthetic appeal.',
+    'Лафет сочетает традиции и стиль' => 'Flat-sided logs combine the traditional appearance of a log house with smoother, more refined lines, giving the structure individuality and aesthetic appeal.',
 
     'Лафет обеспечивает теплоизоляцию' => 'Flat-sided logs and Norwegian notching provide excellent thermal insulation. The tight-fitting log joints minimize heat loss, allowing the house to retain warmth even in harsh climatic conditions.',
 

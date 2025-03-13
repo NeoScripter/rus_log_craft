@@ -47,14 +47,10 @@
             <x-form-field name="room_type_jp" label="Тип комнат (Японский)" :value="old('room_type_jp')" />
         </div>
 
-        <x-form-field name="description_ru" label="Описание (Русский)"
-            :isTextarea="true">{{ old('description_ru') }}</x-form-field>
-        <x-form-field name="description_en" label="Описание (Английский)"
-            :isTextarea="true">{{ old('description_en') }}</x-form-field>
-        <x-form-field name="description_cn" label="Описание (Китайский)"
-            :isTextarea="true">{{ old('description_cn') }}</x-form-field>
-        <x-form-field name="description_jp" label="Описание (Японский)"
-            :isTextarea="true">{{ old('description_jp') }}</x-form-field>
+        <x-form-field name="description_ru" label="Описание (Русский)" :isTextarea="true" :value="old('description_ru')" />
+        <x-form-field name="description_en" label="Описание (Английский)" :isTextarea="true" :value="old('description_en')" />
+        <x-form-field name="description_cn" label="Описание (Китайский)" :isTextarea="true" :value="old('description_cn')" />
+        <x-form-field name="description_jp" label="Описание (Японский)" :isTextarea="true" :value="old('description_jp')" />
 
 
         <div class="flex items-center gap-4">

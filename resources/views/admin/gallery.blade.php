@@ -8,11 +8,11 @@
     </x-slot>
 
     {{-- First Section --}}
-       {{--  @include('admin.supplier.index') --}}
+        @include('admin.gallery.index')
 
     {{-- Second Section --}}
     <x-slot name="second">
-        {{-- @include('admin.supplier.create') --}}
+        @include('admin.gallery.create')
 
     </x-slot>
 </x-admin-layout>

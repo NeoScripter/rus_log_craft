@@ -17,4 +17,9 @@ class Image extends Model
     {
         return $this->belongsTo(Project::class);
     }
+
+    public function gallery(): BelongsTo
+    {
+        return $this->belongsTo(Gallery::class);
+    }
 }

@@ -21,7 +21,7 @@ return [
     'Санузел' => 'Bathroom',
     'Количество жилых комнат' => 'Number of Living Rooms',
     'Цена сруба дома или бани' => 'Price of a Log Frame for a House or Bathhouse: from',
-    'При заказе сруба проект бесплатно' => 'Free Project Design When Ordering a Log Frame or Turnkey Home',
+    'При заказе сруба проект бесплатно' => 'Free Project Design When Ordering a Log Frame or Turnkey House',
     'Заказать проект' => 'Order a Project',
     'Описание' => 'Description',
     'Планировка' => 'Layout',

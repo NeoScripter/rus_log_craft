@@ -15,6 +15,9 @@
                     <x-admin.nav-link :href="route('admin')" :active="request()->routeIs('admin')">
                         {{ __('Проекты') }}
                     </x-admin.nav-link>
+                    <x-admin.nav-link :href="route('gallery.index')" :active="request()->routeIs('gallery.index')">
+                        {{ __('Галерея') }}
+                    </x-admin.nav-link>
                 </div>
             </div>
 
@@ -69,6 +72,9 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-admin.responsive-nav-link :href="route('admin')" :active="request()->routeIs('admin')">
                 {{ __('Проекты') }}
+            </x-admin.responsive-nav-link>
+            <x-admin.responsive-nav-link :href="route('gallery.index')" :active="request()->routeIs('gallery.index')">
+                {{ __('Галерея') }}
             </x-admin.responsive-nav-link>
         </div>
 

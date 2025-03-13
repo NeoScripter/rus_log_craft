@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Project;
@@ -66,18 +67,28 @@ Route::get('/privacy-policy', function () {
     return view('admin.admin');
 })->middleware(['auth', 'verified'])->name('admin'); */
 
+Route::middleware(['auth'])->prefix('admin')->name('gallery.')->group(function () {
+    Route::get('/gallery', [GalleryController::class, 'index'])->name('index');
+    Route::get('/gallery/create', [GalleryController::class, 'create'])->name('create');
+    Route::post('/gallery', [GalleryController::class, 'store'])->name('store');
+    Route::get('/gallery/{gallery}/edit', [GalleryController::class, 'edit'])->name('edit');
+    Route::put('/gallery/{gallery}', [GalleryController::class, 'update'])->name('update');
+    Route::delete('/gallery/{gallery}', [GalleryController::class, 'destroy'])->name('destroy');
+});
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::get('/admin', [ProjectController::class, 'index'])->name('admin'); // List all projects
-    Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create'); // Show create form
-    Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store'); // Store new project
-    Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit'); // Show edit form
-    Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update'); // Update project
-    Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy'); // Delete project
-
+    Route::get('/admin', [ProjectController::class, 'index'])->name('admin');
+    Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create');
+    Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
+    Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
+    Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
+    Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
 });
 
 Route::get('/set-locale/{locale}', function ($locale) {

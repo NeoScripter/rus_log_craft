@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id')->constrained()->onDelete('cascade');
+            $table->foreignId('project_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('gallery_id')->nullable()->constrained()->onDelete('cascade');
             $table->string('path');
-            $table->enum('type', ['plan', 'image']);
+            $table->enum('type', ['plan', 'image', 'gallery']);
             $table->unsignedInteger('order');
             $table->timestamps();
         });

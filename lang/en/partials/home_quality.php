@@ -2,7 +2,7 @@
 
 return [
 
-    'Наши клиенты выбирают' => 'Our Clients Choose',
+    'Наши клиенты выбирают' => 'Our clients choose',
     'качество' => 'Quality',
 
     'мы понимаем, что строительство дома связано со стрессом' => 'We understand that building a home can be stressful: concerns about the installation process, natural disasters, insects, and other factors.',

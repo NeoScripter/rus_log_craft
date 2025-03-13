@@ -9,7 +9,7 @@ return [
     */
 
     'Услуги' => 'Services',
-    'Услуги компании' => 'Services of “Rus Brevenchataya”',
+    'Услуги компании' => 'Services of “Rus Log Craft”',
     'Проектирование' => 'Design',
 
     'Описание проектирования' => 'We create unique designs, considering all your preferences and site features to ensure the perfect combination of functionality and comfort. Our architects have extensive experience in designing both simple and complex structures.',
@@ -23,13 +23,13 @@ return [
 
     'Описание домов и бань' => 'We build turnkey houses and bathhouses, providing a full range of services—from design to finishing—so you can immediately enjoy your new cozy space.',
 
-    'Выбор деревянного дома' => 'Based on your preferences, you can choose a ready-made wooden house from our catalog or order a custom log home design. We provide turnkey solutions that take into account all your layout needs and operational requirements.',
+    'Выбор деревянного дома' => 'Based on your preferences, you can choose a ready-made wooden house from our catalog or order a custom log house design. We provide turnkey solutions that take into account all your layout needs and operational requirements.',
 
     'Заказать обратный звонок' => 'Request a Callback',
 
     'Изготовление срубов' => 'Log Frame Manufacturing',
 
-    'Описание изготовления срубов' => 'We specialize in the professional manufacturing of log frames using high-quality timber, ensuring the strength and durability of each structure. Our log frames provide excellent thermal insulation and create a comfortable microclimate in your future home or bathhouse.',
+    'Описание изготовления срубов' => 'We specialize in the professional manufacturing of log frames using high-quality timber, ensuring the strength and durability of each structure. Our log frames provide excellent thermal insulation and create a comfortable microclimate in your future house or bathhouse.',
 
     'Цена сруба' => 'Price of a log frame for a house or bathhouse: from 8,000 rub. per m²',
     'Заказать сруб' => 'Order a Log Frame',
@@ -45,17 +45,17 @@ return [
 
     'Возведение крыш' => 'Roof Construction',
 
-    'Описание крыши' => 'We construct roofs for log houses and bathhouses using reliable roofing materials and proven technologies, even for the most complex configurations, ensuring the durability and protection of your building. Our team of specialists creates roofs that perfectly match the style and functionality of your home while providing excellent thermal and waterproof insulation.',
+    'Описание крыши' => 'We construct roofs for log houses and bathhouses using reliable roofing materials and proven technologies, even for the most complex configurations, ensuring the durability and protection of your building. Our team of specialists creates roofs that perfectly match the style and functionality of your house while providing excellent thermal and waterproof insulation.',
 
     'Стоимость монтажа крыши' => 'Roof installation cost: from 1,500 rub. per m² of roof area (excluding material costs)',
 
     'Дополнительные услуги' => 'Additional Services',
 
-    'Услуги компании' => 'Services of “Rus Brevenchataya”',
+    'Услуги компании' => 'Services of “Rus Log Craft”',
 
     'Беседки, столы и скамейки' => 'Gazebos, Tables, and Benches',
 
-    'Описание беседок' => 'The construction company "Rus Brevenchataya" offers the design, manufacturing, and installation of gazebos, tables, and benches made of natural wood, creating cozy and durable elements for your outdoor space. Upon request, we can include full or partial glazing (on the windward side), the installation of brick or metal stoves, barbecue grills, and even heated floors for your comfort.',
+    'Описание беседок' => 'The construction company "Rus Log Craft" offers the design, manufacturing, and installation of gazebos, tables, and benches made of natural wood, creating cozy and durable elements for your outdoor space. Upon request, we can include full or partial glazing (on the windward side), the installation of brick or metal stoves, barbecue grills, and even heated floors for your comfort.',
 
     'Качество изделий' => 'Our products are distinguished by their quality and resistance to weather conditions, adding warmth and comfort to any outdoor space.',
 
@@ -65,7 +65,7 @@ return [
 
     'Дополнительное утепление сруба' => 'Additional Log Frame Insulation',
 
-    'Описание утепления' => 'Additional insulation improves the thermal efficiency and energy efficiency of your home, preventing heat loss and ensuring comfort in any weather. Modern insulation materials create a reliable barrier against cold and moisture.',
+    'Описание утепления' => 'Additional insulation improves the thermal efficiency and energy efficiency of your house, preventing heat loss and ensuring comfort in any weather. Modern insulation materials create a reliable barrier against cold and moisture.',
 
     'Монтаж полов и межэтажных перекрытий' => 'Installation of Floors and Interfloor Ceilings',
 

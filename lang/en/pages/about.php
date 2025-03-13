@@ -9,7 +9,7 @@ return [
     */
 
     'О компании' => 'About Us',
-    'Русь Бревенчатая - Уют и экологичность' => '“Rus Brevenchataya” – Comfort and Eco-Friendliness in Log Homes.',
+    'Русь Бревенчатая - Уют и экологичность' => '“Rus Log Craft” – Comfort and Eco-Friendliness in Log Homes.',
     '20 лет' => '20 years',
     'с 2014 года на рынке' => 'In the wooden construction market since 2014',
     '160+' => '160+',
@@ -17,7 +17,7 @@ return [
     '300+' => '300+',
     'специалистов в штате' => 'specialists on staff',
 
-    'Телеканал Россия Санкт-Петербург' => 'The "Russia Saint Petersburg" TV channel (editorial team of "Vesti-Kultura") and the "Kultura" TV channel, with the support of "Rus Brevenchataya," produced a series of programs about Russia’s wooden architecture.',
+    'Телеканал Россия Санкт-Петербург' => 'The "Russia Saint Petersburg" TV channel (editorial team of "Vesti-Kultura") and the "Kultura" TV channel, with the support of "Rus Log Craft," produced a series of programs about Russia’s wooden architecture.',
 
     'Россия телеканал' => 'Russia TV Channel',
     'Подробнее' => 'Learn More',
