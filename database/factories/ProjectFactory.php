@@ -35,7 +35,7 @@ class ProjectFactory extends Factory
             'room_type_jp' => fake()->word(),
             'bathrooms' => fake()->numberBetween(1, 3),
             'rooms' => fake()->numberBetween(1, 10),
-            'price_per_sqm' => fake()->randomFloat(2, 500, 2000),
+            'price_per_sqm' => fake()->numberBetween(500, 2000),
             'description_ru' => fake()->paragraph(),
             'description_en' => fake()->paragraph(),
             'description_cn' => fake()->paragraph(),

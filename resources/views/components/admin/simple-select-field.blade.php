@@ -10,9 +10,9 @@
             <option value="">{{ $placeholder }}</option>
         @endif
 
-        @foreach ($options as $option)
-            <option value="{{ $option }}" {{ $value == $option ? 'selected' : '' }}>
-                {{ $option }}
+        @foreach ($options as $key => $val)
+            <option value="{{ $key }}" {{ $value == $val ? 'selected' : '' }}>
+                {{ $val }}
             </option>
         @endforeach
     </select>

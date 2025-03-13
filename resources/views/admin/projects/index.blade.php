@@ -11,30 +11,33 @@
 
         @if (isset($projects))
             @if ($projects->isNotEmpty())
-                @foreach ($projects as $project)
-                    <hr>
-                    <div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    @foreach ($projects as $project)
                         <div>
-                            <p class="block mb-1 font-bold text-black font-sm text-md">{{ $project->name_ru ?? 'Без названия' }}</p>
-                        </div>
-                        @if ($project->firstImage)
+                            <hr class="mb-4">
                             <div>
-                                <figure class="relative max-w-sm mb-1">
-                                    <img class="rounded-lg max-w-32" src="{{ Storage::url($project->firstImage->path) }}"
-                                        alt="Фото проекта">
-                                </figure>
+                                <p class="block mb-1 font-bold text-black font-sm text-md">
+                                    {{ $project->name_ru ?? 'Без названия' }}</p>
                             </div>
-                        @endif
+                            @if ($project->firstImage)
+                                <div>
+                                    <figure class="relative max-w-sm mb-1">
+                                        <img class="rounded-lg max-w-32"
+                                            src="{{ Storage::url($project->firstImage->path) }}" alt="Фото проекта">
+                                    </figure>
+                                </div>
+                            @endif
 
-                        <div>
-                            <p class="block max-w-xl font-normal text-black font-sm text-md">
-                                {!! Str::limit($project->description_ru, 150, '...') !!}
-                            </p>
+                            <div>
+                                <p class="block max-w-xl font-normal text-black font-sm text-md">
+                                    {!! Str::limit($project->description_ru, 150, '...') !!}
+                                </p>
+                            </div>
+                            <x-admin.link
+                                href="{{ route('projects.edit', $project) }}">{{ __('Редактировать') }}</x-admin.link>
                         </div>
-                        <x-admin.link
-                            href="{{ route('projects.edit', $project) }}">{{ __('Редактировать') }}</x-admin.link>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             @else
                 <p class="no-projects-message">Не найдено ни одного проекта</p>
             @endif
@@ -53,7 +56,7 @@
 @endif
 
 @if (session('status') === 'success')
-    <div class="fixed flex items-center p-4 space-x-4 text-gray-500 -translate-x-1/2 bg-white divide-x divide-gray-200 rounded-lg shadow w-max left-1/2 rtl:divide-x-reverse top-5 dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800"
+    <div class="fixed flex items-center p-4 space-x-4 text-gray-500 -translate-x-1/2 bg-white divide-x divide-gray-200 rounded-lg shadow left-1/2 top-5 w-max rtl:divide-x-reverse dark:divide-gray-700 dark:bg-gray-800 dark:text-gray-400"
         role="alert" x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)">
         <div class="text-base font-normal text-center text-gray-600">
             {{ session('message') }}

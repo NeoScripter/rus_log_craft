@@ -47,17 +47,17 @@ class ProjectController extends Controller
             'has_terrace' => 'boolean',
             'has_garage' => 'boolean',
             'build_area' => 'nullable|integer|min:1',
-            'floors' => 'nullable|integer|min:1|max:10',
+            'floors' => 'nullable|integer|min:1|max:100',
             'total_area' => 'nullable|integer|min:1',
             'living_area' => 'nullable|integer|min:1',
             'roof_area' => 'nullable|integer|min:1',
-            'bedrooms' => 'required|integer|min:0|max:20',
+            'bedrooms' => 'required|integer|min:0|max:200',
             'room_type_ru' => 'nullable|string|max:255',
             'room_type_en' => 'nullable|string|max:255',
             'room_type_cn' => 'nullable|string|max:255',
             'room_type_jp' => 'nullable|string|max:255',
-            'bathrooms' => 'required|integer|min:0|max:10',
-            'rooms' => 'required|integer|min:1|max:50',
+            'bathrooms' => 'required|integer|min:0|max:100',
+            'rooms' => 'required|integer|min:1|max:100',
             'price_per_sqm' => 'required|integer|min:1',
             'description_ru' => 'nullable|string',
             'description_en' => 'nullable|string',
@@ -67,7 +67,7 @@ class ProjectController extends Controller
 
         Project::create($validated);
 
-        return redirect()->route('admin.projects.index')->with([
+        return redirect()->route('admin')->with([
             'status' => 'success',
             'message' => 'Проект успешно создан!',
         ]);
@@ -93,17 +93,17 @@ class ProjectController extends Controller
             'has_terrace' => 'boolean',
             'has_garage' => 'boolean',
             'build_area' => 'nullable|integer|min:1',
-            'floors' => 'nullable|integer|min:1|max:10',
+            'floors' => 'nullable|integer|min:1|max:100',
             'total_area' => 'nullable|integer|min:1',
             'living_area' => 'nullable|integer|min:1',
             'roof_area' => 'nullable|integer|min:1',
-            'bedrooms' => 'required|integer|min:0|max:20',
+            'bedrooms' => 'required|integer|min:0|max:200',
             'room_type_ru' => 'nullable|string|max:255',
             'room_type_en' => 'nullable|string|max:255',
             'room_type_cn' => 'nullable|string|max:255',
             'room_type_jp' => 'nullable|string|max:255',
-            'bathrooms' => 'required|integer|min:0|max:10',
-            'rooms' => 'required|integer|min:1|max:50',
+            'bathrooms' => 'required|integer|min:0|max:100',
+            'rooms' => 'required|integer|min:1|max:100',
             'price_per_sqm' => 'required|integer|min:1',
             'description_ru' => 'nullable|string',
             'description_en' => 'nullable|string',
@@ -113,7 +113,7 @@ class ProjectController extends Controller
 
         $project->update($validated);
 
-        return redirect()->route('admin.projects.index')->with([
+        return redirect()->route('admin')->with([
             'status' => 'success',
             'message' => 'Проект успешно обновлен!',
         ]);
@@ -123,7 +123,7 @@ class ProjectController extends Controller
     public function destroy(Project $project)
     {
         $project->delete();
-        return redirect()->route('admin.projects.index')->with([
+        return redirect()->route('admin')->with([
             'status' => 'success',
             'message' => 'Проект удален!',
         ]);
