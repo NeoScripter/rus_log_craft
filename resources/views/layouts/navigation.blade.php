@@ -13,7 +13,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-admin.nav-link :href="route('admin')" :active="request()->routeIs('admin')">
-                        {{ __('Dashboard') }}
+                        {{ __('Проекты') }}
                     </x-admin.nav-link>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 
                     <x-slot name="content">
                         <x-admin.dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('Настройки') }}
                         </x-admin.dropdown-link>
 
                         <!-- Authentication -->
@@ -45,7 +45,7 @@
                             <x-admin.dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                {{ __('Log Out') }}
+                                {{ __('Выйти') }}
                             </x-admin.dropdown-link>
                         </form>
                     </x-slot>
@@ -68,7 +68,7 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-admin.responsive-nav-link :href="route('admin')" :active="request()->routeIs('admin')">
-                {{ __('Dashboard') }}
+                {{ __('Проекты') }}
             </x-admin.responsive-nav-link>
         </div>
 
@@ -81,7 +81,7 @@
 
             <div class="mt-3 space-y-1">
                 <x-admin.responsive-nav-link :href="route('profile.edit')">
-                    {{ __('Profile') }}
+                    {{ __('Настройки') }}
                 </x-admin.responsive-nav-link>
 
                 <!-- Authentication -->
@@ -91,7 +91,7 @@
                     <x-admin.responsive-nav-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('Выйти') }}
                     </x-admin.responsive-nav-link>
                 </form>
             </div>

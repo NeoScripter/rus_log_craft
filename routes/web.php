@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Project;
 use Illuminate\Support\Facades\App;
@@ -61,14 +62,22 @@ Route::get('/privacy-policy', function () {
     return view('user.privacy-policy');
 })->name('user.privacy-policy');
 
-Route::get('/admin', function () {
+/* Route::get('/admin', function () {
     return view('admin.admin');
-})->middleware(['auth', 'verified'])->name('admin');
+})->middleware(['auth', 'verified'])->name('admin'); */
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/admin', [ProjectController::class, 'index'])->name('admin'); // List all projects
+    Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create'); // Show create form
+    Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store'); // Store new project
+    Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit'); // Show edit form
+    Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update'); // Update project
+    Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy'); // Delete project
+
 });
 
 Route::get('/set-locale/{locale}', function ($locale) {
