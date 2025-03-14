@@ -7,6 +7,7 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Image;
+use Livewire\Attributes\Validate;
 
 class ImageHandler extends Component
 {
@@ -17,6 +18,7 @@ class ImageHandler extends Component
     public string $type;
     public string $label;
 
+    #[Validate(['images.*' => 'image|max:2048'])]
     public array $images = [];
 
     public function mount(string $model, int $modelId, string $type)
@@ -34,12 +36,8 @@ class ImageHandler extends Component
 
     public function updatedImages()
     {
-        $this->validate([
-            'images.*' => 'image|max:2048',
-        ], [
-            'images.*.image' => 'Файл должен быть изображением.',
-            'images.*.max' => 'Размер изображения не должен превышать 2MB.',
-        ]);
+
+        $this->validate();
 
         foreach ($this->images as $image) {
             $path = $image->store($this->getStoragePath(), 'public');
