@@ -3,7 +3,7 @@
 return [
 
     'мы предлагаем' => 'We Offer',
-    'стройте с легкостью' => 'Build with Ease',
+    'стройте с легкостью' => 'Build with ease',
     'смотреть все услуги' => 'View All Services',
 
     'Проектирование' => 'Design',
@@ -13,6 +13,7 @@ return [
     'Возведение крыш' => 'Roof Construction',
     'Беседки, столы и скамейки' => 'Gazebos, Tables, and Benches',
 
-    'Архитекторы компании воплотят ваши идеи' => 'Our architects will bring your ideas to life with high-quality log cottage and bathhouse designs.',
+    'Архитекторы компании воплотят ваши идеи' => 'Our architects bring your vision to life with expertly designed log cottages and bathhouses.',
+
 
 ];

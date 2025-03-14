@@ -25,7 +25,8 @@ return [
     'Более 190' => 'More than 190',
     'Гараж' => 'Garage',
     'По вашему запросу не найдено ни одного проекта' => 'No projects found for your request',
-    'мы в VK видео' => 'We are on VK Video',
+    'мы в VK видео' => 'Find us on VK Video',
     'Смотреть все видео' => 'Watch All Videos',
+
 
 ];

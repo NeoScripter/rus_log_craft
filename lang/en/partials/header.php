@@ -3,8 +3,8 @@
 return [
 
     'Меню' => 'Menu',
-    'Строительство деревянных домов и бань под ключ' => 'Construction of wooden houses and bathhouses "turnkey"',
-    'Готовые проекты и Индивидуальное проектирование' => 'Ready-made projects and custom design',
+    'Строительство деревянных домов и бань под ключ' => 'Turnkey construction of wooden houses and bathhouses',
+    'Готовые проекты и Индивидуальное проектирование' => 'Ready-made projects and custom designs',
     'Галерея' => 'Gallery',
     'Технологии' => 'Technologies',
     'Поиск' => 'Search',
@@ -13,4 +13,3 @@ return [
     'Стрелка вниз' => 'Down arrow',
 
 ];
-

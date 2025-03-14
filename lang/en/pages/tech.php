@@ -10,103 +10,110 @@ return [
 
     'Технологии' => 'Technologies',
 
-    'Технология рубки домов и бань' => 'The Handcrafted Log house and Bathhouse Construction Technology by Our Professional Craftsmen',
+    'Технология рубки домов и бань' => 'The Handcrafted Log House and Bathhouse Construction Technology by Our Skilled Craftsmen',
 
-    'Деревянное домостроение сложный процесс' => 'Wooden construction is quite a complex process, and for someone unfamiliar with the log house industry, it can sometimes be difficult to understand why houses built by different companies using the same design can, first, vary in price and, second, look completely different after several years.',
+    'Деревянное домостроение сложный процесс' => 'Wooden construction is a complex process, and for those unfamiliar with the log house industry, it can sometimes be difficult to understand why homes built by different companies using the same design can, first, vary significantly in price and, second, look completely different after several years.',
 
-    'Мастера отличаемся технологиями' => 'As experts in our field, we stand out with our technologies:',
+    'Мастера отличаемся технологиями' => 'As experts in our craft, we set ourselves apart with our advanced construction techniques:',
 
-    'Завешивание наружных углов' => 'Overhanging of Exterior Corners',
+    'Завешивание наружных углов' => 'Overhanging Exterior Corners',
 
-    'Предотвращение щелей в срубе' => 'To prevent gaps from forming due to drying and settling, "Rus Log Craft" employs a technique known as undercutting, i.e., creating a clearance along the log’s axis. This gap is made along the entire bottom of the log, with a slightly smaller width at the ends (5-8 mm including the overhanging height of the exterior corners) and a slightly larger one in the concealed parts of the log course (10-15 mm).',
+    'Предотвращение щелей в срубе' => 'To prevent gaps from forming due to drying and settling, "Rus Log Craft" uses a specialized technique called undercutting, which involves creating a controlled clearance along the log’s axis. This gap runs along the entire bottom of the log, with a slightly smaller width at the ends (5-8 mm, including the height of the overhanging exterior corners) and a slightly larger one in the concealed parts of the log course (10-15 mm).',
 
-    'Силы действующие на бревно' => 'The diagram shows the forces acting on the log during drying and settling. Due to these forces, the first cracks typically appear at the bottom of the log.',
+    'Силы действующие на бревно' => 'The diagram illustrates the forces acting on the log during drying and settling. Due to these forces, the first cracks typically appear at the bottom of the log.',
 
-    'Мягкая посадка верхнего бревна' => 'Thanks to the clearance, the upper log settles gently onto the lower one, and the groove edges remain tightly pressed against the lower log’s surface even after expansion.',
+
+    'Мягкая посадка верхнего бревна' => 'Thanks to the clearance, the upper log settles smoothly onto the lower one, ensuring that the groove edges remain tightly pressed against the surface even after expansion.',
 
     'Подробнее о технологии' => 'Learn More About the Technology',
 
-    'Совет от генерального директора' => 'General Director’s advice',
+    'Совет от генерального директора' => 'Advice from the General Director',
 
-    'Продольный паз и поднутрение' => 'The use of a longitudinal groove at the bottom of log courses, known as "undercutting," eliminates the need for regular caulking of a log house or bathhouse. It is important to note that to prevent moisture from entering between the logs, the gap at the log ends is reduced from 10-15 mm to 5 mm. The presence of an "undercutting" gap can be easily checked at the ends of logs forming door and window openings.',
+    'Продольный паз и поднутрение' => 'The use of a longitudinal groove at the bottom of log courses, known as "undercutting," eliminates the need for frequent caulking of a log house or bathhouse. To prevent moisture from seeping between the logs, the gap at the log ends is reduced from 10-15 mm to just 5 mm. The presence of an "undercutting" gap can easily be checked at the ends of logs forming door and window openings.',
 
-    'Продуманный шаг защитит стены' => 'Our specially designed approach will protect your house’s walls from the negative effects of settling. Crescent-shaped gaps between the logs will later be sealed with wooden joinery.',
+    'Продуманный шаг защитит стены' => 'Our carefully designed approach protects your home’s walls from the negative effects of settling. Crescent-shaped gaps between the logs will later be sealed with precision wooden joinery.',
 
-    'Торцевое соединение бревен' => 'End-to-End Log Connection in Corner Joints Using Metal Tie Rods.',
+    'Торцевое соединение бревен' => 'End-to-End Log Connection in Corner Joints Using Metal Tie Rods',
 
-    'Описание стяжки' => 'A tie rod is a galvanized stud bolt about half a meter long with threading on both ends. The stud is placed in a narrow longitudinal groove running across the log joint. At the ends, the groove has special triangular prism-shaped recesses.',
+    'Описание стяжки' => 'A tie rod is a galvanized stud bolt about half a meter long with threading on both ends. It is placed inside a narrow longitudinal groove running across the log joint, with special triangular prism-shaped recesses at the ends.',
+
 
     'Плюсы использования стяжек' => 'Advantages of Using Tie Rods:',
 
-    'Металлические шайбы и гайки' => 'Galvanized metal washers are placed on both ends of the stud, and galvanized nuts are screwed on top.',
+    'Металлические шайбы и гайки' => 'Galvanized metal washers are placed on both ends of the stud, with galvanized nuts securely fastened on top.',
 
-    'Плотное соединение бревен' => 'During the log frame assembly, the nuts are tightened with force, resulting in a firm connection that ensures a tight fit between the logs at the corners.',
+    'Плотное соединение бревен' => 'During log frame assembly, the nuts are tightened with force, creating a strong connection that ensures a precise and secure fit between the logs at the corners.',
 
-    'Большая площадь соприкосновения' => 'A larger contact area between the washer and the wood is achieved, significantly reducing the applied pressure.',
+    'Большая площадь соприкосновения' => 'A larger contact area between the washer and the wood helps to significantly reduce pressure on the material.',
 
-    'Металл не подвержен коррозии' => 'Galvanized metal is highly resistant to corrosion and will not cause damage to the wood.',
+    'Металл не подвержен коррозии' => 'Galvanized metal is highly resistant to corrosion and will not cause any damage to the wood.',
 
-    'Сложность методики' => 'This method is a highly complex system.',
+    'Сложность методики' => 'This technique is highly complex and requires precise execution.',
 
-    'Процесс закладки шпильки' => 'To insert the stud, a narrow and deep groove must be cut, with its walls kept vertical and precisely measured. Cutting recesses in the shape of triangular prisms also requires skill and experience.',
+    'Процесс закладки шпильки' => 'To insert the stud, a narrow and deep groove must be carefully cut with perfectly vertical walls and precise measurements. Creating triangular prism-shaped recesses also demands skill and experience.',
 
-    'Шпилька должна быть утоплена' => 'The stud must be embedded deeply into the wood, as a groove for the tenon of the upper log is made above it. Additionally, a mortise must be cut into the lower part of the log, with a tenon left inside it, ensuring both logs are securely joined.',
+    'Шпилька должна быть утоплена' => 'The stud must be deeply embedded into the wood, as a groove for the tenon of the upper log is cut above it. Additionally, a mortise is carved into the lower log, leaving a tenon inside to ensure a secure and stable connection between both logs.',
 
     'Подробнее о технологии' => 'Learn More About the Technology',
 
-    'Рубка сруба в канадскую чашку' => 'Log Frame Notching in the Canadian Saddle Notch. Creating Beveled Cuts When Using the Canadian Notching Technique.',
+    'Рубка сруба в канадскую чашку' => 'Log Frame Notching Using the Canadian Saddle Notch. Creating Beveled Cuts for the Canadian Notching Technique.',
 
-    'Канадская технология рубки' => 'The classic Canadian notching technique ensures the self-locking of corner joints that form during log drying and settling. It serves as an alternative to the traditional Russian notching method.',
+
+    'Канадская технология рубки' => 'The classic Canadian notching technique ensures the self-locking of corner joints as the logs dry and settle. It serves as an alternative to the traditional Russian notching method.',
 
     'Преимущества технологии' => 'Advantages of the Technology:',
 
-    'Точность и качество' => 'Known for its high precision and quality. Allows for the creation of complex shapes and structures, expanding possibilities for architects and designers.',
+    'Точность и качество' => 'Renowned for its high precision and quality, this technique allows for the creation of complex shapes and structures, expanding possibilities for architects and designers.',
 
-    'Быстрота строительства' => 'Construction is faster compared to traditional methods, reducing overall project contruction time.',
+    'Быстрота строительства' => 'Faster construction compared to traditional methods, reducing overall project completion time.',
 
-    'Надежность и долговечность' => 'Structures built using this technique are highly reliable and durable.',
+    'Надежность и долговечность' => 'Structures built with this technique are highly durable and reliable.',
 
-    'Отличие канадской чашки' => 'The main difference in the Canadian saddle notch is the presence of a beveled cut.',
+    'Отличие канадской чашки' => 'The key difference in the Canadian saddle notch is the inclusion of a beveled cut.',
 
-    'Основное отличие канадской чашки' => 'The key distinguishing feature of the Canadian saddle notch is the beveled cut.',
+    'Основное отличие канадской чашки' => 'The defining feature of the Canadian saddle notch is the beveled cut.',
 
-    'Описание русской и канадской чашки' => 'The illustrations provide a comparison of log frame construction using the Russian and Canadian saddle notch methods for round logs, which are more traditional in Russia.',
+    'Описание русской и канадской чашки' => 'The illustrations compare log frame construction using the Russian and Canadian saddle notch methods, both of which are commonly used for round logs in Russia.',
 
-    'Использование шипа в чашке' => 'Using a Tenon in the Notch for the Canadian Log Construction Technique.',
+    'Использование шипа в чашке' => 'Using a Tenon in the Notch for Canadian Log Construction.',
 
-    'Описание шипа' => 'The tenon is an enhancement of the classic Canadian notch. It increases the overall rigidity of the log frame, significantly reduces corner air leakage, and makes the house warmer.',
+    'Описание шипа' => 'The tenon is an enhancement of the classic Canadian notch. It increases the overall rigidity of the log frame, significantly reduces air leakage at the corners, and improves insulation, making the house warmer.',
 
-    'Совет от генерального директора' => 'General Director’s advice',
+    'Совет от генерального директора' => 'Advice from the General Director',
 
-    'Комплексный подход к срубам' => 'A comprehensive approach to log frame construction ensures strong and well-insulated houses and bathhouses.',
 
-    'Технические условия для строителей' => 'Make sure to define technical requirements in advance, which you will later provide to the builders. If you want to avoid gaps in the corners of your house, beveled cuts and tenons should be used when shaping the notches, along with metal tie rods for securing log joints.',
+    'Комплексный подход к срубам' => 'A comprehensive approach to log frame construction ensures sturdy, well-insulated homes and bathhouses.',
 
-    'Как избежать щелей между бревнами' => 'If you want to prevent gaps between the logs in the walls, use the overhanging corner method, apply an "undercutting" gap, and ensure that the longitudinal grooves in the upper log courses are at least 8-10 cm deep.',
-    'Точность при изготовлении шипа' => 'Crafting a tenon (kurdyuk) and its corresponding groove is difficult to achieve with just an axe—it requires mathematical precision, high-quality tools, and exceptional craftsmanship. The log builders at "Rus Log Craft" possess all three of these essential skills.',
+    'Технические условия для строителей' => 'Be sure to define the technical requirements in advance and provide them to the builders. To avoid gaps in the corners of your house, beveled cuts and tenons should be used when shaping the notches, along with metal tie rods to secure the log joints.',
 
-    'Рубка в норвежскую чашку' => 'Notching Logs Using the Norwegian Saddle Notch. Flat-Sided Logs or Semi-Oval Logs.',
+    'Как избежать щелей между бревнами' => 'To prevent gaps between the logs in the walls, use the overhanging corner method, apply an "undercutting" gap, and ensure that the longitudinal grooves in the upper log courses are at least 8-10 cm deep.',
 
-    'О технологии лафета' => 'A traditional Scandinavian wooden construction technique. A flat-sided log (lafet) is a log that has been hewn flat on two opposite sides, giving the house walls a smooth inner and outer surface while preserving the natural texture of the wood.',
+    'Точность при изготовлении шипа' => 'Crafting a tenon (kurdyuk) and its corresponding groove is difficult to achieve with just an axe—it requires mathematical precision, high-quality tools, and expert craftsmanship. The log builders at "Rus Log Craft" possess all three of these essential skills.',
+
+    'Рубка в норвежскую чашку' => 'Notching Logs Using the Norwegian Saddle Notch. Flat-Sided or Semi-Oval Logs.',
+
+    'О технологии лафета' => 'A traditional Scandinavian wooden construction technique. A flat-sided log (lafet) is a log that has been hewn flat on two opposite sides, providing house walls with a smooth inner and outer surface while preserving the natural texture of the wood.',
 
     'Преимущества стен из лафета' => 'Advantages of Flat-Sided Log Walls:',
 
-    'Лафет сочетает традиции и стиль' => 'Flat-sided logs combine the traditional appearance of a log house with smoother, more refined lines, giving the structure individuality and aesthetic appeal.',
+    'Лафет сочетает традиции и стиль' => 'Flat-sided logs combine the traditional look of a log house with smoother, more refined lines, adding individuality and aesthetic appeal to the structure.',
 
-    'Лафет обеспечивает теплоизоляцию' => 'Flat-sided logs and Norwegian notching provide excellent thermal insulation. The tight-fitting log joints minimize heat loss, allowing the house to retain warmth even in harsh climatic conditions.',
 
-    'Готовность лафета к отделке' => 'The interior and exterior surfaces of flat-sided logs are ready for final finishing and require minimal additional treatment, speeding up the construction process and reducing finishing material costs.',
+    'Лафет обеспечивает теплоизоляцию' => 'Flat-sided logs and Norwegian notching offer excellent thermal insulation. The precisely fitted log joints minimize heat loss, ensuring the house retains warmth even in harsh climates.',
 
-    'Норвежская рубка устойчива к деформациям' => 'One of the key advantages of Norwegian notching is its high resistance to deformation. Thanks to the unique log profile and precise joinery, the log structure is less prone to twisting, settling, and cracking.',
+    'Готовность лафета к отделке' => 'The interior and exterior surfaces of flat-sided logs are prepped for final finishing and require minimal additional treatment, accelerating construction and reducing finishing material costs.',
 
-    'Процесс изготовления лафета' => 'The process of creating flat-sided logs includes debarking and cutting the log to the required length. The log is then processed on a special machine that removes the outer layer of wood, making it flat. As a result, the log has two flat sides and two rounded sides. Modern antiseptics reliably protect your walls while preserving the natural texture of the wood.',
+    'Норвежская рубка устойчива к деформациям' => 'A key advantage of Norwegian notching is its exceptional resistance to deformation. Thanks to the unique log profile and precise joinery, the structure is less prone to twisting, settling, and cracking.',
 
-    'Угловые соединения и стиль' => 'Distinctive corner joints give the structure a stylish, slightly archaic appearance, which is especially appreciated by connoisseurs of traditional wooden architecture.',
+    'Процесс изготовления лафета' => 'The process of creating flat-sided logs begins with debarking and cutting the log to the required length. The log is then processed through a specialized machine that removes the outer layer of wood, resulting in two flat sides and two rounded sides. Modern wood preservatives effectively protect the walls while maintaining the natural texture of the wood.',
 
-    'Подбор древесины и традиции' => 'We carefully select the wood, taking into account the unique characteristics of each log, and follow all the nuances of traditional construction techniques.',
+    'Угловые соединения и стиль' => 'Distinctive corner joints give the structure a unique, slightly archaic charm, highly valued by enthusiasts of traditional wooden architecture.',
 
-    'Выбор между кругляком и лафетом' => 'If you are unsure whether to choose round logs or flat-sided logs, keep in mind that you can combine both—using round logs for the exterior walls and flat-sided logs for the interior walls.',
+    'Подбор древесины и традиции' => 'We carefully select each log, considering its unique characteristics, and adhere to the finest details of traditional construction techniques.',
 
-    'Выбор технологии строительства' => 'In conclusion, it is important to note that our company offers log construction using any technique: the traditional Russian saddle notch, the Canadian saddle notch with a beveled cut, the Canadian saddle notch with both a beveled cut and a tenon, or the Norwegian saddle notch (which also includes both beveled cuts and tenons). The choice is yours, and we will provide you with the most accurate details about each method so that you can make an informed and well-considered decision.',
+    'Выбор между кругляком и лафетом' => 'If you are unsure whether to choose round logs or flat-sided logs, consider combining both—using round logs for the exterior walls and flat-sided logs for the interior walls.',
+
+    'Выбор технологии строительства' => 'Ultimately, our company offers log construction using any technique: the traditional Russian saddle notch, the Canadian saddle notch with a beveled cut, the Canadian saddle notch with both a beveled cut and a tenon, or the Norwegian saddle notch, which also includes both beveled cuts and tenons. The choice is yours, and we will provide detailed information on each method to help you make a well-informed decision.',
+
 
 ];

@@ -2,11 +2,12 @@
 
 return [
 
-    'Оформить заявку на строительство' => 'You can submit a construction request, get a consultation, or ask a question in any convenient way:',
+    'Оформить заявку на строительство' => 'Submit a construction request, get a consultation, or ask a question in the way that’s most convenient for you:',
 
     'Написать нам через сайт' => 'Contact us through the website',
 
-    'Отправить письмо на почту' => 'Send an email',
+    'Отправить письмо на почту' => 'Send us an email',
 
     'Написать в WhatsApp' => 'Message us on WhatsApp',
+
 ];

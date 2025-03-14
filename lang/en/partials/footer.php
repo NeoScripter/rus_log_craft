@@ -18,7 +18,7 @@ return [
     'Москва' => 'Moscow',
     'ПН.-ПТ. с 09:00 до 18:00' => 'Mon-Fri from 09:00 to 18:00',
 
-    'Авторские права' => '© 2024 spbrb.ru — Design and construction of wooden houses and log bathhouses. All information on this website is protected in accordance with Russian and international intellectual property laws, including copyright law. The information provided on the site is for informational purposes only and under no circumstances constitutes a public offer as defined by Article 437 (2) of the Civil Code of the Russian Federation.',
+    'Авторские права' => '© 2024 spbrb.ru — Design and construction of wooden houses and log bathhouses. All information on this website is protected under Russian and international intellectual property laws, including copyright law. The content provided is for informational purposes only and does not constitute a public offer as defined by Article 437 (2) of the Civil Code of the Russian Federation.',
 
     'Разработчик сайта' => 'Website Developer',
 
@@ -32,5 +32,6 @@ return [
     'Галерея' => 'Gallery',
     'Готовые проекты' => 'Ready-made Projects',
     'Процесс строительства' => 'Construction Process',
+
 
 ];
