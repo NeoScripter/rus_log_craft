@@ -18,8 +18,6 @@ class ImageHandler extends Component
     public string $type;
     public string $label;
 
-    public bool $isUploading = false;
-
     #[Validate(['images.*' => 'image|max:2048'])]
     public array $images = [];
 
@@ -38,7 +36,6 @@ class ImageHandler extends Component
 
     public function updatedImages()
     {
-        $this->isUploading = true;
 
         $this->validate();
 
@@ -59,7 +56,6 @@ class ImageHandler extends Component
         }
 
         $this->images = [];
-        $this->isUploading = false;
         $this->dispatch('imagesUpdated');
     }
 
