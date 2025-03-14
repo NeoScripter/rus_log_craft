@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-    // List projects with optional search
     public function index(Request $request)
     {
         $search = $request->input('search');
@@ -27,13 +26,11 @@ class ProjectController extends Controller
         return view('admin.admin', compact('projects'));
     }
 
-    // Show the project creation form
     public function create()
     {
         return view('admin.projects.create');
     }
 
-    // Store a new project
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -73,13 +70,11 @@ class ProjectController extends Controller
         ]);
     }
 
-    // Show project edit form
     public function edit(Project $project)
     {
         return view('admin.projects.edit', compact('project'));
     }
 
-    // Update an existing project
     public function update(Request $request, Project $project)
     {
         $validated = $request->validate([
@@ -119,7 +114,6 @@ class ProjectController extends Controller
         ]);
     }
 
-    // Delete a project
     public function destroy(Project $project)
     {
         $project->delete();

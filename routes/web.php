@@ -3,6 +3,8 @@
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Gallery;
+use App\Models\Image;
 use App\Models\Project;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -44,7 +46,8 @@ Route::get('/tech', function () {
 
 Route::get('/gallery', function () {
 
-    return view('user.gallery');
+    $galleries = Gallery::with('images')->get();
+    return view('user.gallery', compact('galleries'));
 })->name('user.gallery');
 
 Route::get('/contacts', function () {
@@ -67,17 +70,6 @@ Route::get('/privacy-policy', function () {
     return view('admin.admin');
 })->middleware(['auth', 'verified'])->name('admin'); */
 
-Route::middleware(['auth'])->prefix('admin')->name('gallery.')->group(function () {
-    Route::get('/gallery', [GalleryController::class, 'index'])->name('index');
-    Route::get('/gallery/create', [GalleryController::class, 'create'])->name('create');
-    Route::post('/gallery', [GalleryController::class, 'store'])->name('store');
-    Route::get('/gallery/{gallery}/edit', [GalleryController::class, 'edit'])->name('edit');
-    Route::put('/gallery/{gallery}', [GalleryController::class, 'update'])->name('update');
-    Route::delete('/gallery/{gallery}', [GalleryController::class, 'destroy'])->name('destroy');
-});
-
-
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -89,6 +81,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
     Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
     Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
+});
+
+Route::middleware(['auth'])->prefix('admin')->name('gallery.')->group(function () {
+    Route::get('/gallery', [GalleryController::class, 'index'])->name('index');
+    Route::get('/gallery/create', [GalleryController::class, 'create'])->name('create');
+    Route::post('/gallery', [GalleryController::class, 'store'])->name('store');
+    Route::get('/gallery/{gallery}/edit', [GalleryController::class, 'edit'])->name('edit');
+    Route::put('/gallery/{gallery}', [GalleryController::class, 'update'])->name('update');
+    Route::delete('/gallery/{gallery}', [GalleryController::class, 'destroy'])->name('destroy');
 });
 
 Route::get('/set-locale/{locale}', function ($locale) {
