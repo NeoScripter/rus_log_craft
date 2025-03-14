@@ -15,7 +15,7 @@
         </div>
 
         <div x-data class="flex flex-col gap-4 my-6 sm:flex-row md:gap-10">
-            <button class="flex-1 btn-primary">{{ __('pages/index.наш каталог проектов') }}</button>
+            <a href="/catalog" class="flex-1 text-center btn-primary">{{ __('pages/index.наш каталог проектов') }}</a>
             <button @click="$dispatch('open-form')"
                 class="flex-1 btn-secondary">{{ __('pages/index.заказать звонок') }}</button>
         </div>

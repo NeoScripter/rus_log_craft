@@ -135,7 +135,7 @@
 
     </div>
 
-    <a href="" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">{{ __('СМОТРЕТЬ ПРОЕКТЫ
+    <a href="/catalog" class="block w-full text-center md:w-100 md:mx-auto btn-primary lg:hidden">{{ __('СМОТРЕТЬ ПРОЕКТЫ
         ДОМОВ') }}</a>
 
 </section>

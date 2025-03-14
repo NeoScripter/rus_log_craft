@@ -14,10 +14,10 @@
     },
 }" x-init="init()" class="sticky top-0 z-50 bg-white border-b border-gray-200">
     <div class="flex items-center justify-between gap-2 px-4 py-3 md:my-6 lg:mx-32 lg:my-0 lg:py-4">
-        <div class="w-40 lg:w-80">
+        <a href="/" class="block w-40 lg:w-80">
             <img src="{{ asset('images/partials/header/logo_' . app()->getLocale() . '.webp') }}" alt="Rus Log Craft logo"
                 class="object-contain object-center w-full h-full">
-        </div>
+        </a>
 
         <div class="hidden lg:flex lg:items-start">
             <div class="pr-4">

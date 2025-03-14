@@ -10,7 +10,7 @@ return [
 
     'Технологии' => 'Technologies',
 
-    'Технология рубки домов и бань' => 'The Handcrafted Log house and Bathhouse Construction Technology by Our Master Craftsmen',
+    'Технология рубки домов и бань' => 'The Handcrafted Log house and Bathhouse Construction Technology by Our Professional Craftsmen',
 
     'Деревянное домостроение сложный процесс' => 'Wooden construction is quite a complex process, and for someone unfamiliar with the log house industry, it can sometimes be difficult to understand why houses built by different companies using the same design can, first, vary in price and, second, look completely different after several years.',
 

@@ -36,7 +36,7 @@
                 {{ __('partials/call_form.Отправить письмо на почту') }}
             </a>
 
-            <a href=""
+            <a href="{{ __('components.whatsapp link') }}"
                 class="py-4 px-8 bg-[#FAFAFA] focus-visible:rounded-none hover:rounded-none text-green-primary rounded-lg transition-all duration-300 border border-white hover:text-white hover:bg-transparent focus-visible:text-white focus-visible:bg-transparent justify-center font-bold inline-flex gap-2 items-center group md:w-full">
                 <div class="w-6 h-6">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
