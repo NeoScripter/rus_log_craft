@@ -16,6 +16,14 @@
             <input id="images" type="file" wire:model="images" multiple class="hidden" />
         </label>
 
+        <div wire:loading class="flex items-center mt-2 space-x-2">
+            <svg class="w-5 h-5 text-slate-800 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0 1 8-8v8H4z"></path>
+            </svg>
+            <span class="text-sm text-slate-800">Загрузка...</span>
+        </div>
+
         @error('images.*')
             <span class="text-sm text-red-500">{{ $message }}</span>
         @enderror
