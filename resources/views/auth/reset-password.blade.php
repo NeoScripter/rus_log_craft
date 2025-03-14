@@ -14,14 +14,14 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-admin.input-label for="password" :value="__('Password')" />
+            <x-admin.input-label for="password" :value="__('Пароль')" />
             <x-admin.text-input id="password" class="block w-full mt-1" type="password" name="password" required autocomplete="new-password" />
             <x-admin.input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         <!-- Confirm Password -->
         <div class="mt-4">
-            <x-admin.input-label for="password_confirmation" :value="__('Confirm Password')" />
+            <x-admin.input-label for="password_confirmation" :value="__('Продублируйте пароль')" />
 
             <x-admin.text-input id="password_confirmation" class="block w-full mt-1"
                                 type="password"
