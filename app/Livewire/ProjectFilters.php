@@ -85,6 +85,7 @@ class ProjectFilters extends Component
         }
 
         $this->dispatch('clearUrlParams');
+        $this->dispatch('scroll-to-top');
 
         return view('livewire.project-filters', [
             'projects' => $query->latest()->with('firstImage')->paginate($this->perPage)
