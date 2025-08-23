@@ -91,10 +91,21 @@
                 </div>
             </form>
 
-            <livewire:image-handler model="Project" :model-id="$project->id" type="image" label="фото проекта" />
+            <livewire:image-handler
+                model="Project"
+                :model-id="$project->id"
+                type="image"
+                label="фото проекта"
+                wire:key="project-{{ $project->id }}-images"
+            />
 
-            <livewire:image-handler model="Project" :model-id="$project->id" type="plan" label="фото планов проекта" />
-
+            <livewire:image-handler
+                model="Project"
+                :model-id="$project->id"
+                type="plan"
+                label="фото планов проекта"
+                wire:key="project-{{ $project->id }}-plans"
+            />
         </section>
 
         <!-- Confirmation Modal for Deletion -->

@@ -1,7 +1,7 @@
 <div>
     <div class="my-4">
 
-        <label for="images"
+        <label for={{ $type . 's'}}
             class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer max-w-80 bg-gray-50 hover:bg-gray-100">
             <div class="flex flex-col items-center justify-center pt-5 pb-6 text-center text-balance">
                 <svg class="w-8 h-8 my-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
@@ -13,7 +13,8 @@
                         {{ $label }}</p>
                 <p class="text-xs text-gray-500 dark:text-gray-400">WEBP, PNG, JPEG или JPG (MAX. 2 MB)</p>
             </div>
-            <input id="images" type="file" wire:model="images" multiple class="hidden" />
+            <input id={{ $type . 's'}} type="file" wire:model="images" multiple class="hidden" wire:key="images-input-{{ $type }}-{{ $modelId }}" />
+
         </label>
 
         <div wire:loading wire:target="images" class="flex items-center mt-2 space-x-2">
@@ -32,7 +33,7 @@
 
     <div class="flex flex-wrap items-center gap-4">
         @foreach ($modelImages as $image)
-            <div class="relative aspect-square h-52">
+            <div class="relative aspect-square h-52" wire:key="image-{{ $image->id }}">
                 <img src="{{ Storage::url($image->path) }}"
                     class="object-cover object-center w-full h-full rounded-lg shadow-lg">
 
