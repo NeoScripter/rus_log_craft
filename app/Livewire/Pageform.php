@@ -43,7 +43,7 @@ class Pageform extends Component
     {
         $this->validate();
 
-        Mail::to('admin@example.com')->send(
+        Mail::to('info@spbrb.ru')->send(
             new ContactForm($this->full_name, $this->email, $this->phone, strip_tags($this->message))
         );
 
