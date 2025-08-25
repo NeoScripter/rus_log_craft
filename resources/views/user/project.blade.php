@@ -29,8 +29,8 @@
                     </div>
                 </div>
 
-                <div x-data="{ preview: '' }" class="mb-6 ms:mb-10 overflow-x-clip md:w-1/2">
-                    <div class="mb-4 hidden overflow-clip rounded-md sm:block md:h-[363px] lg:h-[435px] xl:h-[670px]">
+                <div x-data="{ preview: '' }" class="mb-6 ms:mb-10 w-max overflow-x-auto md:w-1/2">
+                    <div class="mb-4 hidden overflow-clip shrink-0 rounded-md sm:block md:h-[363px] lg:h-[435px] xl:h-[670px]">
                         <img :src="preview || '{{ $project->firstImage ? Storage::url($project->firstImage->path) : asset('images/house-placeholder.webp') }}'"
                             alt="Фото проекта {{ $project->{'name_' . app()->getLocale()} ?? __('components.без названия') }}"
                             class="object-cover object-center w-full h-full">
