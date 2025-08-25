@@ -36,10 +36,10 @@
                             class="object-cover object-center w-full h-full">
                     </div>
 
-                    <div class="flex items-center gap-2 overflow-x-auto scrollbar-hidden sm:gap-5">
+                    <div class="flex items-center gap-2 overflow-x-auto w-max sm:gap-5">
 
                         @foreach ($project->images as $image)
-                            <div class="rounded-md aspect-square h-72 overflow-clip sm:h-26 sm:cursor-pointer">
+                            <div class="rounded-md aspect-square h-72 overflow-clip sm:h-26 shrink-0 sm:cursor-pointer">
                                 <img @click="preview = $el.src" src={{ Storage::url($image->path) }}
                                     alt="Изображение проекта {{ $project->{'name_' . app()->getLocale()} ?? __('components.без названия') }}"
                                     class="object-cover object-center w-full h-full">
